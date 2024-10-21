@@ -1,0 +1,101 @@
+@startuml CPU Simulator
+
+Boostrapper o-- CPU
+Boostrapper *-- Clock
+
+Clock *-- ClockTransition
+Clock *-- ScheduledExecutorService
+
+CPU *-- SynchrounousComponent
+CPU *-- InstructionFetch
+CPU *-- InstructionDecode
+CPU *-right- ExecutionUnit
+CPU *-- Memory
+CPU *-left- Clock
+
+
+ExecutionUnit *-- AluResult
+
+InstructionDecode *-- ControlSignals 
+
+SynchrounousComponent <|.. InstructionDecode
+SynchrounousComponent <|.. InstructionFetch
+SynchrounousComponent <|.left. Memory
+
+
+
+enum ClockTransition{
+    RISING_EDGE
+    FALLING_EDGE
+}
+
+class AluResult{
+    + res : Int32
+    + zero : Boolean
+}
+
+class ControlSignals {
+
+}
+
+interface SynchrounousComponent {
+    + executeOnRisingEdge()
+    + executeOnFallingEdge()
+}
+
+class Boostrapper {
+    - cpu : CPU
+    - clock : Clock
+    - mainView : View
+}
+
+class CPU {
+    - synchComponents : List<SynchrounousComponent>
+    - clock : Clock
+    + reset()
+}
+
+class Clock {
+    - value : Boolean
+    - clockTransition : ClockTransition
+    - frequency : Integer
+    - isAutoTickEnabled : AtomicBoolean
+    - scheduler : ScheduledExecutorService
+    - onRisingEdge : Runnable
+    - onFallingEdge : Runnable
+    + startAutoTick() : void
+    + stopAutoTick() : void
+    + tickOnce() : void
+}
+
+class Memory {
+    - memoryBlock : Vector<Int32>
+}
+
+class InstructionFetch {
+    - instructionMemory : Vector<Int32>
+    - programCounter : Int32
+    + getInstruction(adr: Int32): Int32
+    + incrementPC(): void
+    + jumpToInstruction(adr: Int32): void;
+}
+
+class InstructionDecode {
+    - registerFile : Vector<Int32>
+    + readData1(addr1: Int8) : Int32
+    + readData2(addr2: Int8) : Int32
+    + writeData(writeAddr: Int8, data: Int32): void
+    + getControlSignals(instruction: Int32): ControlSignals
+}
+
+class ExecutionUnit {
+    + executeInstruction(opA: Int32, opB: Int32, aluOP: TBD) : AluRes
+    + getAluControlSignals(TBD: aluOP) : TBD
+}
+
+class Memory {
+    + getData(adr: Int32): Int32
+    + writeData(adr: Int32): void
+}
+
+@enduml
