@@ -1,0 +1,8 @@
+@startuml
+
+start
+:run onRisingEdge callback;
+:run onFallingEdge callback;
+stop
+
+@enduml

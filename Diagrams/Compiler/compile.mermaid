@@ -1,0 +1,30 @@
+```mermaid
+flowchart TD
+    start@{shape: start}
+    splitIntoInstr@{shape: rounded, label: "Split program into instructions"}
+    stringEmptyCheck@{shape: hexagon, label: "Program string empty"}
+    instrAvailableCheck@{shape: hexagon, label : Instruction list is empty}
+    takeNxtInstr@{shape: rounded, label: "Take next instruction from list"}
+    instrExistsCheck@{shape: hexagon, label: "Instruction type is valid"}
+    operandsValidCheck@{shape: hexagon, label: "Operands are valid"}
+    throwError@{shape: rectangle, label: "Throw exception"}
+    createMachineCode@{shape: rectangle, label: "Convert instruction to machine code"}
+    addConvertedInstrToList@{shape: rectangle, label: "Add compiled instruction to list"}
+    returnMachineCode@{shape: rectangle, label: "Return machine code instructions"}
+    stop@{shape: stop}
+
+start --> stringEmptyCheck
+stringEmptyCheck -->|false|splitIntoInstr
+splitIntoInstr --> instrAvailableCheck
+instrAvailableCheck -->|true|takeNxtInstr
+takeNxtInstr --> instrExistsCheck
+instrExistsCheck -->|true| operandsValidCheck
+instrExistsCheck -->|false| throwError
+operandsValidCheck --> |false| throwError
+operandsValidCheck --> |true|createMachineCode 
+createMachineCode --> addConvertedInstrToList
+addConvertedInstrToList --> instrAvailableCheck
+instrAvailableCheck -->|false|returnMachineCode
+returnMachineCode-->stop
+throwError-->stop
+```

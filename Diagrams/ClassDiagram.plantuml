@@ -2,9 +2,11 @@
 
 Boostrapper o-- CPU
 Boostrapper *-- Clock
+Boostrapper *-right- MainView
+Boostrapper *-left- Compiler
 
 Clock *-- ClockTransition
-Clock *-- ScheduledExecutorService
+Clock *-left- ScheduledExecutorService
 
 CPU *-- SynchrounousComponent
 CPU *-- InstructionFetch
@@ -12,14 +14,16 @@ CPU *-- InstructionDecode
 CPU *-right- ExecutionUnit
 CPU *-- Memory
 CPU *-left- Clock
+CPU *-- StageRegister
 
+StageRegister .up.|> SynchrounousComponent
 
-ExecutionUnit *-- AluResult
+ExecutionUnit *-up- AluResult
 
 InstructionDecode *-- ControlSignals 
 
 SynchrounousComponent <|.. InstructionDecode
-SynchrounousComponent <|.. InstructionFetch
+SynchrounousComponent <|.right. InstructionFetch
 SynchrounousComponent <|.left. Memory
 
 
@@ -46,11 +50,11 @@ interface SynchrounousComponent {
 class Boostrapper {
     - cpu : CPU
     - clock : Clock
-    - mainView : View
+    - mainView : MainView
 }
 
 class CPU {
-    - synchComponents : List<SynchrounousComponent>
+    - synchronousComponents : List<SynchrounousComponent>
     - clock : Clock
     + reset()
 }
@@ -58,14 +62,17 @@ class CPU {
 class Clock {
     - value : Boolean
     - clockTransition : ClockTransition
-    - frequency : Integer
+    - clockCycleDuration : Integer
     - isAutoTickEnabled : AtomicBoolean
     - scheduler : ScheduledExecutorService
     - onRisingEdge : Runnable
     - onFallingEdge : Runnable
+    - tick() : void
+    + setOnRisingEdge(callback: Runnable) : void
+    + setOnFallingEdge(callback: Runnable) : void
     + startAutoTick() : void
     + stopAutoTick() : void
-    + tickOnce() : void
+    + TickOnce() : void
 }
 
 class Memory {
@@ -77,7 +84,7 @@ class InstructionFetch {
     - programCounter : Int32
     + getInstruction(adr: Int32): Int32
     + incrementPC(): void
-    + jumpToInstruction(adr: Int32): void;
+    + jumpToAddress(adr: Int32): void;
 }
 
 class InstructionDecode {
@@ -86,16 +93,36 @@ class InstructionDecode {
     + readData2(addr2: Int8) : Int32
     + writeData(writeAddr: Int8, data: Int32): void
     + getControlSignals(instruction: Int32): ControlSignals
+    + extendOp(op: Int16): Int32
 }
 
 class ExecutionUnit {
+    - getAluControlSignals(TBD: aluOP) : TBD
     + executeInstruction(opA: Int32, opB: Int32, aluOP: TBD) : AluRes
-    + getAluControlSignals(TBD: aluOP) : TBD
+    + getBranchAddress(currPCAddr: Int32, instrToJump: Int32) : Int32
 }
 
 class Memory {
     + getData(adr: Int32): Int32
     + writeData(adr: Int32): void
+}
+
+class StageRegister {
+    - fields : Map<Pair<String, Class>, Number>
+    + addField(fieldName: String, fieldType: Class)
+    + setFieldValue(fieldName: String, value: Number) : void
+    + getFieldValue(fieldName: String) : Number
+    + executeOnRisignEdge()
+    + executeOnFallingEdge()
+}
+
+class MainView {
+
+}
+
+class Compiler {
+    - registerSet : Map<String, Int>
+    + compile(program: String) : List<Int32>
 }
 
 @enduml

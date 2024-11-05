@@ -1,0 +1,11 @@
+@startuml
+
+partition "Constructor" {
+    start
+        :initialize private fields;
+        :Set clock rising edge callbacks;
+        :Set clock falling edge callbacks;
+    stop
+}
+
+@enduml

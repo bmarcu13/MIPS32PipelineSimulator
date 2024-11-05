@@ -1,0 +1,22 @@
+@startuml UseCaseDiagram
+
+left to right direction
+
+actor Utilizator
+
+package Simulator {
+    usecase "Încărcare program\nlimbaj de asamblare" as LoadProg
+    usecase "Execuție simulare" as RunSim
+    usecase "Simulare cu declanșare manuală\nimpuls de ceas" as TickOnce
+    usecase "Simulare automată" as AutoTick
+}
+
+AutoTick --|> RunSim : extinde
+TickOnce --|> RunSim : extinde
+AutoTick .left.> TickOnce : include
+
+Utilizator --> LoadProg
+Utilizator --> AutoTick
+Utilizator --> TickOnce
+
+@enduml

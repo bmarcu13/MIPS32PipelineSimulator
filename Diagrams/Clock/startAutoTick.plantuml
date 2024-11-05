@@ -1,0 +1,15 @@
+@startuml startAutoTick
+start
+if (auto tick is enabled) then
+    stop
+else
+    :isAutoTickEnabled = true;
+    while (auto tick is enabled)
+        :call onRisingEdge callback;
+        :wait for clock cycle duration / 2;
+        :call onFallingEdge callback;
+    endwhile 
+    -[hidden]->
+endif
+
+@enduml
