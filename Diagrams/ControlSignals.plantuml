@@ -1,0 +1,14 @@
+@startuml ControlSignals
+
+class ControlSignals {
+    + jump : bool
+    + memToReg : bool
+    + regWrite : bool
+    + memWrite : bool
+    + branch : bool
+    + aluSrc : bool
+    + regDst : bool
+    + aluOp : byte
+}
+
+@enduml

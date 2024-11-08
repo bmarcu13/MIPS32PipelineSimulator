@@ -1,0 +1,7 @@
+@startuml RegisterClassDiagram
+
+class  {
+    
+}
+
+@enduml

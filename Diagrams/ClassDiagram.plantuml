@@ -14,13 +14,13 @@ CPU *-- InstructionDecode
 CPU *-right- ExecutionUnit
 CPU *-- Memory
 CPU *-left- Clock
-CPU *-- StageRegister
+CPU *-- Register
 
-StageRegister .up.|> SynchrounousComponent
+Register .up.|> SynchrounousComponent
 
 ExecutionUnit *-up- AluResult
 
-InstructionDecode *-- ControlSignals 
+InstructionDecode *-left- ControlSignals 
 
 SynchrounousComponent <|.. InstructionDecode
 SynchrounousComponent <|.right. InstructionFetch
@@ -39,7 +39,14 @@ class AluResult{
 }
 
 class ControlSignals {
-
+    + jump : bool
+    + memToReg : bool
+    + regWrite : bool
+    + memWrite : bool
+    + branch : bool
+    + aluSrc : bool
+    + regDst : bool
+    + aluOp : byte
 }
 
 interface SynchrounousComponent {
@@ -65,11 +72,11 @@ class Clock {
     - clockCycleDuration : Integer
     - isAutoTickEnabled : AtomicBoolean
     - scheduler : ScheduledExecutorService
-    - onRisingEdge : Runnable
-    - onFallingEdge : Runnable
+    - onRisingEdge : List<Runnable>
+    - onFallingEdge : List<Runnable>
     - tick() : void
-    + setOnRisingEdge(callback: Runnable) : void
-    + setOnFallingEdge(callback: Runnable) : void
+    + addOnRisignEdgeCallback(callback: Runnable) : void
+    + addOnFallingEdgeCallback(callback: Runnable) : void
     + startAutoTick() : void
     + stopAutoTick() : void
     + TickOnce() : void
@@ -93,7 +100,7 @@ class InstructionDecode {
     + readData2(addr2: Int8) : Int32
     + writeData(writeAddr: Int8, data: Int32): void
     + getControlSignals(instruction: Int32): ControlSignals
-    + extendOp(op: Int16): Int32
+    + extendOp(op: Int16, withSign: bool): Int32
 }
 
 class ExecutionUnit {
@@ -107,17 +114,18 @@ class Memory {
     + writeData(adr: Int32): void
 }
 
-class StageRegister {
-    - fields : Map<Pair<String, Class>, Number>
-    + addField(fieldName: String, fieldType: Class)
-    + setFieldValue(fieldName: String, value: Number) : void
-    + getFieldValue(fieldName: String) : Number
+class Register {
+    - fieldValues : Map<String, Pair<Class, Object>>
+    - pendingValues : Map<String, Pair<Class, Object>>
+    + addField<T>(fieldName: String) : void
+    + setValue<T>(fieldName: String, value: T) : void
+    + getValue<T>(fieldName: String) : T
     + executeOnRisignEdge()
     + executeOnFallingEdge()
 }
 
 class MainView {
-
+    
 }
 
 class Compiler {
