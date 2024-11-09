@@ -1,8 +1,10 @@
 package Model;
 
 public class AluRes {
-    public boolean zero;
-    public int res;
+    public boolean zero = false;
+    public int res = 0;
+
+    public AluRes(){}
 
     public AluRes(boolean zero, int res)
     {

@@ -1,19 +1,22 @@
 package Model;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 
-public class InstructionDecode {
+public class InstructionDecode implements SynchronousComponent{
     private final int registerFileCapacity = 32;
-    private Vector<Integer> registerFile = new Vector<>(registerFileCapacity);
+    private final int[] registerFile = new int[registerFileCapacity];
+    private final Map<Integer, Integer> pendingChanges = new HashMap<>();
 
     public Integer readData(Integer addr)
     {
-        return registerFile.get(addr);
+        return registerFile[addr];
     }
 
     public void writeData(Integer addr, Integer data)
     {
-        registerFile.set(addr, data);
+        pendingChanges.put(addr, data);
     }
 
     public int extendOp(int op, boolean signExtend)
@@ -96,4 +99,18 @@ public class InstructionDecode {
         }
     }
 
+    @Override
+    public void executeOnClockTick() {
+
+    }
+
+    @Override
+    public void commitChanges()
+    {
+        for (Map.Entry<Integer, Integer> pair : pendingChanges.entrySet())
+        {
+            registerFile[pair.getKey()] = pair.getValue();
+        }
+        pendingChanges.clear();
+    }
 }

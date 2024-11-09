@@ -1,5 +1,6 @@
 package Model;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,10 +10,10 @@ public class Register implements SynchronousComponent
     private final Map<String, Object> fieldValues = new HashMap<>();
     private final Map<String, Object> pendingValues = new HashMap<>();
 
-    public <T> void addField(String fieldName)
+    public <T> void addField(String fieldName, T defaultValue)
     {
-        fieldValues.putIfAbsent(fieldName, null);
-        pendingValues.putIfAbsent(fieldName, null);
+        fieldValues.putIfAbsent(fieldName, defaultValue);
+        pendingValues.putIfAbsent(fieldName, defaultValue);
     }
 
     public <T> void setValue(String fieldName, T value)

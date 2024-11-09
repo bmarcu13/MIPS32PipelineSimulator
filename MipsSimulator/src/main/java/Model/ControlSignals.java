@@ -19,6 +19,12 @@ public class ControlSignals {
     private BitSet signalValues;
     public byte aluOp;
 
+    public ControlSignals()
+    {
+        signalValues = new BitSet(10);
+        this.aluOp = 0;
+    }
+
     public ControlSignals(byte aluOp, Signals... s)
     {
         this.signalValues = new BitSet(10);
