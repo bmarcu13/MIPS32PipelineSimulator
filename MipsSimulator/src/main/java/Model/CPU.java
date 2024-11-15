@@ -18,22 +18,18 @@ public class CPU {
     private static final String ALU_RES = "ALU_RES";
     private static final String MEM_DATA = "MEM_DATA";
 
-    private Clock clock;
-
     private final InstructionFetch instructionFetch = new InstructionFetch();
     private final InstructionDecode instructionDecode = new InstructionDecode();
     private final ExecutionUnit executionUnit = new ExecutionUnit();
     private final Memory memory = new Memory();
 
-    private Register ifId = new Register();
-    private Register idEx = new Register();
-    private Register exMem = new Register();
-    private Register memWb = new Register();
+    private final Register ifId = new Register();
+    private final Register idEx = new Register();
+    private final Register exMem = new Register();
+    private final Register memWb = new Register();
 
     public CPU(Clock clock)
     {
-        this.clock = clock;
-
         List<SynchronousComponent> syncComponents = new ArrayList<>();
         syncComponents.add(ifId);
         syncComponents.add(idEx);
@@ -53,7 +49,6 @@ public class CPU {
             {
                 sc.commitChanges();
             }
-
         });
     }
 
