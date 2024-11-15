@@ -39,28 +39,25 @@ public class CPU {
         syncComponents.add(idEx);
         syncComponents.add(exMem);
         syncComponents.add(memWb);
+        syncComponents.add(memory);
+        syncComponents.add(instructionDecode);
+        syncComponents.add(instructionDecode);
 
         initRegisters();
 
         clock.addSynchronousTask(() -> {
             System.out.println("On rising edge");
-//            executePipeline();
-            execute();
-            printRegisters();
+            executePipeline();
+            //commit registers
             for (SynchronousComponent sc : syncComponents)
             {
                 sc.commitChanges();
             }
 
         });
-//        clock.addSynchronousTask(() -> {
-//            System.out.println("On falling edge");
-//            for (SynchronousComponent sc : syncComponents)
-//                sc.commitChanges();
-//        });
     }
 
-    private void execute()
+    private void executeTest()
     {
         ifId.setValue(PROG_CNT, instructionFetch.getProgramCounter());
         ifId.setValue(INSTRUCTION, instructionFetch.getInstruction());
@@ -71,9 +68,12 @@ public class CPU {
 
     private void executePipeline()
     {
+        ///Instruction Fetch Stage
         ifId.setValue(INSTRUCTION, instructionFetch.getInstruction());
+        instructionFetch.incrementProgramCounter();
         ifId.setValue(PROG_CNT, instructionFetch.getProgramCounter());
 
+        ///Instruction Decode Stage
         int instrId = ifId.getValue(INSTRUCTION, Integer.class);
         ControlSignals idCtrlSig = instructionDecode.getControlSignals(instrId);
         int addr1 = (instrId >> 21) & 0x1f;
@@ -89,7 +89,8 @@ public class CPU {
         idEx.setValue(REG_TGT, (instrId >> 16) & 0x1f);
         idEx.setValue(REG_DST, (instrId >> 11) & 0x1f);
 
-        if(idCtrlSig.getSignalValue(ControlSignals.Signals.RegWrite))
+        boolean regWrite = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.RegWrite);
+        if(regWrite)
         {
             int data = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
                     ? memWb.getValue(MEM_DATA, Integer.class)
@@ -98,6 +99,7 @@ public class CPU {
             instructionDecode.writeData(regAddr, data);
         }
 
+        ///Execution Stage
         ControlSignals exCtrlSig = idEx.getValue(CTRL_SIG, ControlSignals.class);
 
         int exOp1 = idEx.getValue(RD1, Integer.class);
@@ -105,30 +107,38 @@ public class CPU {
             ? idEx.getValue(EXT_OP, Integer.class)
             : idEx.getValue(RD2, Integer.class);
         int shiftAmm = idEx.getValue(SHIFT_AMM, Integer.class);
-        byte func = idEx.getValue(FUNC, byte.class);
+        int func = idEx.getValue(FUNC, Integer.class);
         int finalRegDst = exCtrlSig.getSignalValue(ControlSignals.Signals.RegDst)
-            ? idEx.getValue(REG_TGT, Integer.class)
-            : idEx.getValue(REG_DST, Integer.class);
+            ? idEx.getValue(REG_DST, Integer.class)
+            : idEx.getValue(REG_TGT, Integer.class);
 
-        exMem.setValue(CTRL_SIG, idEx.getValue(CTRL_SIG, ControlSignals.class));
-        exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, func));
+        exMem.setValue(CTRL_SIG, exCtrlSig);
+        exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, (byte)func));
         exMem.setValue(RD2, idEx.getValue(RD2, Integer.class));
         exMem.setValue(REG_DST, finalRegDst);
 
+        ///Memory Stage
         ControlSignals memCtrlSig = exMem.getValue(CTRL_SIG, ControlSignals.class);
         int memAluRes = exMem.getValue(ALU_RES, AluRes.class).res;
+        if(memCtrlSig.getSignalValue(ControlSignals.Signals.MemWrite))
+        {
+            memory.writeData(memAluRes, exMem.getValue(RD2, Integer.class));
+        }
+        else
+        {
+            memWb.setValue(MEM_DATA, memory.readData(memAluRes));
+        }
 
         memWb.setValue(CTRL_SIG, memCtrlSig);
-        memWb.setValue(MEM_DATA, memory.readData(memAluRes));
         memWb.setValue(ALU_RES, memAluRes);
         memWb.setValue(REG_DST, exMem.getValue(REG_DST, Integer.class));
-
-        instructionFetch.incrementProgramCounter();
     }
 
     private void printRegisters()
     {
-        System.out.println("IF/ID: " + ifId.getValue(INSTRUCTION, Integer.class));
+        System.out.println("IF/ID Clock: " + ifId.getValue(PROG_CNT, Integer.class));
+        System.out.println("IF/ID: " + String.format("%x", ifId.getValue(INSTRUCTION, Integer.class)));
+        System.out.print("AluRes: " + exMem.getValue(ALU_RES, AluRes.class).res);
 //        System.out.println("ID/EX: " + idEx.getValue(PROG_CNT, Integer.class));
 //        System.out.println("EX/MEM: " + exMem.getValue(PROG_CNT, Integer.class));
 //        System.out.println("MEM/WB: " + memWb.getValue(PROG_CNT, Integer.class));
