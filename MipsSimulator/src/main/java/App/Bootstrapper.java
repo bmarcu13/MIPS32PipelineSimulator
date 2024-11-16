@@ -1,23 +1,19 @@
+package App;
+
 import Model.CPU;
 import Model.Clock;
 import View.MainView;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
-import java.awt.event.ActionListener;
-
-
+@SpringBootApplication
+@ComponentScan(basePackages = {"Communication"})
 public class Bootstrapper {
 
     public static void main(String[] args) {
         Clock clock = new Clock(2000);
         CPU cpu = new CPU(clock);
-
-//        clock.setOnRisingEdge(() -> {
-//            System.out.println("On rising edge");
-//        });
-//
-//        clock.setOnFallingEdge(() -> {
-//            System.out.println("On falling edge");
-//        });
 
         MainView mainView = new MainView(e -> clock.startAutoTick(), e -> {
             try {
@@ -27,5 +23,6 @@ public class Bootstrapper {
             }
         }, e -> clock.tick());
 
+        SpringApplication.run(Bootstrapper.class, args);
     }
 }
