@@ -8,7 +8,7 @@ Boostrapper *-left- Compiler
 Clock *-- ClockTransition
 Clock *-left- ScheduledExecutorService
 
-CPU *-- SynchrounousComponent
+CPU *-- DeferredUpdateComponent
 CPU *-- InstructionFetch
 CPU *-- InstructionDecode
 CPU *-right- ExecutionUnit
@@ -16,26 +16,20 @@ CPU *-- Memory
 CPU *-left- Clock
 CPU *-- Register
 
-Register .up.|> SynchrounousComponent
+Register .up.|> DeferredUpdateComponent
 
 ExecutionUnit *-up- AluResult
 
 InstructionDecode *-left- ControlSignals 
 
-SynchrounousComponent <|.. InstructionDecode
-SynchrounousComponent <|.right. InstructionFetch
-SynchrounousComponent <|.left. Memory
+DeferredUpdateComponent <|.. InstructionDecode
+DeferredUpdateComponent <|.right. InstructionFetch
+DeferredUpdateComponent <|.left. Memory
 
-
-
-enum ClockTransition{
-    RISING_EDGE
-    FALLING_EDGE
-}
 
 class AluResult{
-    + res : Int32
-    + zero : Boolean
+    + res : int
+    + zero : boolean
 }
 
 class ControlSignals {
@@ -49,9 +43,8 @@ class ControlSignals {
     + aluOp : byte
 }
 
-interface SynchrounousComponent {
-    + executeOnRisingEdge()
-    + executeOnFallingEdge()
+interface DeferredUpdateComponent {
+    {abstract} + commitChanges()
 }
 
 class Boostrapper {
@@ -61,67 +54,59 @@ class Boostrapper {
 }
 
 class CPU {
-    - synchronousComponents : List<SynchrounousComponent>
+    - synchronousComponents : List<DeferredUpdateComponent>
     - clock : Clock
     + reset()
 }
 
 class Clock {
-    - value : Boolean
-    - clockTransition : ClockTransition
-    - clockCycleDuration : Integer
-    - isAutoTickEnabled : AtomicBoolean
+    - value : boolean
+    - clockCycleDuration : int
+    - isAutoTickEnabled : boolean
     - scheduler : ScheduledExecutorService
-    - onRisingEdge : List<Runnable>
-    - onFallingEdge : List<Runnable>
-    - tick() : void
-    + addOnRisignEdgeCallback(callback: Runnable) : void
-    + addOnFallingEdgeCallback(callback: Runnable) : void
+    - onClockTick : List<Runnable>
+    + addOnClockTickEvent(callback: Runnable) : void
     + startAutoTick() : void
     + stopAutoTick() : void
-    + TickOnce() : void
-}
-
-class Memory {
-    - memoryBlock : Vector<Int32>
+    + tickOnce() : void
 }
 
 class InstructionFetch {
-    - instructionMemory : Vector<Int32>
-    - programCounter : Int32
-    + getInstruction(adr: Int32): Int32
+    - instructionMemotyCapacity : int = 64
+    - instructionMemory : int[instructionMemoryCapacity]
+    - programCounter : int
+    + getCurrentInstruction(): int
     + incrementPC(): void
-    + jumpToAddress(adr: Int32): void;
+    + jumpToAddress(addr: int): void
 }
 
 class InstructionDecode {
-    - registerFile : Vector<Int32>
-    + readData1(addr1: Int8) : Int32
-    + readData2(addr2: Int8) : Int32
-    + writeData(writeAddr: Int8, data: Int32): void
-    + getControlSignals(instruction: Int32): ControlSignals
-    + extendOp(op: Int16, withSign: bool): Int32
+    - registerFile : int[32]
+    + readData(addr2: int) : int
+    + writeData(addr: short, data: int): void
+    + getControlSignals(instruction: int): ControlSignals
+    + extendOp(op: int, withSign: bool): int
 }
 
 class ExecutionUnit {
-    - getAluControlSignals(TBD: aluOP) : TBD
-    + executeInstruction(opA: Int32, opB: Int32, aluOP: TBD) : AluRes
-    + getBranchAddress(currPCAddr: Int32, instrToJump: Int32) : Int32
+    + executeInstruction(op1: int, op2: int, shiftAmmt: int, aluOp: byte) : AluRes
+    + getBranchAddress(currPCAddr: Int32, instrToJump: int) : int
 }
 
 class Memory {
-    + getData(adr: Int32): Int32
-    + writeData(adr: Int32): void
+    - memoryBlock : int[32]
+    + getData(adr: int) : int
+    + writeData(adr: int) : void
+    + commitChanges() : void
 }
 
 class Register {
-    - fieldValues : Map<String, Pair<Class, Object>>
-    - pendingValues : Map<String, Pair<Class, Object>>
-    + addField<T>(fieldName: String) : void
+    - fieldValues : Map<String, Object>
+    - pendingValues : Map<String, Object>
+    + addField<T>(fieldName: String, defaultValue: T) : void
     + setValue<T>(fieldName: String, value: T) : void
-    + getValue<T>(fieldName: String) : T
-    + executeOnRisignEdge()
-    + executeOnFallingEdge()
+    + getValue<T>(fieldName: String, value: T) : T
+    + commitChanges() : void
 }
 
 class MainView {

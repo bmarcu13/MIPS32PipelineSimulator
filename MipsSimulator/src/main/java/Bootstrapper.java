@@ -1,3 +1,4 @@
+import Model.CPU;
 import Model.Clock;
 import View.MainView;
 
@@ -8,14 +9,15 @@ public class Bootstrapper {
 
     public static void main(String[] args) {
         Clock clock = new Clock(2000);
+        CPU cpu = new CPU(clock);
 
-        clock.setOnRisingEdge(() -> {
-            System.out.println("On rising edge");
-        });
-
-        clock.setOnFallingEdge(() -> {
-            System.out.println("On falling edge");
-        });
+//        clock.setOnRisingEdge(() -> {
+//            System.out.println("On rising edge");
+//        });
+//
+//        clock.setOnFallingEdge(() -> {
+//            System.out.println("On falling edge");
+//        });
 
         MainView mainView = new MainView(e -> clock.startAutoTick(), e -> {
             try {
