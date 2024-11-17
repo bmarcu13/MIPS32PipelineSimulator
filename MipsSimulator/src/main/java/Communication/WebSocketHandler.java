@@ -1,17 +1,66 @@
 package Communication;
 
+import Model.CPU;
+import Model.Clock;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
+import org.w3c.dom.Text;
+
+import java.io.IOException;
 
 public class WebSocketHandler extends TextWebSocketHandler {
+
+    private Clock clock = new Clock(1500);
+    private CPU cpu;
+    private WebSocketSession session;
+
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         System.out.printf("Client %s: %s%n", session.getRemoteAddress(), message.getPayload());
+        session.sendMessage(message);
+
+        JsonObject json = JsonParser.parseString(message.getPayload()).getAsJsonObject();
+        String command = json.get("command").getAsString();
+
+        switch(command){
+            case "tick":
+                clock.tick();
+                break;
+            case "start_auto":
+                clock.startAutoTick();
+                break;
+            case "stop_auto":
+                clock.stopAutoTick();
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-        System.out.println("Connection accepted from " + session.getRemoteAddress());
+        if(this.session == null) {
+            this.session = session;
+            cpu = new CPU(clock, this::sendMessage);
+        }
+    }
+
+    @Override
+    public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+        this.session = null;
+    }
+
+    private void sendMessage(JsonObject json) {
+        try{
+            session.sendMessage(new TextMessage(json.toString()));
+        }
+        catch (Exception e) {
+            System.out.println();
+        }
     }
 }

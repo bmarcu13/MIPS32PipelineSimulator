@@ -1,5 +1,9 @@
 package Model;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +22,8 @@ public class CPU {
     private static final String ALU_RES = "ALU_RES";
     private static final String MEM_DATA = "MEM_DATA";
 
+    private final Callback sendUpdate;
+
     private final InstructionFetch instructionFetch = new InstructionFetch();
     private final InstructionDecode instructionDecode = new InstructionDecode();
     private final ExecutionUnit executionUnit = new ExecutionUnit();
@@ -28,8 +34,10 @@ public class CPU {
     private final Register exMem = new Register();
     private final Register memWb = new Register();
 
-    public CPU(Clock clock)
+    public CPU(Clock clock, Callback sendUpdate)
     {
+        this.sendUpdate = sendUpdate;
+
         List<SynchronousComponent> syncComponents = new ArrayList<>();
         syncComponents.add(ifId);
         syncComponents.add(idEx);
@@ -40,6 +48,15 @@ public class CPU {
         syncComponents.add(instructionDecode);
 
         initRegisters();
+
+        JsonObject json = new JsonObject();
+        JsonArray instructionsArray = new JsonArray();
+        for(int i : instructionFetch.getInstructionMemory()) {
+            instructionsArray.add(i);
+        }
+        json.add("instr_mem", instructionsArray);
+        json.addProperty("prog_cnt", instructionFetch.getProgramCounter());
+        sendUpdate.execute(json);
 
         clock.addSynchronousTask(() -> {
             System.out.println("On rising edge");

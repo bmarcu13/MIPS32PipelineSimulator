@@ -43,4 +43,8 @@ public class InstructionFetch{
         }
         programCounter = addr;
     }
+
+    public int[] getInstructionMemory() {
+        return instructionMemory;
+    }
 }
