@@ -4,8 +4,10 @@ def subHelper(match: re.Match):
     result = match.group(1)
     if(match.group(2) is not None):
         result += str(match.group(2))[1].upper() + str(match.group(2))[2:]
-        
-    result += f': \'{match.group(3)}\','
+    
+    g3 = " ".join(str(match.group(3)).split())
+
+    result += f': \'{g3}\','
     return result
 
 def sub(match: re.Match):
