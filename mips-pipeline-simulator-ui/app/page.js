@@ -51,8 +51,8 @@ export default function Flow() {
     // );
 
     return (
-        <div style={{ height: "100%", width: "100%" }}>
-            <div>Message from server: </div>
+        <div style={{ height: "100vh", width: "100%" }}>
+            {/* <div>Message from server: </div> */}
             <Diagram />
         </div>
     );
