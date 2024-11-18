@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 
-export default function Diagram() {
-    const [pcValue, setPcValue] = useState(0);
+export default function Diagram({values}) {
+    // const [pcValue, setPcValue] = useState(0);
+
+    console.log(values)
 
     return (
         <svg
@@ -160,7 +162,7 @@ export default function Diagram() {
                                                             boxSizing:
                                                                 "border-box",
                                                             fontSize: "0px",
-                                                            textAlign: "center",
+                                                            textAlign: "left",
                                                         }}
                                                     >
                                                         <div
@@ -180,9 +182,11 @@ export default function Diagram() {
                                                                     "normal",
                                                                 overflowWrap:
                                                                     "normal",
+                                                                overflowY: "scroll",
+                                                                maxHeight: '200px'
                                                             }}
                                                         >
-                                                            placeholder_instr_mem
+                                                            placeholder_instr_mem 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -368,7 +372,7 @@ export default function Diagram() {
                                                                     "normal",
                                                             }}
                                                         >
-                                                            35
+                                                            {values.programCounter}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1623,7 +1627,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                IF_ID.INSTR_VAL
+                                                                {values.if_id.instr}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1814,7 +1818,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                IF_ID/PC_VAL
+                                                                {values.if_id.pc}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2123,7 +2127,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                ID_EX.SA_VAL
+                                                            {values.id_ex.sa}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2302,7 +2306,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                ID_EX_OP_EXT_VAL
+                                                                {values.id_ex.opExt}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2481,7 +2485,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                FUNC_VAL
+                                                                {values.id_ex.func}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2660,7 +2664,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                RT_VAL
+                                                                {values.id_ex.rt}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3031,7 +3035,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    RD1_VAL
+                                                                    {values.id_ex.rd1}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3216,7 +3220,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    ID/EX_PC_VAL
+                                                                    {values.id_ex.pc}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3401,7 +3405,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    ID_EX_RD2_VAL
+                                                                    {values.id_ex.rd2}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4183,7 +4187,7 @@ export default function Diagram() {
                                                                     "normal",
                                                             }}
                                                         >
-                                                            ID_EX_RD_VAL
+                                                            {values.id_ex.rd}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -4705,7 +4709,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                BranchAddr_VAL
+                                                                {values.ex_mem.branchAddr}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -4906,7 +4910,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                EX_MEM.DST_VAL
+                                                                {values.ex_mem.dst}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -5090,7 +5094,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    EX_MEM.AluRes_VAL
+                                                                    {values.ex_mem.aluRes}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -5280,7 +5284,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0
+                                                                    {values.ex_mem.zero}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -5468,7 +5472,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    EX_MEM.RD2
+                                                                    {values.ex_mem.rd2}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -7372,7 +7376,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                MEM_WB_MEM_DATA_VAL
+                                                                {values.mem_wb.memData}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7553,7 +7557,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                MEM_WB_ALURES_VAL
+                                                                {values.mem_wb.aluRes}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7734,7 +7738,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                MEM_WB.DST_VAL
+                                                                {values.mem_wb.dst}
                                                             </div>
                                                         </div>
                                                     </div>
