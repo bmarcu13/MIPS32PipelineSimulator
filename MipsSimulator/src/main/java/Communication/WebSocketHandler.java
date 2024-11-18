@@ -24,7 +24,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         System.out.printf("Client %s: %s%n", session.getRemoteAddress(), message.getPayload());
-        session.sendMessage(message);
+//        session.sendMessage(message);
 
         JsonObject json = JsonParser.parseString(message.getPayload()).getAsJsonObject();
         String command = json.get("command").getAsString();
