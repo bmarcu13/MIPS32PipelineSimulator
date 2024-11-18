@@ -1623,7 +1623,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                IF_ID.INSTR_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1636,7 +1636,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    IF_ID.INSTR_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -1814,7 +1814,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0008915
+                                                                IF_ID/PC_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1827,7 +1827,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0008915
+                                                    IF_ID/PC_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -2123,7 +2123,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                ID_EX.SA_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2136,7 +2136,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    ID_EX_SA_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -2302,7 +2302,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                ID_EX_OP_EXT_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2315,7 +2315,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    ID_EX_OP_EXT_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -2481,7 +2481,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                FUNC_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2494,7 +2494,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    FUNC_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -2660,7 +2660,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                RT_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2673,7 +2673,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    RT_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -3031,7 +3031,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0x00008915
+                                                                    RD1_VAL
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3044,7 +3044,7 @@ export default function Diagram() {
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0x00008915
+                                                        RD1_VAL
                                                     </text>
                                                 </switch>
                                             </g>
@@ -3216,7 +3216,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0008915
+                                                                    ID/EX_PC_VAL
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3229,7 +3229,7 @@ export default function Diagram() {
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0008915
+                                                        ID/EX_PC_VAL
                                                     </text>
                                                 </switch>
                                             </g>
@@ -3401,7 +3401,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0x00008915
+                                                                    ID_EX_RD2_VAL
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3414,7 +3414,7 @@ export default function Diagram() {
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0x00008915
+                                                        ID_EX_RD2_VAL
                                                     </text>
                                                 </switch>
                                             </g>
@@ -4183,7 +4183,7 @@ export default function Diagram() {
                                                                     "normal",
                                                             }}
                                                         >
-                                                            0x00008915
+                                                            ID_EX_RD_VAL
                                                         </div>
                                                     </div>
                                                 </div>
@@ -4196,7 +4196,7 @@ export default function Diagram() {
                                                 font-size="12px"
                                                 text-anchor="middle"
                                             >
-                                                0x00008915
+                                                ID_EX_RD_VAL
                                             </text>
                                         </switch>
                                     </g>
@@ -4705,7 +4705,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0008915
+                                                                BranchAddr_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -4718,7 +4718,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0008915
+                                                    BranchAddr_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -4906,7 +4906,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                EX_MEM.DST_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -4919,7 +4919,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    EX_MEM.DST_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -5090,7 +5090,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0x00008915
+                                                                    EX_MEM.AluRes_VAL
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -5103,7 +5103,7 @@ export default function Diagram() {
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0x00008915
+                                                        EX_MEM.AluRes_VAL
                                                     </text>
                                                 </switch>
                                             </g>
@@ -5468,7 +5468,7 @@ export default function Diagram() {
                                                                             "normal",
                                                                     }}
                                                                 >
-                                                                    0x00008915
+                                                                    EX_MEM.RD2
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -5481,7 +5481,7 @@ export default function Diagram() {
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0x00008915
+                                                        EX_MEM.RD2
                                                     </text>
                                                 </switch>
                                             </g>
@@ -6595,7 +6595,7 @@ export default function Diagram() {
                                                                     "normal",
                                                             }}
                                                         >
-                                                            0x00008915
+                                                            ALU_CTRL_ALUOP_VAL
                                                         </div>
                                                     </div>
                                                 </div>
@@ -6608,7 +6608,7 @@ export default function Diagram() {
                                                 font-size="12px"
                                                 text-anchor="middle"
                                             >
-                                                0x00008915
+                                                ALU_CTRL_ALUOP_VAL
                                             </text>
                                         </switch>
                                     </g>
@@ -7372,7 +7372,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0008915
+                                                                MEM_WB_MEM_DATA_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7385,7 +7385,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0008915
+                                                    MEM_WB_MEM_DATA_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -7553,7 +7553,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0008915
+                                                                MEM_WB_ALURES_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7566,7 +7566,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0008915
+                                                    MEM_WB_ALURES_VAL
                                                 </text>
                                             </switch>
                                         </g>
@@ -7643,7 +7643,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                <b>AluSrc</b>
+                                                                <b>AluRes</b>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7656,7 +7656,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    AluSrc
+                                                    AluRes
                                                 </text>
                                             </switch>
                                         </g>
@@ -7734,7 +7734,7 @@ export default function Diagram() {
                                                                         "normal",
                                                                 }}
                                                             >
-                                                                0x00008915
+                                                                MEM_WB.DST_VAL
                                                             </div>
                                                         </div>
                                                     </div>
@@ -7747,7 +7747,7 @@ export default function Diagram() {
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    0x00008915
+                                                    MEM_WB.DST_VAL
                                                 </text>
                                             </switch>
                                         </g>
