@@ -2,6 +2,7 @@ package Communication;
 
 import Model.CPU;
 import Model.Clock;
+import Presentation.WebView;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.springframework.web.socket.CloseStatus;
@@ -16,6 +17,7 @@ import java.io.IOException;
 public class WebSocketHandler extends TextWebSocketHandler {
 
     private Clock clock = new Clock(1500);
+    private WebView webView = new WebView();
     private CPU cpu;
     private WebSocketSession session;
 
@@ -46,7 +48,11 @@ public class WebSocketHandler extends TextWebSocketHandler {
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         if(this.session == null) {
             this.session = session;
-            cpu = new CPU(clock, this::sendMessage);
+            cpu = new CPU(clock, webView);
+            clock.addSynchronousTask(() -> {
+                sendMessage(webView.collect());
+            });
+            sendMessage(webView.collect());
         }
     }
 
@@ -55,9 +61,9 @@ public class WebSocketHandler extends TextWebSocketHandler {
         this.session = null;
     }
 
-    private void sendMessage(JsonObject json) {
+    private void sendMessage(String payload) {
         try{
-            session.sendMessage(new TextMessage(json.toString()));
+            session.sendMessage(new TextMessage(payload));
         }
         catch (Exception e) {
             System.out.println();

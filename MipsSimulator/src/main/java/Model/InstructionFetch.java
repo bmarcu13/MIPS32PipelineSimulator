@@ -2,7 +2,7 @@ package Model;
 
 import jdk.jfr.Unsigned;
 
-import java.util.Vector;
+import java.util.*;
 
 public class InstructionFetch{
     private final int maxRomCapacity = 64;
@@ -44,7 +44,7 @@ public class InstructionFetch{
         programCounter = addr;
     }
 
-    public int[] getInstructionMemory() {
-        return instructionMemory;
+    public List<Integer> getInstructionMemory() {
+        return Arrays.stream(instructionMemory).boxed().toList();
     }
 }

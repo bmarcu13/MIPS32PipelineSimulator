@@ -1,8 +1,6 @@
 package Model;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Vector;
+import java.util.*;
 
 public class InstructionDecode implements SynchronousComponent{
     private final int registerFileCapacity = 32;
@@ -97,6 +95,10 @@ public class InstructionDecode implements SynchronousComponent{
                     throw new IllegalArgumentException("Unsupported Instruction"); //this should never happen
             }
         }
+    }
+
+    public List<Integer> getRfValues() {
+        return Arrays.stream(registerFile).boxed().toList();
     }
 
     @Override

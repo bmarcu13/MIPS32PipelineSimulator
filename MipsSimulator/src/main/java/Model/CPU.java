@@ -1,9 +1,8 @@
 package Model;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
+import Presentation.IView;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +20,9 @@ public class CPU {
     private static final String CTRL_SIG = "CTRL_SIG";
     private static final String ALU_RES = "ALU_RES";
     private static final String MEM_DATA = "MEM_DATA";
+    private static final String BRANCH_ADDR = "BRANCH_ADDR";
 
-    private final Callback sendUpdate;
+    private final IView view;
 
     private final InstructionFetch instructionFetch = new InstructionFetch();
     private final InstructionDecode instructionDecode = new InstructionDecode();
@@ -34,9 +34,9 @@ public class CPU {
     private final Register exMem = new Register();
     private final Register memWb = new Register();
 
-    public CPU(Clock clock, Callback sendUpdate)
+    public CPU(Clock clock, IView view)
     {
-        this.sendUpdate = sendUpdate;
+        this.view = view;
 
         List<SynchronousComponent> syncComponents = new ArrayList<>();
         syncComponents.add(ifId);
@@ -48,24 +48,17 @@ public class CPU {
         syncComponents.add(instructionDecode);
 
         initRegisters();
-
-        JsonObject json = new JsonObject();
-        JsonArray instructionsArray = new JsonArray();
-        for(int i : instructionFetch.getInstructionMemory()) {
-            instructionsArray.add(i);
-        }
-        json.add("instr_mem", instructionsArray);
-        json.addProperty("prog_cnt", instructionFetch.getProgramCounter());
-        sendUpdate.execute(json);
+        updateView();
 
         clock.addSynchronousTask(() -> {
-            System.out.println("On rising edge");
             executePipeline();
+
             //commit registers
             for (SynchronousComponent sc : syncComponents)
             {
                 sc.commitChanges();
             }
+            updateView();
         });
     }
 
@@ -114,9 +107,10 @@ public class CPU {
         ///Execution Stage
         ControlSignals exCtrlSig = idEx.getValue(CTRL_SIG, ControlSignals.class);
 
+        int extOp = idEx.getValue(EXT_OP, Integer.class);
         int exOp1 = idEx.getValue(RD1, Integer.class);
         int exOp2 = exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc)
-            ? idEx.getValue(EXT_OP, Integer.class)
+            ? extOp
             : idEx.getValue(RD2, Integer.class);
         int shiftAmm = idEx.getValue(SHIFT_AMM, Integer.class);
         int func = idEx.getValue(FUNC, Integer.class);
@@ -124,6 +118,7 @@ public class CPU {
             ? idEx.getValue(REG_DST, Integer.class)
             : idEx.getValue(REG_TGT, Integer.class);
 
+        exMem.setValue(BRANCH_ADDR, extOp);
         exMem.setValue(CTRL_SIG, exCtrlSig);
         exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, (byte)func));
         exMem.setValue(RD2, idEx.getValue(RD2, Integer.class));
@@ -156,6 +151,34 @@ public class CPU {
 //        System.out.println("MEM/WB: " + memWb.getValue(PROG_CNT, Integer.class));
     }
 
+    private void updateView() {
+        view.updateProgramCounterValue(instructionFetch.getProgramCounter());
+        view.updateIfIdValues(ifId.getValue(PROG_CNT, Integer.class), ifId.getValue(INSTRUCTION, Integer.class));
+        view.updateIdExValues(
+                idEx.getValue(PROG_CNT, Integer.class),
+                idEx.getValue(RD1, Integer.class),
+                idEx.getValue(RD2, Integer.class),
+                idEx.getValue(SHIFT_AMM, Integer.class),
+                idEx.getValue(EXT_OP, Integer.class),
+                idEx.getValue(FUNC, Integer.class),
+                idEx.getValue(REG_TGT, Integer.class),
+                idEx.getValue(REG_DST, Integer.class)
+        );
+        view.updateExMemValues(
+                exMem.getValue(BRANCH_ADDR, Integer.class),
+                exMem.getValue(ALU_RES, AluRes.class),
+                exMem.getValue(RD2, Integer.class),
+                exMem.getValue(REG_DST, Integer.class)
+        );
+        view.updateMemWbValues(
+                memWb.getValue(MEM_DATA, Integer.class),
+                memWb.getValue(ALU_RES, Integer.class),
+                memWb.getValue(REG_DST, Integer.class)
+        );
+        view.updateRegisterFileValues(instructionDecode.getRfValues());
+        view.updateMemoryValues(memory.getMemValues());
+    }
+
     private void initRegisters()
     {
         ifId.addField(PROG_CNT, 0);
@@ -176,6 +199,7 @@ public class CPU {
         exMem.addField(ALU_RES, new AluRes());
         exMem.addField(RD2, 0);
         exMem.addField(REG_DST, 0);
+        exMem.addField(BRANCH_ADDR, 0);
 
         memWb.addField(CTRL_SIG, new ControlSignals());
         memWb.addField(MEM_DATA, 0);

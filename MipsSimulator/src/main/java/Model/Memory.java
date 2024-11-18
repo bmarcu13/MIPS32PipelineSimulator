@@ -1,8 +1,6 @@
 package Model;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Vector;
+import java.util.*;
 
 public class Memory implements SynchronousComponent {
     private final int memCapacity = 256;
@@ -17,6 +15,10 @@ public class Memory implements SynchronousComponent {
     public void writeData(int addr, int data)
     {
         pendingChanges.put(addr, data);
+    }
+
+    public List<Integer> getMemValues() {
+        return Arrays.stream(memoryBlock).limit(32).boxed().toList();
     }
 
     @Override
