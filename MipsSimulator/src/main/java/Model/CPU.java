@@ -24,6 +24,8 @@ public class CPU {
 
     private final IView view;
 
+    List<SynchronousComponent> synchronousComponents = new ArrayList<>();
+
     private final InstructionFetch instructionFetch = new InstructionFetch();
     private final InstructionDecode instructionDecode = new InstructionDecode();
     private final ExecutionUnit executionUnit = new ExecutionUnit();
@@ -38,14 +40,13 @@ public class CPU {
     {
         this.view = view;
 
-        List<SynchronousComponent> syncComponents = new ArrayList<>();
-        syncComponents.add(ifId);
-        syncComponents.add(idEx);
-        syncComponents.add(exMem);
-        syncComponents.add(memWb);
-        syncComponents.add(memory);
-        syncComponents.add(instructionDecode);
-        syncComponents.add(instructionDecode);
+        synchronousComponents.add(ifId);
+        synchronousComponents.add(idEx);
+        synchronousComponents.add(exMem);
+        synchronousComponents.add(memWb);
+        synchronousComponents.add(memory);
+        synchronousComponents.add(instructionDecode);
+        synchronousComponents.add(instructionDecode);
 
         initRegisters();
         updateView();
@@ -54,7 +55,7 @@ public class CPU {
             executePipeline();
 
             //commit registers
-            for (SynchronousComponent sc : syncComponents)
+            for (SynchronousComponent sc : synchronousComponents)
             {
                 sc.commitChanges();
             }
@@ -62,13 +63,13 @@ public class CPU {
         });
     }
 
-    private void executeTest()
-    {
-        ifId.setValue(PROG_CNT, instructionFetch.getProgramCounter());
-        ifId.setValue(INSTRUCTION, instructionFetch.getInstruction());
-        instructionFetch.incrementProgramCounter();
-//        idEx.setValue(PROG_CNT, ifId.getValue(PROG_CNT, Integer.class));
-//        exMem.setValue(PROG_CNT, idEx.getValue(PROG_CNT, Integer.class));
+    public void reset() {
+        for(SynchronousComponent sc : synchronousComponents) {
+            sc.reset();
+        }
+        instructionFetch.resetProgramCounter();
+        initRegisters();
+        updateView();
     }
 
     private void executePipeline()
@@ -129,6 +130,7 @@ public class CPU {
         int memAluRes = exMem.getValue(ALU_RES, AluRes.class).res;
         if(memCtrlSig.getSignalValue(ControlSignals.Signals.MemWrite))
         {
+            System.out.println("Addr: " + memAluRes + "; Data: " + exMem.getValue(RD2, Integer.class));
             memory.writeData(memAluRes, exMem.getValue(RD2, Integer.class));
         }
         else
@@ -141,20 +143,23 @@ public class CPU {
         memWb.setValue(REG_DST, exMem.getValue(REG_DST, Integer.class));
     }
 
-    private void printRegisters()
-    {
-        System.out.println("IF/ID Clock: " + ifId.getValue(PROG_CNT, Integer.class));
-        System.out.println("IF/ID: " + String.format("%x", ifId.getValue(INSTRUCTION, Integer.class)));
-        System.out.print("AluRes: " + exMem.getValue(ALU_RES, AluRes.class).res);
-//        System.out.println("ID/EX: " + idEx.getValue(PROG_CNT, Integer.class));
-//        System.out.println("EX/MEM: " + exMem.getValue(PROG_CNT, Integer.class));
-//        System.out.println("MEM/WB: " + memWb.getValue(PROG_CNT, Integer.class));
-    }
-
     private void updateView() {
         view.updateProgramCounterValue(instructionFetch.getProgramCounter());
-        view.updateIfIdValues(ifId.getValue(PROG_CNT, Integer.class), ifId.getValue(INSTRUCTION, Integer.class));
+
+        int idInstr = ifId.getValue(INSTRUCTION, Integer.class);
+
+        view.updateJumpData(
+                idInstr & 0x3FFFFFF,
+                instructionDecode.getControlSignals(idInstr).getSignalValue(ControlSignals.Signals.Jmp)
+        );
+
+        view.updateIfIdValues(
+                ifId.getValue(PROG_CNT, Integer.class),
+                idInstr
+        );
+
         view.updateIdExValues(
+                idEx.getValue(CTRL_SIG, ControlSignals.class),
                 idEx.getValue(PROG_CNT, Integer.class),
                 idEx.getValue(RD1, Integer.class),
                 idEx.getValue(RD2, Integer.class),
@@ -164,17 +169,22 @@ public class CPU {
                 idEx.getValue(REG_TGT, Integer.class),
                 idEx.getValue(REG_DST, Integer.class)
         );
+
         view.updateExMemValues(
+                exMem.getValue(CTRL_SIG, ControlSignals.class),
                 exMem.getValue(BRANCH_ADDR, Integer.class),
                 exMem.getValue(ALU_RES, AluRes.class),
                 exMem.getValue(RD2, Integer.class),
                 exMem.getValue(REG_DST, Integer.class)
         );
+
         view.updateMemWbValues(
+                memWb.getValue(CTRL_SIG, ControlSignals.class),
                 memWb.getValue(MEM_DATA, Integer.class),
                 memWb.getValue(ALU_RES, Integer.class),
                 memWb.getValue(REG_DST, Integer.class)
         );
+
         view.updateRegisterFileValues(instructionDecode.getRfValues());
         view.updateMemoryValues(memory.getMemValues());
     }

@@ -37,8 +37,9 @@ public class Register implements SynchronousComponent
     }
 
     @Override
-    public void executeOnClockTick() {
-
+    public void reset() {
+        fieldValues.clear();
+        pendingValues.clear();
     }
 
     @Override

@@ -39,6 +39,10 @@ public class WebSocketHandler extends TextWebSocketHandler {
             case "stop_auto":
                 clock.stopAutoTick();
                 break;
+            case "reset":
+                cpu.reset();
+                sendMessage(webView.collect());
+                break;
             default:
                 break;
         }

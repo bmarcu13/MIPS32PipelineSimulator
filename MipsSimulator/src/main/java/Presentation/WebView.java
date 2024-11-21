@@ -1,6 +1,7 @@
 package Presentation;
 
 import Model.AluRes;
+import Model.ControlSignals;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -13,6 +14,12 @@ public class WebView implements IView{
         String payload = values.toString();
         values = new JsonObject();
         return payload;
+    }
+
+    @Override
+    public void updateJumpData(int jmpAddr, boolean jmp) {
+        values.addProperty("jmpAddr", jmpAddr);
+        values.addProperty("jmp", jmp);
     }
 
     @Override
@@ -29,9 +36,10 @@ public class WebView implements IView{
     }
 
     @Override
-    public void updateIdExValues(int programCounter, int rd1, int rd2, int sa, int opExt, int func, int rt, int rd) {
+    public void updateIdExValues(ControlSignals cs, int programCounter, int rd1, int rd2, int sa, int opExt, int func, int rt, int rd) {
         JsonObject idExValues = new JsonObject();
 
+        idExValues.add("ctrlSig", decodeControlSignals(cs));
         idExValues.addProperty("pc", programCounter);
         idExValues.addProperty("rd1", rd1);
         idExValues.addProperty("rd2", rd2);
@@ -45,9 +53,10 @@ public class WebView implements IView{
     }
 
     @Override
-    public void updateExMemValues(int branchAddr, AluRes aluRes, int rd2, int dst) {
+    public void updateExMemValues(ControlSignals cs, int branchAddr, AluRes aluRes, int rd2, int dst) {
         JsonObject exMemValues = new JsonObject();
 
+        exMemValues.add("ctrlSig", decodeControlSignals(cs));
         exMemValues.addProperty("branchAddr", branchAddr);
         exMemValues.addProperty("zero", aluRes.zero);
         exMemValues.addProperty("aluRes", aluRes.res);
@@ -58,9 +67,10 @@ public class WebView implements IView{
     }
 
     @Override
-    public void updateMemWbValues(int memData, int aluRes, int dst) {
+    public void updateMemWbValues(ControlSignals cs, int memData, int aluRes, int dst) {
         JsonObject memWbValues = new JsonObject();
 
+        memWbValues.add("ctrlSig", decodeControlSignals(cs));
         memWbValues.addProperty("memData", memData);
         memWbValues.addProperty("aluRes", aluRes);
         memWbValues.addProperty("dst", dst);
@@ -86,5 +96,15 @@ public class WebView implements IView{
         }
 
         values.add("memory", valuesJsonArray);
+    }
+
+    private static JsonObject decodeControlSignals(ControlSignals cs) {
+        JsonObject csJson = new JsonObject();
+        for (ControlSignals.Signals s : ControlSignals.Signals.values()) {
+            csJson.addProperty(s.name(), cs.getSignalValue(s));
+        }
+        csJson.addProperty("aluOp", cs.aluOp);
+
+        return csJson;
     }
 }

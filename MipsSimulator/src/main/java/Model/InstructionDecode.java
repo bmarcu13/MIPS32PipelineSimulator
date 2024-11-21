@@ -4,7 +4,7 @@ import java.util.*;
 
 public class InstructionDecode implements SynchronousComponent{
     private final int registerFileCapacity = 32;
-    private final int[] registerFile = new int[registerFileCapacity];
+    private int[] registerFile = new int[registerFileCapacity];
     private final Map<Integer, Integer> pendingChanges = new HashMap<>();
 
     public Integer readData(Integer addr)
@@ -102,8 +102,9 @@ public class InstructionDecode implements SynchronousComponent{
     }
 
     @Override
-    public void executeOnClockTick() {
-
+    public void reset() {
+        registerFile = new int[registerFileCapacity];
+        pendingChanges.clear();
     }
 
     @Override

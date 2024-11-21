@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Memory implements SynchronousComponent {
     private final int memCapacity = 256;
-    private final int[] memoryBlock = new int[memCapacity];
+    private int[] memoryBlock = new int[memCapacity];
     private Map<Integer, Integer> pendingChanges = new HashMap<>();
 
     public int readData(int addr)
@@ -22,8 +22,9 @@ public class Memory implements SynchronousComponent {
     }
 
     @Override
-    public void executeOnClockTick() {
-
+    public void reset() {
+        memoryBlock = new int[memCapacity];
+        pendingChanges.clear();
     }
 
     @Override

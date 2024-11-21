@@ -22,7 +22,10 @@ public class InstructionFetch{
         instructionMemory[3] = 0b00000000000000000000000000000000;
         instructionMemory[4] = 0b00000000000000000000000000000000;
         instructionMemory[5] = 0b00000000010000110000100000000000;
-        instructionMemory[6] = 0b10001100001000000000000000000000;
+        instructionMemory[6] = 0b00000000000000000000000000000000;
+        instructionMemory[7] = 0b00000000000000000000000000000000;
+        instructionMemory[8] = 0b00000000000000000000000000000000;
+        instructionMemory[9] = 0b10001100000000010000000000000000;
     }
 
     public Integer getInstruction()
@@ -42,6 +45,10 @@ public class InstructionFetch{
             throw new IllegalArgumentException("Memory address out of bounds");
         }
         programCounter = addr;
+    }
+
+    public void resetProgramCounter() {
+        programCounter = 0;
     }
 
     public List<Integer> getInstructionMemory() {
