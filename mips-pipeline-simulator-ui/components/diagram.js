@@ -1,20 +1,21 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import MemoryList from "./MemoryList";
 
-export default function Diagram({values}) {
+export default function Diagram({ values }) {
     // const [pcValue, setPcValue] = useState(0);
 
-    console.log(values)
+    console.log(values);
 
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            width="1421px"
-            viewBox="-0.5 -0.5 1421 740"
-            style={{ maxWidth: "100%", maxHeight: "740px" }}
+            // width="1422px"
+            viewBox="-0.5 -0.5 1422 740"
+            style={{ maxWidth: "100%" }}
         >
             <defs />
             <g>
@@ -23,24 +24,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="fya-JSUQ_MmqU_CgoYYm-9">
                             <g>
                                 <path
-                                    d="M 178 434 L 178 421.35 Q 178 411 167.65 411 L 38.35 411 Q 28 411 28 421.35 L 28 434"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 179 434 L 179 421.35 Q 179 411 168.65 411 L 39.35 411 Q 29 411 29 421.35 L 29 434"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 28 434 L 28 635.65 Q 28 646 38.35 646 L 167.65 646 Q 178 646 178 635.65 L 178 434"
+                                    d="M 29 434 L 29 635.65 Q 29 646 39.35 646 L 168.65 646 Q 179 646 179 635.65 L 179 434"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 28 434 L 178 434"
+                                    d="M 29 434 L 179 434"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -52,26 +53,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "148px",
                                                     height: "1px",
                                                     paddingTop: "423px",
-                                                    marginLeft: "29px",
+                                                    marginLeft: "30px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -80,20 +77,15 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         <font color="#ffffff">
@@ -104,9 +96,9 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="103"
+                                            x="104"
                                             y="426"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -120,7 +112,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-36">
                                 <g>
                                     <rect
-                                        x="28"
+                                        x="29"
                                         y="434.5"
                                         width="150"
                                         height="205"
@@ -137,62 +129,47 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "148px",
                                                         height: "1px",
                                                         paddingTop: "537px",
-                                                        marginLeft: "29px",
+                                                        marginLeft: "30px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
-                                                            textAlign: "left",
+                                                            textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
-                                                                overflowY: "scroll",
-                                                                maxHeight: '200px'
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
-                                                            placeholder_instr_mem 
+                                                            placeholder_instr_mem
                                                         </div>
                                                     </div>
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="103"
+                                                x="104"
                                                 y="541"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -209,24 +186,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="fya-JSUQ_MmqU_CgoYYm-10">
                             <g>
                                 <path
-                                    d="M 148 328 L 148 315.35 Q 148 305 137.65 305 L 38.35 305 Q 28 305 28 315.35 L 28 328"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 149 328 L 149 315.35 Q 149 305 138.65 305 L 39.35 305 Q 29 305 29 315.35 L 29 328"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 28 328 L 28 364.65 Q 28 375 38.35 375 L 137.65 375 Q 148 375 148 364.65 L 148 328"
+                                    d="M 29 328 L 29 364.65 Q 29 375 39.35 375 L 138.65 375 Q 149 375 149 364.65 L 149 328"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 28 328 L 148 328"
+                                    d="M 29 328 L 149 328"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -238,26 +215,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "118px",
                                                     height: "1px",
                                                     paddingTop: "317px",
-                                                    marginLeft: "29px",
+                                                    marginLeft: "30px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -266,33 +239,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            Program Counter
-                                                        </font>
+                                                        <font color="#ffffff">Program Counter</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="88"
+                                            x="89"
                                             y="320"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -306,7 +272,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="fya-JSUQ_MmqU_CgoYYm-12">
                                 <g>
                                     <rect
-                                        x="58"
+                                        x="59"
                                         y="335"
                                         width="60"
                                         height="30"
@@ -323,53 +289,39 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "58px",
                                                         height: "1px",
                                                         paddingTop: "350px",
-                                                        marginLeft: "59px",
+                                                        marginLeft: "60px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "16px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "16px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                fontWeight:
-                                                                    "bold",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             {values.programCounter}
@@ -378,7 +330,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="88"
+                                                x="89"
                                                 y="355"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -386,7 +338,7 @@ export default function Diagram({values}) {
                                                 text-anchor="middle"
                                                 font-weight="bold"
                                             >
-                                                35
+                                                plh_pro...
                                             </text>
                                         </switch>
                                     </g>
@@ -396,19 +348,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-19">
                             <g>
                                 <path
-                                    d="M 569.98 300.05 L 591 300 L 604.77 300.31"
+                                    d="M 570.98 300.05 L 592 300.1 L 603.9 300.32"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 300.45 L 602.68 304.27 L 604.77 300.31 L 602.86 296.27 Z"
+                                    d="M 610.65 300.44 L 601.57 304.77 L 603.9 300.32 L 601.73 295.78 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -416,19 +368,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-325">
                             <g>
                                 <path
-                                    d="M 534.04 251.76 L 534.09 240 L 533.71 220"
+                                    d="M 535 251.76 L 535 240 L 534.71 220"
                                     fill="none"
-                                    stroke="#6600cc"
+                                    stroke="#990099"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 534.01 257.76 L 530.05 249.75 L 534.04 251.76 L 538.05 249.78 Z"
-                                    fill="#6600cc"
-                                    stroke="#6600cc"
+                                    d="M 535 257.76 L 531 249.76 L 535 251.76 L 539 249.76 Z"
+                                    fill="#990099"
+                                    stroke="#990099"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -436,24 +388,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="fya-JSUQ_MmqU_CgoYYm-27">
                             <g>
                                 <path
-                                    d="M 569 283 L 569 270.35 Q 569 260 558.65 260 L 439.35 260 Q 429 260 429 270.35 L 429 283"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 570 283 L 570 270.35 Q 570 260 559.65 260 L 440.35 260 Q 430 260 430 270.35 L 430 283"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 429 283 L 429 449.65 Q 429 460 439.35 460 L 558.65 460 Q 569 460 569 449.65 L 569 283"
+                                    d="M 430 283 L 430 449.65 Q 430 460 440.35 460 L 559.65 460 Q 570 460 570 449.65 L 570 283"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 429 283 L 569 283"
+                                    d="M 430 283 L 570 283"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -465,26 +417,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "138px",
                                                     height: "1px",
                                                     paddingTop: "272px",
-                                                    marginLeft: "430px",
+                                                    marginLeft: "431px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -493,33 +441,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            Register File
-                                                        </font>
+                                                        <font color="#ffffff">Register File</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="499"
+                                            x="500"
                                             y="275"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -533,7 +474,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-40">
                                 <g>
                                     <rect
-                                        x="429"
+                                        x="430"
                                         y="285"
                                         width="140"
                                         height="175"
@@ -550,51 +491,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "138px",
                                                         height: "1px",
                                                         paddingTop: "373px",
-                                                        marginLeft: "430px",
+                                                        marginLeft: "431px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             placeholder_reg_file
@@ -603,7 +531,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="499"
+                                                x="500"
                                                 y="376"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -620,21 +548,21 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-4">
                             <g>
                                 <path
-                                    d="M 429 330 L 358.09 330 L 358.01 303"
+                                    d="M 430 330 L 429 330 L 359 330 L 359 303"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="358"
+                                    cx="359"
                                     cy="300"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -647,51 +575,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
                                                         paddingTop: "321px",
-                                                        marginLeft: "393px",
+                                                        marginLeft: "394px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             20:16
@@ -700,12 +617,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="393"
-                                                y="325"
+                                                x="394"
+                                                y="324"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 20:16
                                             </text>
@@ -717,27 +635,114 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-105">
                             <g>
                                 <path
-                                    d="M 499 190 L 556.09 190 L 556.09 40 L 604.76 40"
+                                    d="M 500 190 L 557 190 L 557 40 L 603.9 40"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 40 L 602.76 44 L 604.76 40 L 602.76 36 Z"
+                                    d="M 610.65 40 L 601.65 44.5 L 603.9 40 L 601.65 35.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
+                            </g>
+                        </g>
+                        <g data-cell-id="iDGc5PNU-aZqenxwyxyE-3">
+                            <g>
+                                <path
+                                    d="M 489.75 154.64 L 529 154.6 L 529 130 L 259 130 L 259 176.5 L 124.24 176.5"
+                                    fill="none"
+                                    stroke={values.jmp ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
+                                    pointer-events="stroke"
+                                />
+                                <path
+                                    d="M 118.24 176.5 L 126.24 172.5 L 124.24 176.5 L 126.24 180.5 Z"
+                                    fill={values.jmp ? "#009900" : "#66ff66"}
+                                    stroke={values.jmp ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
+                                    pointer-events="all"
+                                />
+                            </g>
+                            <g data-cell-id="iDGc5PNU-aZqenxwyxyE-4">
+                                <g>
+                                    <g transform="translate(-0.5 -0.5)">
+                                        <switch>
+                                            <foreignObject
+                                                pointer-events="none"
+                                                width="100%"
+                                                height="100%"
+                                                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                                                style={{ overflow: "visible", textAlign: "left" }}
+                                            >
+                                                <div
+                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
+                                                        width: "1px",
+                                                        height: "1px",
+                                                        paddingTop: "164px",
+                                                        marginLeft: "154px",
+                                                    }}
+                                                >
+                                                    <div
+                                                        data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            fontSize: "0px",
+                                                            textAlign: "center",
+                                                        }}
+                                                    >
+                                                        <div
+                                                            style={{
+                                                                display: "inline-block",
+                                                                fontSize: "11px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(0, 0, 0)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
+                                                                backgroundColor:
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
+                                                            }}
+                                                        >
+                                                            <font style={{ fontSize: "13px" }}>
+                                                                Jump
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </foreignObject>
+                                            <text
+                                                x="154"
+                                                y="167"
+                                                fill="rgb(0, 0, 0)"
+                                                font-family='"Helvetica"'
+                                                font-size="11px"
+                                                text-anchor="middle"
+                                                font-weight="bold"
+                                            >
+                                                Jump
+                                            </text>
+                                        </switch>
+                                    </g>
+                                </g>
                             </g>
                         </g>
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-5">
                             <g>
                                 <ellipse
-                                    cx="464"
+                                    cx="465"
                                     cy="190"
                                     rx="35"
                                     ry="50"
@@ -754,22 +759,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "68px",
                                                     height: "1px",
                                                     paddingTop: "190px",
-                                                    marginLeft: "430px",
+                                                    marginLeft: "431px",
                                                 }}
                                             >
                                                 <div
@@ -782,19 +783,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         Main
@@ -804,7 +800,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="464"
+                                            x="465"
                                             y="194"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -820,21 +816,21 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-6">
                             <g>
                                 <path
-                                    d="M 429 190 L 358.09 190 L 358 297"
+                                    d="M 430 190 L 359 190 L 359 297"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="358"
+                                    cx="359"
                                     cy="300"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -842,11 +838,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-12">
                             <g>
                                 <path
-                                    d="M 358 300 L 428 300"
+                                    d="M 359 300 L 429 300"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                             </g>
@@ -859,61 +855,49 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
                                                         paddingTop: "289px",
-                                                        marginLeft: "393px",
+                                                        marginLeft: "394px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
-                                                            25:21
+                                                            <b>25:21</b>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="393"
-                                                y="293"
+                                                x="394"
+                                                y="292"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
@@ -929,29 +913,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-13">
                             <g>
                                 <path
-                                    d="M 361 250.01 L 604.76 250.48"
+                                    d="M 359 250 L 603.9 250.48"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
-                                <ellipse
-                                    cx="358"
-                                    cy="250"
-                                    rx="3"
-                                    ry="3"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    pointer-events="all"
-                                />
                                 <path
-                                    d="M 610.76 250.5 L 602.76 254.48 L 604.76 250.48 L 602.77 246.48 Z"
+                                    d="M 610.65 250.49 L 601.64 254.98 L 603.9 250.48 L 601.65 245.98 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -959,19 +933,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-24">
                             <g>
                                 <path
-                                    d="M 488 512 L 551 512.55 L 604.76 512.07"
+                                    d="M 489 512 L 552 512.5 L 603.9 512.08"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 512.02 L 602.8 516.09 L 604.76 512.07 L 602.73 508.09 Z"
+                                    d="M 610.65 512.03 L 601.68 516.6 L 603.9 512.08 L 601.61 507.6 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -979,7 +953,7 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-21">
                             <g>
                                 <ellipse
-                                    cx="503"
+                                    cx="504"
                                     cy="512"
                                     rx="20"
                                     ry="25"
@@ -996,22 +970,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "38px",
                                                     height: "1px",
                                                     paddingTop: "512px",
-                                                    marginLeft: "484px",
+                                                    marginLeft: "485px",
                                                 }}
                                             >
                                                 <div
@@ -1024,19 +994,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         Ext
@@ -1045,7 +1010,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="503"
+                                            x="504"
                                             y="516"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -1061,21 +1026,21 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-25">
                             <g>
                                 <path
-                                    d="M 483 512 L 358.45 512 L 358.01 333"
+                                    d="M 484 512 L 359.5 512 L 359.01 333"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="358"
+                                    cx="359"
                                     cy="330"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1088,51 +1053,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
                                                         paddingTop: "502px",
-                                                        marginLeft: "427px",
+                                                        marginLeft: "428px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             15:0
@@ -1141,12 +1095,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="427"
-                                                y="506"
+                                                x="428"
+                                                y="505"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 15:0
                                             </text>
@@ -1158,19 +1113,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-27">
                             <g>
                                 <path
-                                    d="M 604.76 470 L 448.09 470 L 448 510"
+                                    d="M 603.9 470 L 449 470 L 449 510"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 470 L 602.76 474 L 604.76 470 L 602.76 466 Z"
+                                    d="M 610.65 470 L 601.65 474.5 L 603.9 470 L 601.65 465.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1183,51 +1138,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
-                                                        paddingTop: "478px",
-                                                        marginLeft: "549px",
+                                                        paddingTop: "482px",
+                                                        marginLeft: "551px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             10:6
@@ -1236,12 +1180,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="549"
-                                                y="482"
+                                                x="551"
+                                                y="485"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 10:6
                                             </text>
@@ -1253,29 +1198,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-29">
                             <g>
                                 <path
-                                    d="M 604.76 554 L 448.09 554 L 448.01 513"
+                                    d="M 603.9 554 L 449 554 L 449 513"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 554 L 602.76 558 L 604.76 554 L 602.76 550 Z"
+                                    d="M 610.65 554 L 601.65 558.5 L 603.9 554 L 601.65 549.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
-                                    cx="448"
+                                    cx="449"
                                     cy="510"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1288,51 +1233,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
-                                                        paddingTop: "563px",
-                                                        marginLeft: "551px",
+                                                        paddingTop: "565px",
+                                                        marginLeft: "552px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             5:0
@@ -1341,12 +1275,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="551"
-                                                y="567"
+                                                x="552"
+                                                y="568"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 5:0
                                             </text>
@@ -1358,29 +1293,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-34">
                             <g>
                                 <path
-                                    d="M 604.76 595 L 359.73 595.09 L 359.75 517"
+                                    d="M 603.9 595 L 360.8 595 L 360.75 517"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 595 L 602.77 599 L 604.76 595 L 602.76 591 Z"
+                                    d="M 610.65 595 L 601.65 599.5 L 603.9 595 L 601.65 590.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
-                                    cx="359.75"
+                                    cx="360.75"
                                     cy="514"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1393,51 +1328,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
                                                         paddingTop: "586px",
-                                                        marginLeft: "459px",
+                                                        marginLeft: "461px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             20:16
@@ -1446,12 +1370,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="459"
-                                                y="590"
+                                                x="461"
+                                                y="589"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 20:16
                                             </text>
@@ -1463,24 +1388,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-44">
                             <g>
                                 <path
-                                    d="M 318 232 L 318 219.35 Q 318 209 307.65 209 L 248.35 209 Q 238 209 238 219.35 L 238 232"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 319 232 L 319 219.35 Q 319 209 308.65 209 L 249.35 209 Q 239 209 239 219.35 L 239 232"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 238 232 L 238 669.65 Q 238 680 248.35 680 L 307.65 680 Q 318 680 318 669.65 L 318 232"
+                                    d="M 239 232 L 239 669.65 Q 239 680 249.35 680 L 308.65 680 Q 319 680 319 669.65 L 319 232"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 238 232 L 318 232"
+                                    d="M 239 232 L 319 232"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1492,26 +1417,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "78px",
                                                     height: "1px",
                                                     paddingTop: "221px",
-                                                    marginLeft: "239px",
+                                                    marginLeft: "240px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -1520,33 +1441,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            IF/ID
-                                                        </font>
+                                                        <font color="#ffffff">IF/ID</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="278"
+                                            x="279"
                                             y="224"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -1562,12 +1476,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-48">
                                     <g>
                                         <rect
-                                            x="238"
+                                            x="239"
                                             y="514"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#ffcccc"
+                                            stroke="#36393d"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -1588,43 +1502,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "541px",
-                                                            marginLeft: "239px",
+                                                            marginLeft: "240px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.if_id.instr}
@@ -1633,14 +1536,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="278"
+                                                    x="279"
                                                     y="541"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    IF_ID.INSTR_VAL
+                                                    plh_if_id.ins...
                                                 </text>
                                             </switch>
                                         </g>
@@ -1649,11 +1552,11 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-63">
                                     <g>
                                         <path
-                                            d="M 318 514 L 338.09 514 L 358 514"
+                                            d="M 319 514 L 339 514 L 359 514"
                                             fill="none"
                                             stroke="rgb(0, 0, 0)"
-                                            stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            stroke-width="3"
+                                            strokeMiterlimit="10"
                                             pointer-events="stroke"
                                         />
                                     </g>
@@ -1661,14 +1564,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-47">
                                     <g>
                                         <rect
-                                            x="238"
+                                            x="239"
                                             y="504"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -1689,43 +1592,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "514px",
-                                                            marginLeft: "239px",
+                                                            marginLeft: "240px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>INSTR</b>
@@ -1734,9 +1626,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="278"
+                                                    x="279"
                                                     y="518"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -1749,16 +1641,26 @@ export default function Diagram({values}) {
                                 </g>
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-56">
-                                <g />
+                                <g>
+                                    <rect
+                                        x="239"
+                                        y="240"
+                                        width="80"
+                                        height="40"
+                                        fill="rgb(255, 255, 255)"
+                                        stroke="none"
+                                        pointer-events="all"
+                                    />
+                                </g>
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-57">
                                     <g>
                                         <rect
-                                            x="238"
+                                            x="239"
                                             y="250"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -1779,43 +1681,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "277px",
-                                                            marginLeft: "239px",
+                                                            marginLeft: "240px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.if_id.pc}
@@ -1824,14 +1715,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="278"
+                                                    x="279"
                                                     y="277"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    IF_ID/PC_VAL
+                                                    plh_if_id.pc
                                                 </text>
                                             </switch>
                                         </g>
@@ -1840,11 +1731,11 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-64">
                                     <g>
                                         <path
-                                            d="M 318 250 L 338.09 250 L 358 250"
+                                            d="M 319 250 L 339 250 L 359 250"
                                             fill="none"
                                             stroke="rgb(0, 0, 0)"
-                                            stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            stroke-width="3"
+                                            strokeMiterlimit="10"
                                             pointer-events="stroke"
                                         />
                                     </g>
@@ -1852,14 +1743,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-58">
                                     <g>
                                         <rect
-                                            x="238"
+                                            x="239"
                                             y="240"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -1880,43 +1771,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "250px",
-                                                            marginLeft: "239px",
+                                                            marginLeft: "240px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>PC</b>
@@ -1925,9 +1805,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="278"
+                                                    x="279"
                                                     y="254"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -1943,19 +1823,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-62">
                             <g>
                                 <path
-                                    d="M 229.76 514 L 208.09 514 L 178.9 513.84"
+                                    d="M 228.9 514 L 209 514 L 179.9 513.84"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 235.76 514 L 227.76 518 L 229.76 514 L 227.76 510 Z"
+                                    d="M 235.65 514 L 226.65 518.5 L 228.9 514 L 226.65 509.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1963,24 +1843,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-65">
                             <g>
                                 <path
-                                    d="M 693 23 L 693 10.35 Q 693 0 682.65 0 L 623.35 0 Q 613 0 613 10.35 L 613 23"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 694 23 L 694 10.35 Q 694 0 683.65 0 L 624.35 0 Q 614 0 614 10.35 L 614 23"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 613 23 L 613 669.65 Q 613 680 623.35 680 L 682.65 680 Q 693 680 693 669.65 L 693 23"
+                                    d="M 614 23 L 614 669.65 Q 614 680 624.35 680 L 683.65 680 Q 694 680 694 669.65 L 694 23"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 613 23 L 693 23"
+                                    d="M 614 23 L 694 23"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -1992,26 +1872,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "78px",
                                                     height: "1px",
                                                     paddingTop: "12px",
-                                                    marginLeft: "614px",
+                                                    marginLeft: "615px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -2020,33 +1896,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            ID/EX
-                                                        </font>
+                                                        <font color="#ffffff">ID/EX</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="653"
+                                            x="654"
                                             y="15"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -2062,12 +1931,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-76">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="470"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2088,59 +1957,48 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "497px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
-                                                            {values.id_ex.sa}
+                                                                {values.id_ex.sa}
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="497"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    ID_EX_SA_VAL
+                                                    plh_id_ex.sa
                                                 </text>
                                             </switch>
                                         </g>
@@ -2149,14 +2007,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-77">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="460"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2177,43 +2035,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "470px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>SA</b>
@@ -2222,9 +2069,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="474"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -2241,12 +2088,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-79">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="512"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2267,43 +2114,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "539px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.id_ex.opExt}
@@ -2312,14 +2148,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="539"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    ID_EX_OP_EXT_VAL
+                                                    plh_id_ex.opE...
                                                 </text>
                                             </switch>
                                         </g>
@@ -2328,14 +2164,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-80">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="502"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2356,43 +2192,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "512px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>OP_EXT</b>
@@ -2401,9 +2226,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="516"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -2420,12 +2245,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-82">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="553"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2446,43 +2271,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "580px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.id_ex.func}
@@ -2491,14 +2305,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="580"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    FUNC_VAL
+                                                    plh_id_ex.func
                                                 </text>
                                             </switch>
                                         </g>
@@ -2507,14 +2321,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-83">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="544"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2535,43 +2349,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "554px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>FUNC</b>
@@ -2580,9 +2383,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="558"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -2599,12 +2402,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-86">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="595"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2625,43 +2428,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "622px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.id_ex.rt}
@@ -2670,14 +2462,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="622"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    RT_VAL
+                                                    plh_id_ex.rt
                                                 </text>
                                             </switch>
                                         </g>
@@ -2686,14 +2478,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-87">
                                     <g>
                                         <rect
-                                            x="613"
+                                            x="614"
                                             y="585"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -2714,43 +2506,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "595px",
-                                                            marginLeft: "614px",
+                                                            marginLeft: "615px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>RT</b>
@@ -2759,9 +2540,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="653"
+                                                    x="654"
                                                     y="599"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -2780,12 +2561,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-93">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="40"
                                                 width="80"
                                                 height="30"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -2806,46 +2587,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "67px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "67px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     RegDst
@@ -2854,7 +2621,7 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="67"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
@@ -2870,14 +2637,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-94">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="30"
                                                 width="80"
                                                 height="20"
                                                 rx="6"
                                                 ry="6"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -2898,59 +2665,43 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "40px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "40px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
-                                                                    <b>
-                                                                        CTRL_SIG
-                                                                    </b>
+                                                                    <b>CTRL_SIG</b>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="44"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -2967,12 +2718,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-67">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="300.5"
                                                 width="80"
                                                 height="30"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -2993,46 +2744,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "328px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "328px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.id_ex.rd1}
@@ -3041,14 +2778,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="328"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        RD1_VAL
+                                                        plh_id_ex.rd1
                                                     </text>
                                                 </switch>
                                             </g>
@@ -3057,14 +2794,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-68">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="290.5"
                                                 width="80"
                                                 height="20"
                                                 rx="6"
                                                 ry="6"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -3085,46 +2822,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "301px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "301px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     <b>RD1</b>
@@ -3133,9 +2856,9 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="304"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -3152,12 +2875,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-70">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="250.5"
                                                 width="80"
                                                 height="30"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -3178,46 +2901,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "278px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "278px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.id_ex.pc}
@@ -3226,14 +2935,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="278"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        ID/EX_PC_VAL
+                                                        plh_id_ex.pc
                                                     </text>
                                                 </switch>
                                             </g>
@@ -3242,14 +2951,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-71">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="240.5"
                                                 width="80"
                                                 height="20"
                                                 rx="6"
                                                 ry="6"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -3270,46 +2979,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "251px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "251px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     <b>PC</b>
@@ -3318,9 +3013,9 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="254"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -3333,16 +3028,26 @@ export default function Diagram({values}) {
                                     </g>
                                 </g>
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-72">
-                                    <g />
+                                    <g>
+                                        <rect
+                                            x="614"
+                                            y="340.5"
+                                            width="80"
+                                            height="40"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
+                                            pointer-events="all"
+                                        />
+                                    </g>
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-73">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="350.5"
                                                 width="80"
                                                 height="30"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -3363,46 +3068,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "378px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "378px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.id_ex.rd2}
@@ -3411,14 +3102,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="378"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        ID_EX_RD2_VAL
+                                                        plh_id_ex.rd2
                                                     </text>
                                                 </switch>
                                             </g>
@@ -3427,14 +3118,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-74">
                                         <g>
                                             <rect
-                                                x="613"
+                                                x="614"
                                                 y="340.5"
                                                 width="80"
                                                 height="20"
                                                 rx="6"
                                                 ry="6"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -3455,46 +3146,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "351px",
-                                                                marginLeft:
-                                                                    "614px",
+                                                                paddingTop: "351px",
+                                                                marginLeft: "615px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     <b>RD2</b>
@@ -3503,9 +3180,9 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="653"
+                                                        x="654"
                                                         y="354"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -3521,12 +3198,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-96">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="70"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3538,51 +3215,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "80px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             AluSrc
@@ -3591,7 +3255,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="84"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -3607,12 +3271,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-97">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="90"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3624,51 +3288,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "100px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Beq
@@ -3677,7 +3328,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="104"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -3693,12 +3344,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-98">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="110"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3710,51 +3361,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "120px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Bgtz
@@ -3763,7 +3401,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="124"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -3779,12 +3417,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-99">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="130"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3796,51 +3434,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "140px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Bne
@@ -3849,7 +3474,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="144"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -3865,12 +3490,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-101">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="150"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3882,51 +3507,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "160px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             MemWrite
@@ -3935,7 +3547,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="164"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -3951,12 +3563,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-102">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="170"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -3968,51 +3580,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "180px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             MemToReg
@@ -4021,7 +3620,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="184"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -4037,12 +3636,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-103">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="190"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -4054,51 +3653,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "200px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             RegWrite
@@ -4107,7 +3693,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="204"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -4123,12 +3709,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-90">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="640"
                                         width="80"
                                         height="30"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -4140,51 +3726,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe flex-end",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe flex-end",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "667px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             {values.id_ex.rd}
@@ -4193,14 +3766,14 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="667"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="12px"
                                                 text-anchor="middle"
                                             >
-                                                ID_EX_RD_VAL
+                                                plh_id_ex.rd
                                             </text>
                                         </switch>
                                     </g>
@@ -4210,29 +3783,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-88">
                             <g>
                                 <path
-                                    d="M 604.76 637 L 359.73 637.09 L 359.75 598"
+                                    d="M 603.9 637 L 360.8 637 L 360.75 598"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 610.76 637 L 602.77 641 L 604.76 637 L 602.76 633 Z"
+                                    d="M 610.65 637 L 601.65 641.5 L 603.9 637 L 601.65 632.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
-                                    cx="359.75"
+                                    cx="360.75"
                                     cy="595"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4245,51 +3818,40 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
                                                         paddingTop: "627px",
-                                                        marginLeft: "460px",
+                                                        marginLeft: "461px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "13px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "13px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                fontWeight: "bold",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             15:11
@@ -4298,12 +3860,13 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="460"
-                                                y="631"
+                                                x="461"
+                                                y="630"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="13px"
                                                 text-anchor="middle"
+                                                font-weight="bold"
                                             >
                                                 15:11
                                             </text>
@@ -4315,19 +3878,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-162">
                             <g>
                                 <path
-                                    d="M 883 359 L 904.76 359.07"
+                                    d="M 884 359 L 903.9 359"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 910.76 359.08 L 902.75 363.06 L 904.76 359.07 L 902.78 355.06 Z"
+                                    d="M 910.65 359 L 901.65 363.5 L 903.9 359 L 901.65 354.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4335,17 +3898,17 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-195">
                             <g>
                                 <path
-                                    d="M 848.6 309.5 L 848.64 303.82 L 906.63 303.76"
+                                    d="M 849.6 309.5 L 849.6 303.8 L 907.63 303.75"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 911.88 303.75 L 904.89 307.26 L 906.63 303.76 L 904.88 300.26 Z"
+                                    d="M 912.88 303.75 L 905.88 307.26 L 907.63 303.75 L 905.88 300.26 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4353,10 +3916,10 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-107">
                             <g>
                                 <path
-                                    d="M 803 284 L 883 329 L 883 389 L 803 434 L 803 404 L 843 381.5 L 843 336.5 L 803 314 Z"
+                                    d="M 804 284 L 884 329 L 884 389 L 804 434 L 804 404 L 844 381.5 L 844 336.5 L 804 314 Z"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4368,22 +3931,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "78px",
                                                     height: "1px",
                                                     paddingTop: "359px",
-                                                    marginLeft: "804px",
+                                                    marginLeft: "805px",
                                                 }}
                                             >
                                                 <div
@@ -4396,19 +3955,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                                      ALU  
@@ -4417,7 +3971,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="843"
+                                            x="844"
                                             y="363"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -4433,11 +3987,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-108">
                             <g>
                                 <path
-                                    d="M 723 429 L 743 409 L 773 409 L 793 429 Z"
+                                    d="M 724 429 L 744 409 L 774 409 L 794 429 Z"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
-                                    transform="rotate(90,758,419)"
+                                    strokeMiterlimit="10"
+                                    transform="rotate(90,759,419)"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4445,19 +3999,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-110">
                             <g>
                                 <path
-                                    d="M 768 419 L 794.76 419"
+                                    d="M 769 419 L 793.9 419"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 800.76 419 L 792.76 423 L 794.76 419 L 792.76 415 Z"
+                                    d="M 800.65 419 L 791.65 423.5 L 793.9 419 L 791.65 414.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4465,19 +4019,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-111">
                             <g>
                                 <path
-                                    d="M 693 512 L 720.45 512 L 720.45 436.55 L 739.76 436.51"
+                                    d="M 694 512 L 721.5 512 L 721.5 436.5 L 738.9 436.5"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 745.76 436.5 L 737.77 440.52 L 739.76 436.51 L 737.76 432.52 Z"
+                                    d="M 745.65 436.5 L 736.65 441 L 738.9 436.5 L 736.65 432 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4485,19 +4039,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-112">
                             <g>
                                 <path
-                                    d="M 693 350.5 L 733 350.55 L 733 401.45 L 739.76 401.48"
+                                    d="M 694 350.5 L 734 350.5 L 734 401.5 L 738.9 401.5"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 745.76 401.49 L 737.75 405.47 L 739.76 401.48 L 737.78 397.47 Z"
+                                    d="M 745.65 401.5 L 736.65 406 L 738.9 401.5 L 736.65 397 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4505,19 +4059,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-113">
                             <g>
                                 <path
-                                    d="M 693 470 L 830.27 470 L 830.21 427.24"
+                                    d="M 694 470 L 831.2 470 L 831.2 429.1"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 830.2 421.24 L 834.21 429.23 L 830.21 427.24 L 826.21 429.24 Z"
+                                    d="M 831.2 422.35 L 835.7 431.35 L 831.2 429.1 L 826.7 431.35 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4525,19 +4079,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-114">
                             <g>
                                 <path
-                                    d="M 693 300.5 L 748.09 300.55 L 793.8 300.13"
+                                    d="M 694 300.5 L 749 300.5 L 792.94 300.13"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 799.8 300.07 L 791.84 304.14 L 793.8 300.13 L 791.77 296.14 Z"
+                                    d="M 799.69 300.08 L 790.72 304.65 L 792.94 300.13 L 790.65 295.65 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4545,24 +4099,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-115">
                             <g>
                                 <path
-                                    d="M 993 23 L 993 10.35 Q 993 0 982.65 0 L 923.35 0 Q 913 0 913 10.35 L 913 23"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 994 23 L 994 10.35 Q 994 0 983.65 0 L 924.35 0 Q 914 0 914 10.35 L 914 23"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 913 23 L 913 669.65 Q 913 680 923.35 680 L 982.65 680 Q 993 680 993 669.65 L 993 23"
+                                    d="M 914 23 L 914 669.65 Q 914 680 924.35 680 L 983.65 680 Q 994 680 994 669.65 L 994 23"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 913 23 L 993 23"
+                                    d="M 914 23 L 994 23"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -4574,26 +4128,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "78px",
                                                     height: "1px",
                                                     paddingTop: "12px",
-                                                    marginLeft: "914px",
+                                                    marginLeft: "915px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -4602,33 +4152,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            EX/MEM
-                                                        </font>
+                                                        <font color="#ffffff">EX/MEM</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="953"
+                                            x="954"
                                             y="15"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -4644,12 +4187,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-120">
                                     <g>
                                         <rect
-                                            x="913"
+                                            x="914"
                                             y="250"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -4670,43 +4213,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "277px",
-                                                            marginLeft: "914px",
+                                                            marginLeft: "915px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.ex_mem.branchAddr}
@@ -4715,14 +4247,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="953"
+                                                    x="954"
                                                     y="277"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    BranchAddr_VAL
+                                                    plh_ex_mem.br...
                                                 </text>
                                             </switch>
                                         </g>
@@ -4731,19 +4263,19 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-189">
                                     <g>
                                         <path
-                                            d="M 993 250 L 1015.55 250 L 1029.76 250"
+                                            d="M 994 250 L 1016.5 250 L 1030.76 250"
                                             fill="none"
                                             stroke="#0055ff"
                                             stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            strokeMiterlimit="10"
                                             pointer-events="stroke"
                                         />
                                         <path
-                                            d="M 1035.76 250 L 1027.76 254 L 1029.76 250 L 1027.76 246 Z"
+                                            d="M 1036.76 250 L 1028.76 254 L 1030.76 250 L 1028.76 246 Z"
                                             fill="#0055ff"
                                             stroke="#0055ff"
                                             stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            strokeMiterlimit="10"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -4751,14 +4283,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-121">
                                     <g>
                                         <rect
-                                            x="913"
+                                            x="914"
                                             y="240"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -4779,56 +4311,43 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "250px",
-                                                            marginLeft: "914px",
+                                                            marginLeft: "915px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
-                                                                <b>
-                                                                    BranchAddr
-                                                                </b>
+                                                                <b>BranchAddr</b>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="953"
+                                                    x="954"
                                                     y="254"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -4845,12 +4364,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-138">
                                     <g>
                                         <rect
-                                            x="913"
-                                            y="656"
+                                            x="914"
+                                            y="640"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -4871,43 +4390,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
-                                                            paddingTop: "683px",
-                                                            marginLeft: "914px",
+                                                            paddingTop: "667px",
+                                                            marginLeft: "915px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.ex_mem.dst}
@@ -4916,14 +4424,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="953"
-                                                    y="683"
+                                                    x="954"
+                                                    y="667"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    EX_MEM.DST_VAL
+                                                    plh_ex_mem.dst
                                                 </text>
                                             </switch>
                                         </g>
@@ -4932,14 +4440,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-139">
                                     <g>
                                         <rect
-                                            x="913"
-                                            y="646"
+                                            x="914"
+                                            y="630"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -4960,43 +4468,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
-                                                            paddingTop: "656px",
-                                                            marginLeft: "914px",
+                                                            paddingTop: "640px",
+                                                            marginLeft: "915px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>DST</b>
@@ -5005,9 +4502,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="953"
-                                                    y="660"
-                                                    fill="rgb(0, 0, 0)"
+                                                    x="954"
+                                                    y="644"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -5026,12 +4523,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-117">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="359.75"
                                                 width="80"
                                                 height="29.25"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5052,46 +4549,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "386px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "386px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.ex_mem.aluRes}
@@ -5100,14 +4583,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="386"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        EX_MEM.AluRes_VAL
+                                                        plh_ex_mem.al...
                                                     </text>
                                                 </switch>
                                             </g>
@@ -5116,14 +4599,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-118">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="350"
                                                 width="80"
                                                 height="19.5"
                                                 rx="5.85"
                                                 ry="5.85"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5144,59 +4627,43 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "360px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "360px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
-                                                                    <b>
-                                                                        AluRes
-                                                                    </b>
+                                                                    <b>AluRes</b>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="363"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -5216,12 +4683,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-193">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="303.75"
                                                 width="80"
                                                 height="29.25"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5242,46 +4709,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "330px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "330px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.ex_mem.zero}
@@ -5290,14 +4743,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="330"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        0
+                                                        plh_ex_mem.ze...
                                                     </text>
                                                 </switch>
                                             </g>
@@ -5306,14 +4759,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-194">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="294"
                                                 width="80"
                                                 height="19.5"
                                                 rx="5.85"
                                                 ry="5.85"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5334,46 +4787,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "304px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "304px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     <b>Zero</b>
@@ -5382,9 +4821,9 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="307"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -5404,12 +4843,12 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-238">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="439.75"
                                                 width="80"
                                                 height="29.25"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#fad9d5"
+                                                stroke="#ae4132"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5430,46 +4869,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe flex-end",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe flex-end",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "466px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "466px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
                                                                 data-drawio-colors="color: rgb(0, 0, 0); "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(0, 0, 0)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     {values.ex_mem.rd2}
@@ -5478,14 +4903,14 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="466"
                                                         fill="rgb(0, 0, 0)"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
                                                     >
-                                                        EX_MEM.RD2
+                                                        plh_ex_mem.rd2
                                                     </text>
                                                 </switch>
                                             </g>
@@ -5494,14 +4919,14 @@ export default function Diagram({values}) {
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-239">
                                         <g>
                                             <rect
-                                                x="913"
+                                                x="914"
                                                 y="430"
                                                 width="80"
                                                 height="19.5"
                                                 rx="5.85"
                                                 ry="5.85"
-                                                fill="rgb(255, 255, 255)"
-                                                stroke="rgb(0, 0, 0)"
+                                                fill="#e51400"
+                                                stroke="#b20000"
                                                 pointer-events="all"
                                             />
                                         </g>
@@ -5522,46 +4947,32 @@ export default function Diagram({values}) {
                                                             xmlns="http://www.w3.org/1999/xhtml"
                                                             style={{
                                                                 display: "flex",
-                                                                alignItems:
-                                                                    "unsafe center",
-                                                                justifyContent:
-                                                                    "unsafe center",
+                                                                alignItems: "unsafe center",
+                                                                justifyContent: "unsafe center",
                                                                 width: "78px",
                                                                 height: "1px",
-                                                                paddingTop:
-                                                                    "440px",
-                                                                marginLeft:
-                                                                    "914px",
+                                                                paddingTop: "440px",
+                                                                marginLeft: "915px",
                                                             }}
                                                         >
                                                             <div
-                                                                data-drawio-colors="color: rgb(0, 0, 0); "
+                                                                data-drawio-colors="color: #ffffff; "
                                                                 style={{
-                                                                    boxSizing:
-                                                                        "border-box",
-                                                                    fontSize:
-                                                                        "0px",
-                                                                    textAlign:
-                                                                        "center",
+                                                                    boxSizing: "border-box",
+                                                                    fontSize: "0px",
+                                                                    textAlign: "center",
                                                                 }}
                                                             >
                                                                 <div
                                                                     style={{
-                                                                        display:
-                                                                            "inline-block",
-                                                                        fontSize:
-                                                                            "12px",
-                                                                        fontFamily:
-                                                                            "Helvetica",
-                                                                        color: "rgb( 0, 0, 0 )",
-                                                                        lineHeight:
-                                                                            "1.2",
-                                                                        pointerEvents:
-                                                                            "all",
-                                                                        whiteSpace:
-                                                                            "normal",
-                                                                        overflowWrap:
-                                                                            "normal",
+                                                                        display: "inline-block",
+                                                                        fontSize: "12px",
+                                                                        fontFamily: "Helvetica",
+                                                                        color: "rgb(255, 255, 255)",
+                                                                        lineHeight: "1.2",
+                                                                        pointerEvents: "all",
+                                                                        whiteSpace: "normal",
+                                                                        overflowWrap: "normal",
                                                                     }}
                                                                 >
                                                                     <b>RD2</b>
@@ -5570,9 +4981,9 @@ export default function Diagram({values}) {
                                                         </div>
                                                     </foreignObject>
                                                     <text
-                                                        x="953"
+                                                        x="954"
                                                         y="443"
-                                                        fill="rgb(0, 0, 0)"
+                                                        fill="#ffffff"
                                                         font-family='"Helvetica"'
                                                         font-size="12px"
                                                         text-anchor="middle"
@@ -5588,12 +4999,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-146">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="38"
                                         width="80"
                                         height="30"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -5605,51 +5016,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe flex-end",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe flex-end",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "65px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Beq
@@ -5658,7 +5056,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="65"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -5674,12 +5072,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-147">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="66"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -5691,51 +5089,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "76px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Bgtz
@@ -5744,7 +5129,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="80"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -5760,12 +5145,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-148">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="86"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -5777,51 +5162,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "96px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             Bne
@@ -5830,7 +5202,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="100"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -5846,12 +5218,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-150">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="106"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -5863,51 +5235,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "116px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             MemWrite
@@ -5916,7 +5275,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="120"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -5932,12 +5291,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-151">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="126"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -5949,51 +5308,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "136px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             MemToReg
@@ -6002,7 +5348,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="140"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -6018,12 +5364,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-152">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="146"
                                         width="80"
                                         height="20"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -6035,51 +5381,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "156px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             RegWrite
@@ -6088,7 +5421,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="160"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -6104,14 +5437,14 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-143">
                                 <g>
                                     <rect
-                                        x="913"
+                                        x="914"
                                         y="30"
                                         width="80"
                                         height="20"
                                         rx="6"
                                         ry="6"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#e51400"
+                                        stroke="#b20000"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -6123,51 +5456,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "40px",
-                                                        marginLeft: "914px",
+                                                        marginLeft: "915px",
                                                     }}
                                                 >
                                                     <div
-                                                        data-drawio-colors="color: rgb(0, 0, 0); "
+                                                        data-drawio-colors="color: #ffffff; "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
-                                                                color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(255, 255, 255)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             <b>CTRL_SIG</b>
@@ -6176,9 +5496,9 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="953"
+                                                x="954"
                                                 y="44"
-                                                fill="rgb(0, 0, 0)"
+                                                fill="#ffffff"
                                                 font-family='"Helvetica"'
                                                 font-size="12px"
                                                 text-anchor="middle"
@@ -6193,19 +5513,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-159">
                             <g>
                                 <path
-                                    d="M 843 235 L 863 235.09 L 863 250 L 904.76 250"
+                                    d="M 844 235 L 864 235 L 864 250 L 903.9 250"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 910.76 250 L 902.76 254 L 904.76 250 L 902.76 246 Z"
+                                    d="M 910.65 250 L 901.65 254.5 L 903.9 250 L 901.65 245.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6213,10 +5533,10 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-153">
                             <g>
                                 <path
-                                    d="M 803 200 L 843 221 L 843 249 L 803 270 L 803 256 L 823 245.5 L 823 224.5 L 803 214 Z"
+                                    d="M 804 200 L 844 221 L 844 249 L 804 270 L 804 256 L 824 245.5 L 824 224.5 L 804 214 Z"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6228,22 +5548,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "38px",
                                                     height: "1px",
                                                     paddingTop: "235px",
-                                                    marginLeft: "804px",
+                                                    marginLeft: "805px",
                                                 }}
                                             >
                                                 <div
@@ -6256,19 +5572,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                              +
@@ -6277,7 +5588,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="823"
+                                            x="824"
                                             y="239"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -6293,19 +5604,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-157">
                             <g>
                                 <path
-                                    d="M 693 250.5 L 713 250.55 L 713 206.36 L 794.76 206.31"
+                                    d="M 694 250.5 L 729 250.5 L 729 206.3 L 793.9 206.3"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 800.76 206.3 L 792.77 210.31 L 794.76 206.31 L 792.76 202.31 Z"
+                                    d="M 800.65 206.3 L 791.65 210.8 L 793.9 206.3 L 791.65 201.8 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6313,29 +5624,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-158">
                             <g>
                                 <path
-                                    d="M 794.76 263.69 L 722.09 263.64 L 722.09 434.09"
+                                    d="M 793.9 263.7 L 723 263.7 L 722.02 434"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 800.76 263.7 L 792.76 267.69 L 794.76 263.69 L 792.77 259.69 Z"
+                                    d="M 800.65 263.7 L 791.65 268.2 L 793.9 263.7 L 791.65 259.2 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
-                                    cx="722.09"
-                                    cy="437.09"
+                                    cx="722"
+                                    cy="437"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6343,19 +5654,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-171">
                             <g>
                                 <path
-                                    d="M 758 616 L 835.55 616 L 835.55 656 L 904.76 656"
+                                    d="M 759 616 L 836.5 616 L 836.5 640 L 903.9 640"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 910.76 656 L 902.76 660 L 904.76 656 L 902.76 652 Z"
+                                    d="M 910.65 640 L 901.65 644.5 L 903.9 640 L 901.65 635.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6363,11 +5674,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-163">
                             <g>
                                 <path
-                                    d="M 708 626 L 728 606 L 768 606 L 788 626 Z"
+                                    d="M 709 626 L 729 606 L 769 606 L 789 626 Z"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
-                                    transform="rotate(90,748,616)"
+                                    strokeMiterlimit="10"
+                                    transform="rotate(90,749,616)"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6375,19 +5686,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-167">
                             <g>
                                 <path
-                                    d="M 693 595 L 729.4 595.04"
+                                    d="M 694 595 L 728.54 595.03"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 735.4 595.04 L 727.4 599.03 L 729.4 595.04 L 727.41 591.03 Z"
+                                    d="M 735.29 595.04 L 726.28 599.53 L 728.54 595.03 L 726.29 590.53 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6395,19 +5706,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-169">
                             <g>
                                 <path
-                                    d="M 693 637 L 715.55 637.09 L 729.77 636.56"
+                                    d="M 694 637 L 716.5 637 L 728.9 636.59"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 735.77 636.33 L 727.92 640.63 L 729.77 636.56 L 727.62 632.64 Z"
+                                    d="M 735.65 636.36 L 726.8 641.16 L 728.9 636.59 L 726.5 632.16 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6415,17 +5726,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-170">
                             <g>
                                 <path
-                                    d="M 693 80 L 758.09 80 L 758 387.63"
+                                    d="M 694 80 L 759 80 L 759 385.76"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 758 392.88 L 754.5 385.88 L 758 387.63 L 761.5 385.88 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 759 391.76 L 755 383.76 L 759 385.76 L 763 383.76 Z"
+                                    fill={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
+                                    stroke={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6433,9 +5746,9 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-173">
                             <g>
                                 <ellipse
-                                    cx="860"
+                                    cx="861"
                                     cy="525.5"
-                                    rx="29.999999999999996"
+                                    rx="30"
                                     ry="38.5"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
@@ -6450,22 +5763,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "58px",
                                                     height: "1px",
                                                     paddingTop: "526px",
-                                                    marginLeft: "831px",
+                                                    marginLeft: "832px",
                                                 }}
                                             >
                                                 <div
@@ -6478,19 +5787,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         Alu Control
@@ -6499,7 +5803,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="860"
+                                            x="861"
                                             y="529"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -6515,17 +5819,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-174">
                             <g>
                                 <path
-                                    d="M 860 487 L 860.09 460.55 L 859.83 408.87"
+                                    d="M 861 487 L 861 444.75 L 860.85 412.6"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 859.81 403.62 L 863.34 410.6 L 859.83 408.87 L 856.34 410.64 Z"
+                                    d="M 860.82 405.85 L 865.36 414.83 L 860.85 412.6 L 856.36 414.88 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6535,12 +5841,12 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-178">
                                 <g>
                                     <rect
-                                        x="730"
+                                        x="731"
                                         y="526"
                                         width="80"
                                         height="30"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -6552,67 +5858,54 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe flex-end",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe flex-end",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "553px",
-                                                        marginLeft: "731px",
+                                                        marginLeft: "732px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
-                                                            ALU_CTRL_ALUOP_VAL
+                                                            {values.id_ex.ctrlSig.aluOp}
                                                         </div>
                                                     </div>
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="770"
+                                                x="771"
                                                 y="553"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
                                                 font-size="12px"
                                                 text-anchor="middle"
                                             >
-                                                ALU_CTRL_ALUOP_VAL
+                                                id_ex.aluOp
                                             </text>
                                         </switch>
                                     </g>
@@ -6621,14 +5914,14 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-179">
                                 <g>
                                     <rect
-                                        x="730"
+                                        x="731"
                                         y="516"
                                         width="80"
                                         height="20"
                                         rx="6"
                                         ry="6"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#e51400"
+                                        stroke="#b20000"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -6640,51 +5933,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "526px",
-                                                        marginLeft: "731px",
+                                                        marginLeft: "732px",
                                                     }}
                                                 >
                                                     <div
-                                                        data-drawio-colors="color: rgb(0, 0, 0); "
+                                                        data-drawio-colors="color: #ffffff; "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
-                                                                color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(255, 255, 255)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             <b>AluOp</b>
@@ -6693,9 +5973,9 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="770"
+                                                x="771"
                                                 y="530"
-                                                fill="rgb(0, 0, 0)"
+                                                fill="#ffffff"
                                                 font-family='"Helvetica"'
                                                 font-size="12px"
                                                 text-anchor="middle"
@@ -6710,17 +5990,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-180">
                             <g>
                                 <path
-                                    d="M 810 526 L 823.72 526"
+                                    d="M 811 526 L 820.9 526"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 828.97 526 L 821.97 529.5 L 823.72 526 L 821.97 522.5 Z"
+                                    d="M 827.65 526 L 818.65 530.5 L 820.9 526 L 818.65 521.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6728,7 +6010,7 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-181">
                             <g>
                                 <rect
-                                    x="746"
+                                    x="747"
                                     y="385.5"
                                     width="20"
                                     height="67"
@@ -6745,22 +6027,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "18px",
                                                     height: "1px",
                                                     paddingTop: "419px",
-                                                    marginLeft: "747px",
+                                                    marginLeft: "748px",
                                                 }}
                                             >
                                                 <div
@@ -6773,19 +6051,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         <b>0</b>
@@ -6802,7 +6075,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="756"
+                                            x="757"
                                             y="423"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -6818,7 +6091,7 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-182">
                             <g>
                                 <rect
-                                    x="738"
+                                    x="739"
                                     y="586"
                                     width="20"
                                     height="67"
@@ -6835,22 +6108,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "18px",
                                                     height: "1px",
                                                     paddingTop: "620px",
-                                                    marginLeft: "739px",
+                                                    marginLeft: "740px",
                                                 }}
                                             >
                                                 <div
@@ -6863,19 +6132,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         <b>0</b>
@@ -6892,7 +6156,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="748"
+                                            x="749"
                                             y="623"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -6908,17 +6172,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-184">
                             <g>
                                 <path
-                                    d="M 693 62.5 L 693 60 L 708.09 60 L 708.09 570 L 743 570 L 743 579.63"
+                                    d="M 694 62.5 L 694 60 L 709 60 L 709 570 L 744 570 L 744 577.76"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 743 584.88 L 739.5 577.88 L 743 579.63 L 746.5 577.88 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 744 583.76 L 740 575.76 L 744 577.76 L 748 575.76 Z"
+                                    fill={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
+                                    stroke={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6926,19 +6192,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-186">
                             <g>
                                 <path
-                                    d="M 693 40 L 904.76 40"
+                                    d="M 694 40 L 903.9 40"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 910.76 40 L 902.76 44 L 904.76 40 L 902.76 36 Z"
+                                    d="M 910.65 40 L 901.65 44.5 L 903.9 40 L 901.65 35.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6946,10 +6212,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-196">
                             <g>
                                 <path
-                                    d="M 993 303.75 L 1054.09 303.82 L 1054.09 110 L 1078.09 110 L 1078 120"
+                                    d="M 994 303.75 L 1055 303.8 L 1055 110 L 1079 110 L 1079 120"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                             </g>
@@ -6957,24 +6224,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-232">
                             <g>
                                 <path
-                                    d="M 1208 343 L 1208 330.35 Q 1208 320 1197.65 320 L 1078.35 320 Q 1068 320 1068 330.35 L 1068 343"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1209 343 L 1209 330.35 Q 1209 320 1198.65 320 L 1079.35 320 Q 1069 320 1069 330.35 L 1069 343"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 1068 343 L 1068 509.65 Q 1068 520 1078.35 520 L 1197.65 520 Q 1208 520 1208 509.65 L 1208 343"
+                                    d="M 1069 343 L 1069 509.65 Q 1069 520 1079.35 520 L 1198.65 520 Q 1209 520 1209 509.65 L 1209 343"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 1068 343 L 1208 343"
+                                    d="M 1069 343 L 1209 343"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -6986,26 +6253,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "138px",
                                                     height: "1px",
                                                     paddingTop: "332px",
-                                                    marginLeft: "1069px",
+                                                    marginLeft: "1070px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -7014,33 +6277,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            Register File
-                                                        </font>
+                                                        <font color="#ffffff">Register File</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="1138"
+                                            x="1139"
                                             y="335"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -7054,7 +6310,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-233">
                                 <g>
                                     <rect
-                                        x="1068"
+                                        x="1069"
                                         y="345"
                                         width="140"
                                         height="175"
@@ -7071,51 +6327,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "138px",
                                                         height: "1px",
                                                         paddingTop: "433px",
-                                                        marginLeft: "1069px",
+                                                        marginLeft: "1070px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             placeholder_reg_file
@@ -7124,7 +6367,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="1138"
+                                                x="1139"
                                                 y="436"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -7141,19 +6384,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-234">
                             <g>
                                 <path
-                                    d="M 993 359.75 L 1030.45 359.82 L 1059.77 360.41"
+                                    d="M 994 359.75 L 1031.5 359.8 L 1058.9 360.37"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1065.76 360.53 L 1057.69 364.37 L 1059.77 360.41 L 1057.85 356.37 Z"
+                                    d="M 1065.65 360.51 L 1056.56 364.82 L 1058.9 360.37 L 1056.74 355.82 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -7161,29 +6404,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-235">
                             <g>
                                 <path
-                                    d="M 737 350 L 778.09 350 L 778.09 439.09 L 904.76 439.09"
+                                    d="M 738 350 L 779 350 L 779 439.8 L 903.9 439.75"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="734"
+                                    cx="735"
                                     cy="350"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 910.76 439.09 L 902.76 443.09 L 904.76 439.09 L 902.76 435.09 Z"
+                                    d="M 910.65 439.75 L 901.65 444.25 L 903.9 439.75 L 901.64 435.25 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -7191,19 +6434,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-240">
                             <g>
                                 <path
-                                    d="M 993 439.75 L 1030.45 439.82 L 1057.8 440.11"
+                                    d="M 994 439.75 L 1031.5 439.8 L 1056.94 440.09"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1063.8 440.18 L 1055.76 444.09 L 1057.8 440.11 L 1055.85 436.09 Z"
+                                    d="M 1063.69 440.16 L 1054.64 444.56 L 1056.94 440.09 L 1054.74 435.56 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -7211,24 +6454,24 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-254">
                             <g>
                                 <path
-                                    d="M 1328 23 L 1328 10.35 Q 1328 0 1317.65 0 L 1258.35 0 Q 1248 0 1248 10.35 L 1248 23"
-                                    fill="#ff1717"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1329 23 L 1329 10.35 Q 1329 0 1318.65 0 L 1259.35 0 Q 1249 0 1249 10.35 L 1249 23"
+                                    fill="#e51400"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 1248 23 L 1248 669.65 Q 1248 680 1258.35 680 L 1317.65 680 Q 1328 680 1328 669.65 L 1328 23"
+                                    d="M 1249 23 L 1249 669.65 Q 1249 680 1259.35 680 L 1318.65 680 Q 1329 680 1329 669.65 L 1329 23"
                                     fill="rgb(255, 255, 255)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 1248 23 L 1328 23"
+                                    d="M 1249 23 L 1329 23"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke="#b20000"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -7240,26 +6483,22 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "78px",
                                                     height: "1px",
                                                     paddingTop: "12px",
-                                                    marginLeft: "1249px",
+                                                    marginLeft: "1250px",
                                                 }}
                                             >
                                                 <div
-                                                    data-drawio-colors="color: rgb(0, 0, 0); "
+                                                    data-drawio-colors="color: #ffffff; "
                                                     style={{
                                                         boxSizing: "border-box",
                                                         fontSize: "0px",
@@ -7268,33 +6507,26 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
-                                                            color: "rgb(0, 0, 0)",
+                                                            fontFamily: "Helvetica",
+                                                            color: "rgb(255, 255, 255)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
+                                                            pointerEvents: "all",
                                                             fontWeight: "bold",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">
-                                                            MemWb
-                                                        </font>
+                                                        <font color="#ffffff">MemWb</font>
                                                     </div>
                                                 </div>
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="1288"
+                                            x="1289"
                                             y="15"
-                                            fill="rgb(0, 0, 0)"
+                                            fill="#ffffff"
                                             font-family='"Helvetica"'
                                             font-size="12px"
                                             text-anchor="middle"
@@ -7310,12 +6542,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-290">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="356"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7336,44 +6568,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "383px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.mem_wb.memData}
@@ -7382,14 +6602,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="383"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    MEM_WB_MEM_DATA_VAL
+                                                    plh_mem_wb.me...
                                                 </text>
                                             </switch>
                                         </g>
@@ -7398,14 +6618,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-291">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="346"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7426,44 +6646,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "356px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>MemData</b>
@@ -7472,9 +6680,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="360"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -7491,12 +6699,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-294">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="570"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7517,44 +6725,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "597px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.mem_wb.aluRes}
@@ -7563,14 +6759,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="597"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    MEM_WB_ALURES_VAL
+                                                    plh_mem_wb.al...
                                                 </text>
                                             </switch>
                                         </g>
@@ -7579,14 +6775,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-295">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="560"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7607,44 +6803,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "570px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>AluRes</b>
@@ -7653,9 +6837,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="574"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -7672,12 +6856,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-297">
                                     <g>
                                         <rect
-                                            x="1248"
-                                            y="656"
+                                            x="1249"
+                                            y="640"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7698,44 +6882,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
-                                                            paddingTop: "683px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            paddingTop: "667px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 {values.mem_wb.dst}
@@ -7744,14 +6916,14 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
-                                                    y="683"
+                                                    x="1289"
+                                                    y="667"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
                                                 >
-                                                    MEM_WB.DST_VAL
+                                                    plh_mem_wb.dst
                                                 </text>
                                             </switch>
                                         </g>
@@ -7760,14 +6932,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-298">
                                     <g>
                                         <rect
-                                            x="1248"
-                                            y="646"
+                                            x="1249"
+                                            y="630"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7788,44 +6960,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
-                                                            paddingTop: "656px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            paddingTop: "640px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>DST</b>
@@ -7834,9 +6994,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
-                                                    y="660"
-                                                    fill="rgb(0, 0, 0)"
+                                                    x="1289"
+                                                    y="644"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -7853,12 +7013,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-315">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="40"
                                             width="80"
                                             height="30"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7879,44 +7039,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe flex-end",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe flex-end",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "67px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 MemToReg
@@ -7925,7 +7073,7 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="67"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
@@ -7941,19 +7089,19 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-322">
                                     <g>
                                         <path
-                                            d="M 1328 80 L 1348.09 80 L 1348.02 101.76"
+                                            d="M 1329 80 L 1349 80 L 1349 101.76"
                                             fill="none"
-                                            stroke="#7f00ff"
+                                            stroke="#990099"
                                             stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            strokeMiterlimit="10"
                                             pointer-events="stroke"
                                         />
                                         <path
-                                            d="M 1348.01 107.76 L 1344.03 99.75 L 1348.02 101.76 L 1352.03 99.78 Z"
-                                            fill="#7f00ff"
-                                            stroke="#7f00ff"
+                                            d="M 1349 107.76 L 1345 99.76 L 1349 101.76 L 1353 99.76 Z"
+                                            fill="#990099"
+                                            stroke="#990099"
                                             stroke-width="2"
-                                            stroke-miterlimit="10"
+                                            strokeMiterlimit="10"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7961,12 +7109,12 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-316">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="70"
                                             width="80"
                                             height="20"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#fad9d5"
+                                            stroke="#ae4132"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -7987,44 +7135,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "80px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
                                                             data-drawio-colors="color: rgb(0, 0, 0); "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
                                                                     color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 RegWrite
@@ -8033,7 +7169,7 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="84"
                                                     fill="rgb(0, 0, 0)"
                                                     font-family='"Helvetica"'
@@ -8049,14 +7185,14 @@ export default function Diagram({values}) {
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-317">
                                     <g>
                                         <rect
-                                            x="1248"
+                                            x="1249"
                                             y="30"
                                             width="80"
                                             height="20"
                                             rx="6"
                                             ry="6"
-                                            fill="rgb(255, 255, 255)"
-                                            stroke="rgb(0, 0, 0)"
+                                            fill="#e51400"
+                                            stroke="#b20000"
                                             pointer-events="all"
                                         />
                                     </g>
@@ -8077,44 +7213,32 @@ export default function Diagram({values}) {
                                                         xmlns="http://www.w3.org/1999/xhtml"
                                                         style={{
                                                             display: "flex",
-                                                            alignItems:
-                                                                "unsafe center",
-                                                            justifyContent:
-                                                                "unsafe center",
+                                                            alignItems: "unsafe center",
+                                                            justifyContent: "unsafe center",
                                                             width: "78px",
                                                             height: "1px",
                                                             paddingTop: "40px",
-                                                            marginLeft:
-                                                                "1249px",
+                                                            marginLeft: "1250px",
                                                         }}
                                                     >
                                                         <div
-                                                            data-drawio-colors="color: rgb(0, 0, 0); "
+                                                            data-drawio-colors="color: #ffffff; "
                                                             style={{
-                                                                boxSizing:
-                                                                    "border-box",
+                                                                boxSizing: "border-box",
                                                                 fontSize: "0px",
-                                                                textAlign:
-                                                                    "center",
+                                                                textAlign: "center",
                                                             }}
                                                         >
                                                             <div
                                                                 style={{
-                                                                    display:
-                                                                        "inline-block",
-                                                                    fontSize:
-                                                                        "12px",
-                                                                    fontFamily:
-                                                                        "Helvetica",
-                                                                    color: "rgb(0, 0, 0)",
-                                                                    lineHeight:
-                                                                        "1.2",
-                                                                    pointerEvents:
-                                                                        "all",
-                                                                    whiteSpace:
-                                                                        "normal",
-                                                                    overflowWrap:
-                                                                        "normal",
+                                                                    display: "inline-block",
+                                                                    fontSize: "12px",
+                                                                    fontFamily: "Helvetica",
+                                                                    color: "rgb(255, 255, 255)",
+                                                                    lineHeight: "1.2",
+                                                                    pointerEvents: "all",
+                                                                    whiteSpace: "normal",
+                                                                    overflowWrap: "normal",
                                                                 }}
                                                             >
                                                                 <b>CTRL_SIG</b>
@@ -8123,9 +7247,9 @@ export default function Diagram({values}) {
                                                     </div>
                                                 </foreignObject>
                                                 <text
-                                                    x="1288"
+                                                    x="1289"
                                                     y="44"
-                                                    fill="rgb(0, 0, 0)"
+                                                    fill="#ffffff"
                                                     font-family='"Helvetica"'
                                                     font-size="12px"
                                                     text-anchor="middle"
@@ -8143,11 +7267,11 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-263">
                                 <g>
                                     <path
-                                        d="M 1073 126 Q 1103 126 1103 145.5 Q 1103 165 1073 165 Z"
+                                        d="M 1074 126 Q 1104 126 1104 145.5 Q 1104 165 1074 165 Z"
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
-                                        stroke-miterlimit="10"
-                                        transform="rotate(-270,1088,145.5)"
+                                        strokeMiterlimit="10"
+                                        transform="rotate(-270,1089,145.5)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -8155,13 +7279,13 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-264">
                                 <g>
                                     <ellipse
-                                        cx="1078"
+                                        cx="1079"
                                         cy="125"
                                         rx="5"
                                         ry="5"
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
-                                        transform="rotate(-180,1078,125)"
+                                        transform="rotate(-180,1079,125)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -8172,11 +7296,11 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-268">
                                 <g>
                                     <path
-                                        d="M 1123 126 Q 1153 126 1153 145.5 Q 1153 165 1123 165 Z"
+                                        d="M 1124 126 Q 1154 126 1154 145.5 Q 1154 165 1124 165 Z"
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
-                                        stroke-miterlimit="10"
-                                        transform="rotate(-270,1138,145.5)"
+                                        strokeMiterlimit="10"
+                                        transform="rotate(-270,1139,145.5)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -8184,13 +7308,13 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-269">
                                 <g>
                                     <ellipse
-                                        cx="1128"
+                                        cx="1129"
                                         cy="125"
                                         rx="5"
                                         ry="5"
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
-                                        transform="rotate(-180,1128,125)"
+                                        transform="rotate(-180,1129,125)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -8199,11 +7323,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-271">
                             <g>
                                 <path
-                                    d="M 1171 125.5 Q 1201 125.5 1201 145 Q 1201 164.5 1171 164.5 Z"
+                                    d="M 1172 125.5 Q 1202 125.5 1202 145 Q 1202 164.5 1172 164.5 Z"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
-                                    transform="rotate(-270,1186,145)"
+                                    strokeMiterlimit="10"
+                                    transform="rotate(-270,1187,145)"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8211,19 +7335,21 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-272">
                             <g>
                                 <path
-                                    d="M 1081 110 L 1128.09 110 L 1128 120"
+                                    d="M 1082 110 L 1129 110 L 1129 120"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="1078"
+                                    cx="1079"
                                     cy="110"
                                     rx="3"
                                     ry="3"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
+                                    fill={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8231,19 +7357,21 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-273">
                             <g>
                                 <path
-                                    d="M 1131 110.03 L 1176.82 110.55 L 1176.25 130"
+                                    d="M 1132 110.03 L 1177.8 110.5 L 1177.25 130"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="1128"
+                                    cx="1129"
                                     cy="110"
                                     rx="3"
                                     ry="3"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
+                                    fill={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8251,10 +7379,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-274">
                             <g>
                                 <path
-                                    d="M 993 96 L 1097.73 96 L 1097.75 130.5"
+                                    d="M 994 96 L 1098.8 96 L 1098.75 130.5"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.ctrlSig.Bne ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                             </g>
@@ -8262,10 +7391,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-275">
                             <g>
                                 <path
-                                    d="M 993 76 L 1147.73 76 L 1147.75 130.5"
+                                    d="M 994 76 L 1148.8 76 L 1148.75 130.5"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.ctrlSig.Bgtz ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                             </g>
@@ -8273,10 +7403,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-276">
                             <g>
                                 <path
-                                    d="M 993 53 L 1195.73 53.09 L 1195.75 130"
+                                    d="M 994 53 L 1196.8 53 L 1196.75 130"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.ctrlSig.Beq ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                             </g>
@@ -8284,19 +7415,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-281">
                             <g>
                                 <path
-                                    d="M 1157 250 L 1177.55 250 L 1189.76 250.08"
+                                    d="M 1158 250 L 1178.5 250 L 1190.76 250.08"
                                     fill="none"
                                     stroke="#ff0000"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1195.76 250.12 L 1187.74 254.07 L 1189.76 250.08 L 1187.79 246.07 Z"
+                                    d="M 1196.76 250.12 L 1188.74 254.07 L 1190.76 250.08 L 1188.79 246.07 Z"
                                     fill="#ff0000"
                                     stroke="#ff0000"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8304,10 +7435,10 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-277">
                             <g>
                                 <path
-                                    d="M 1127 230 Q 1157 230 1157 250 Q 1157 270 1127 270 Q 1142 250 1127 230 Z"
+                                    d="M 1128 230 Q 1158 230 1158 250 Q 1158 270 1128 270 Q 1143 250 1128 230 Z"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8315,17 +7446,31 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-278">
                             <g>
                                 <path
-                                    d="M 1088 160.5 L 1088.09 260 L 1125.88 260"
+                                    d="M 1089 160.5 L 1089 260 L 1125.01 260"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bne
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1131.13 260 L 1124.13 263.5 L 1125.88 260 L 1124.13 256.5 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1131.01 260 L 1123.01 264 L 1125.01 260 L 1123.01 256 Z"
+                                    fill={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bne
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bne
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8333,17 +7478,31 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-279">
                             <g>
                                 <path
-                                    d="M 1138 160.5 L 1098.09 160.55 L 1098.09 250 L 1128.13 250"
+                                    d="M 1139 160.5 L 1099 160.5 L 1099 250 L 1127.26 250"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bgtz
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1133.38 250 L 1126.38 253.5 L 1128.13 250 L 1126.38 246.5 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1133.26 250 L 1125.26 254 L 1127.26 250 L 1125.26 246 Z"
+                                    fill={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bgtz
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke={
+                                        !values.ex_mem.zero && values.ex_mem.ctrlSig.Bgtz
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8351,17 +7510,31 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-280">
                             <g>
                                 <path
-                                    d="M 1186 160 L 1186.09 170 L 1108.09 170 L 1108.09 240 L 1125.88 240"
+                                    d="M 1187 160 L 1187 170 L 1109 170 L 1109 240 L 1125.01 240"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={
+                                        values.ex_mem.zero && values.ex_mem.ctrlSig.Beq
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1131.13 240 L 1124.13 243.5 L 1125.88 240 L 1124.13 236.5 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1131.01 240 L 1123.01 244 L 1125.01 240 L 1123.01 236 Z"
+                                    fill={
+                                        values.ex_mem.zero && values.ex_mem.ctrlSig.Beq
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke={
+                                        values.ex_mem.zero && values.ex_mem.ctrlSig.Beq
+                                            ? "#009900"
+                                            : "#66ff66"
+                                    }
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8369,17 +7542,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-287">
                             <g>
                                 <path
-                                    d="M 993 116 L 1018.09 116 L 1018.09 280 L 1138.09 280 L 1138.01 313.63"
+                                    d="M 994 116 L 1019 116 L 1019 280 L 1139 280 L 1139 311.76"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1138 318.88 L 1134.52 311.87 L 1138.01 313.63 L 1141.52 311.89 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1139 317.76 L 1135 309.76 L 1139 311.76 L 1143 309.76 Z"
+                                    fill={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
+                                    stroke={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8387,29 +7562,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-288">
                             <g>
                                 <path
-                                    d="M 1018 363 L 1018.09 570 L 1239.76 570"
+                                    d="M 1019 363 L 1019 570 L 1238.9 570"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <ellipse
-                                    cx="1018"
+                                    cx="1019"
                                     cy="360"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                                 <path
-                                    d="M 1245.76 570 L 1237.76 574 L 1239.76 570 L 1237.76 566 Z"
+                                    d="M 1245.65 570 L 1236.65 574.5 L 1238.9 570 L 1236.65 565.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8417,19 +7592,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-292">
                             <g>
                                 <path
-                                    d="M 1239.76 356 L 1228.09 356 L 1207.72 355.67"
+                                    d="M 1238.9 356 L 1229 356 L 1208.72 355.68"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1245.76 356 L 1237.76 360 L 1239.76 356 L 1237.76 352 Z"
+                                    d="M 1245.65 356 L 1236.65 360.5 L 1238.9 356 L 1236.65 351.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8437,19 +7612,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-299">
                             <g>
                                 <path
-                                    d="M 993 656 L 1239.76 656"
+                                    d="M 994 640 L 1238.9 640"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1245.76 656 L 1237.76 660 L 1239.76 656 L 1237.76 652 Z"
+                                    d="M 1245.65 640 L 1236.65 644.5 L 1238.9 640 L 1236.65 635.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8457,11 +7632,11 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-300">
                             <g>
                                 <path
-                                    d="M 1348 454.5 L 1368 434.5 L 1398 434.5 L 1418 454.5 Z"
+                                    d="M 1349 454.5 L 1369 434.5 L 1399 434.5 L 1419 454.5 Z"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
-                                    transform="rotate(90,1383,444.5)"
+                                    strokeMiterlimit="10"
+                                    transform="rotate(90,1384,444.5)"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8469,19 +7644,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-320">
                             <g>
                                 <path
-                                    d="M 1391 444.5 L 1411 444.55 L 1411 730 L 388.09 730 L 388.09 416.36 L 420.76 416.27"
+                                    d="M 1392 444.5 L 1412 444.5 L 1412 730 L 389 730 L 389 416.3 L 419.9 416.26"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 426.76 416.26 L 418.78 420.28 L 420.76 416.27 L 418.75 412.28 Z"
+                                    d="M 426.65 416.25 L 417.65 420.77 L 419.9 416.26 L 417.64 411.77 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8489,7 +7664,7 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-301">
                             <g>
                                 <rect
-                                    x="1371"
+                                    x="1372"
                                     y="411"
                                     width="20"
                                     height="67"
@@ -8506,22 +7681,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "18px",
                                                     height: "1px",
-                                                    paddingTop: "444px",
-                                                    marginLeft: "1372px",
+                                                    paddingTop: "445px",
+                                                    marginLeft: "1373px",
                                                 }}
                                             >
                                                 <div
@@ -8534,19 +7705,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                         <b>0</b>
@@ -8563,7 +7729,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="1381"
+                                            x="1382"
                                             y="448"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -8579,19 +7745,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-302">
                             <g>
                                 <path
-                                    d="M 1328 356 L 1349.55 356 L 1349.55 427.82 L 1362.76 427.78"
+                                    d="M 1329 356 L 1350.5 356 L 1350.5 427.8 L 1361.9 427.77"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1368.76 427.76 L 1360.78 431.78 L 1362.76 427.78 L 1360.75 423.78 Z"
+                                    d="M 1368.65 427.76 L 1359.66 432.28 L 1361.9 427.77 L 1359.64 423.28 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8599,19 +7765,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-303">
                             <g>
                                 <path
-                                    d="M 1328 570 L 1349.55 570 L 1349.55 461.27 L 1362.76 461.26"
+                                    d="M 1329 570 L 1350.5 570 L 1350.5 461.3 L 1361.9 461.27"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1368.76 461.25 L 1360.77 465.26 L 1362.76 461.26 L 1360.76 457.26 Z"
+                                    d="M 1368.65 461.26 L 1359.66 465.78 L 1361.9 461.27 L 1359.64 456.78 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8619,17 +7785,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-319">
                             <g>
                                 <path
-                                    d="M 1328 62.5 L 1378.82 62.55 L 1378.83 408.97"
+                                    d="M 1329 62.5 L 1379.8 62.5 L 1379.83 407.1"
                                     fill="none"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 1378.83 414.22 L 1375.33 407.22 L 1378.83 408.97 L 1382.33 407.22 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    d="M 1379.83 413.1 L 1375.83 405.1 L 1379.83 407.1 L 1383.83 405.1 Z"
+                                    fill={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
+                                    stroke={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
+                                    stroke-width="2"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8639,14 +7807,14 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-91">
                                 <g>
                                     <rect
-                                        x="613"
+                                        x="614"
                                         y="627"
                                         width="80"
                                         height="20"
                                         rx="6"
                                         ry="6"
-                                        fill="rgb(255, 255, 255)"
-                                        stroke="rgb(0, 0, 0)"
+                                        fill="#e51400"
+                                        stroke="#b20000"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -8658,51 +7826,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "78px",
                                                         height: "1px",
                                                         paddingTop: "637px",
-                                                        marginLeft: "614px",
+                                                        marginLeft: "615px",
                                                     }}
                                                 >
                                                     <div
-                                                        data-drawio-colors="color: rgb(0, 0, 0); "
+                                                        data-drawio-colors="color: #ffffff; "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
-                                                                color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(255, 255, 255)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             <b>RD</b>
@@ -8711,9 +7866,9 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="653"
+                                                x="654"
                                                 y="641"
-                                                fill="rgb(0, 0, 0)"
+                                                fill="#ffffff"
                                                 font-family='"Helvetica"'
                                                 font-size="12px"
                                                 text-anchor="middle"
@@ -8728,19 +7883,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-321">
                             <g>
                                 <path
-                                    d="M 1328 656 L 1348.09 656 L 1348.09 710 L 409 710 L 409 435.09 L 421.18 435.02"
+                                    d="M 1329 640 L 1349 640 L 1349 710 L 410 710 L 410 435 L 420.32 434.99"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 427.18 434.99 L 419.21 439.03 L 421.18 435.02 L 419.16 431.03 Z"
+                                    d="M 427.07 434.98 L 418.07 439.49 L 420.32 434.99 L 418.06 430.49 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8748,19 +7903,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-329">
                             <g>
                                 <path
-                                    d="M 80.48 98.76 L 80.45 84 L 80.67 60"
+                                    d="M 81.5 98.76 L 81.5 84 L 81.67 60"
                                     fill="none"
                                     stroke="#0000ff"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 80.5 104.76 L 76.48 96.77 L 80.48 98.76 L 84.48 96.76 Z"
+                                    d="M 81.5 104.76 L 77.5 96.76 L 81.5 98.76 L 85.5 96.76 Z"
                                     fill="#0000ff"
                                     stroke="#0000ff"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8768,19 +7923,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-338">
                             <g>
                                 <path
-                                    d="M 146.24 116.51 L 168.09 116.55 L 188 116.56"
+                                    d="M 147.24 116.5 L 169 116.5 L 189 116.56"
                                     fill="none"
                                     stroke="#ff0000"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 140.24 116.5 L 148.24 112.52 L 146.24 116.51 L 148.23 120.52 Z"
+                                    d="M 141.24 116.5 L 149.24 112.5 L 147.24 116.5 L 149.24 120.5 Z"
                                     fill="#ff0000"
                                     stroke="#ff0000"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8788,19 +7943,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-331">
                             <g>
                                 <path
-                                    d="M 218 250 L 229.76 250"
+                                    d="M 219 250 L 230.76 250"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 235.76 250 L 227.76 254 L 229.76 250 L 227.76 246 Z"
+                                    d="M 236.76 250 L 228.76 254 L 230.76 250 L 228.76 246 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
                                     stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8808,19 +7963,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-332">
                             <g>
                                 <path
-                                    d="M 169.76 221.29 L 158.09 221.27 L 138 221.64"
+                                    d="M 168.9 221.3 L 159 221.3 L 139 221.64"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 175.76 221.3 L 167.76 225.29 L 169.76 221.29 L 167.77 217.29 Z"
+                                    d="M 175.65 221.3 L 166.65 225.8 L 168.9 221.3 L 166.65 216.8 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8833,60 +7988,43 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "1px",
                                                         height: "1px",
-                                                        paddingTop: "222px",
+                                                        paddingTop: "221px",
                                                         marginLeft: "132px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "11px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "11px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
                                                                 backgroundColor:
-                                                                    "rgb( 255, 255, 255 )",
-                                                                whiteSpace:
-                                                                    "nowrap",
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
                                                             }}
                                                         >
                                                             <b>
-                                                                <font
-                                                                    style={{
-                                                                        fontSize:
-                                                                            "15px",
-                                                                    }}
-                                                                >
+                                                                <font style={{ fontSize: "15px" }}>
                                                                     1
                                                                 </font>
                                                             </b>
@@ -8912,10 +8050,10 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-330">
                             <g>
                                 <path
-                                    d="M 178 215 L 218 236 L 218 264 L 178 285 L 178 271 L 198 260.5 L 198 239.5 L 178 229 Z"
+                                    d="M 179 215 L 219 236 L 219 264 L 179 285 L 179 271 L 199 260.5 L 199 239.5 L 179 229 Z"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -8927,22 +8065,18 @@ export default function Diagram({values}) {
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                            style={{
-                                                overflow: "visible",
-                                                textAlign: "left",
-                                            }}
+                                            style={{ overflow: "visible", textAlign: "left" }}
                                         >
                                             <div
                                                 xmlns="http://www.w3.org/1999/xhtml"
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "unsafe center",
-                                                    justifyContent:
-                                                        "unsafe center",
+                                                    justifyContent: "unsafe center",
                                                     width: "38px",
                                                     height: "1px",
                                                     paddingTop: "250px",
-                                                    marginLeft: "179px",
+                                                    marginLeft: "180px",
                                                 }}
                                             >
                                                 <div
@@ -8955,19 +8089,14 @@ export default function Diagram({values}) {
                                                 >
                                                     <div
                                                         style={{
-                                                            display:
-                                                                "inline-block",
+                                                            display: "inline-block",
                                                             fontSize: "12px",
-                                                            fontFamily:
-                                                                "Helvetica",
+                                                            fontFamily: "Helvetica",
                                                             color: "rgb(0, 0, 0)",
                                                             lineHeight: "1.2",
-                                                            pointerEvents:
-                                                                "all",
-                                                            whiteSpace:
-                                                                "normal",
-                                                            overflowWrap:
-                                                                "normal",
+                                                            pointerEvents: "all",
+                                                            whiteSpace: "normal",
+                                                            overflowWrap: "normal",
                                                         }}
                                                     >
                                                              +
@@ -8976,7 +8105,7 @@ export default function Diagram({values}) {
                                             </div>
                                         </foreignObject>
                                         <text
-                                            x="198"
+                                            x="199"
                                             y="254"
                                             fill="rgb(0, 0, 0)"
                                             font-family='"Helvetica"'
@@ -8992,19 +8121,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-334">
                             <g>
                                 <path
-                                    d="M 88 305 L 88.09 278.73 L 169.76 278.7"
+                                    d="M 89 305 L 89 278.7 L 168.9 278.7"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 175.76 278.7 L 167.77 282.7 L 169.76 278.7 L 167.76 274.7 Z"
+                                    d="M 175.65 278.7 L 166.65 283.2 L 168.9 278.7 L 166.65 274.2 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -9012,19 +8141,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-335">
                             <g>
                                 <path
-                                    d="M 19.76 485.78 L 8.09 485.82 L 8.09 390 L 159 390 L 159 283"
+                                    d="M 18.9 485.78 L 9 485.8 L 9 390 L 160 390 L 159.03 283"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 25.76 485.76 L 17.78 489.79 L 19.76 485.78 L 17.75 481.79 Z"
+                                    d="M 25.65 485.76 L 16.66 490.28 L 18.9 485.78 L 16.63 481.28 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
@@ -9034,7 +8163,7 @@ export default function Diagram({values}) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -9044,7 +8173,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-328">
                                 <g>
                                     <rect
-                                        x="73"
+                                        x="74"
                                         y="100"
                                         width="60"
                                         height="30"
@@ -9061,51 +8190,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "58px",
                                                         height: "1px",
                                                         paddingTop: "115px",
-                                                        marginLeft: "74px",
+                                                        marginLeft: "75px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             <b>1        0</b>
@@ -9114,7 +8230,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="103"
+                                                x="104"
                                                 y="119"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -9130,11 +8246,11 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-326">
                                 <g>
                                     <path
-                                        d="M 58 126 L 78 107 L 128 107 L 148 126 Z"
+                                        d="M 59 126 L 79 107 L 129 107 L 149 126 Z"
                                         fill="none"
                                         stroke="rgb(0, 0, 0)"
-                                        stroke-miterlimit="10"
-                                        transform="rotate(-180,103,116.5)"
+                                        strokeMiterlimit="10"
+                                        transform="rotate(-180,104,116.5)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -9145,7 +8261,7 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-341">
                                 <g>
                                     <rect
-                                        x="50"
+                                        x="51"
                                         y="160"
                                         width="60"
                                         height="30"
@@ -9162,51 +8278,38 @@ export default function Diagram({values}) {
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
-                                                style={{
-                                                    overflow: "visible",
-                                                    textAlign: "left",
-                                                }}
+                                                style={{ overflow: "visible", textAlign: "left" }}
                                             >
                                                 <div
                                                     xmlns="http://www.w3.org/1999/xhtml"
                                                     style={{
                                                         display: "flex",
-                                                        alignItems:
-                                                            "unsafe center",
-                                                        justifyContent:
-                                                            "unsafe center",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
                                                         width: "58px",
                                                         height: "1px",
                                                         paddingTop: "175px",
-                                                        marginLeft: "51px",
+                                                        marginLeft: "52px",
                                                     }}
                                                 >
                                                     <div
                                                         data-drawio-colors="color: rgb(0, 0, 0); "
                                                         style={{
-                                                            boxSizing:
-                                                                "border-box",
+                                                            boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
                                                         }}
                                                     >
                                                         <div
                                                             style={{
-                                                                display:
-                                                                    "inline-block",
-                                                                fontSize:
-                                                                    "12px",
-                                                                fontFamily:
-                                                                    "Helvetica",
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
                                                                 color: "rgb(0, 0, 0)",
-                                                                lineHeight:
-                                                                    "1.2",
-                                                                pointerEvents:
-                                                                    "all",
-                                                                whiteSpace:
-                                                                    "normal",
-                                                                overflowWrap:
-                                                                    "normal",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
                                                             }}
                                                         >
                                                             <b>1        0</b>
@@ -9215,7 +8318,7 @@ export default function Diagram({values}) {
                                                 </div>
                                             </foreignObject>
                                             <text
-                                                x="80"
+                                                x="81"
                                                 y="179"
                                                 fill="rgb(0, 0, 0)"
                                                 font-family='"Helvetica"'
@@ -9231,11 +8334,11 @@ export default function Diagram({values}) {
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-342">
                                 <g>
                                     <path
-                                        d="M 35 186 L 55 167 L 105 167 L 125 186 Z"
+                                        d="M 36 186 L 56 167 L 106 167 L 126 186 Z"
                                         fill="none"
                                         stroke="rgb(0, 0, 0)"
-                                        stroke-miterlimit="10"
-                                        transform="rotate(-180,80,176.5)"
+                                        strokeMiterlimit="10"
+                                        transform="rotate(-180,81,176.5)"
                                         pointer-events="all"
                                     />
                                 </g>
@@ -9244,17 +8347,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-343">
                             <g>
                                 <path
-                                    d="M 103 126 L 103 146.55 L 102.66 160.63"
+                                    d="M 104 126 L 104 146.5 L 103.75 156.9"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 102.53 165.88 L 99.2 158.8 L 102.66 160.63 L 106.2 158.97 Z"
+                                    d="M 103.58 163.65 L 99.3 154.54 L 103.75 156.9 L 108.3 154.76 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -9262,19 +8367,19 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-349">
                             <g>
                                 <path
-                                    d="M 80 186 L 80.09 245.45 L 8.09 245.45 L 8.09 340 L 19.76 340"
+                                    d="M 81 186 L 81 245.5 L 9 245.5 L 9 340 L 18.9 340"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 25.76 340 L 17.76 344 L 19.76 340 L 17.76 336 Z"
+                                    d="M 25.65 340 L 16.65 344.5 L 18.9 340 L 16.65 335.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
@@ -9282,29 +8387,29 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-350">
                             <g>
                                 <path
-                                    d="M 125.51 98.76 L 125.55 70 L 218.09 70 L 218 247"
+                                    d="M 126.5 96.9 L 126.5 70 L 219 70 L 219 247"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
                                 <path
-                                    d="M 125.5 104.76 L 121.51 96.76 L 125.51 98.76 L 129.51 96.77 Z"
+                                    d="M 126.5 103.65 L 122 94.65 L 126.5 96.9 L 131 94.65 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                                 <ellipse
-                                    cx="218"
+                                    cx="219"
                                     cy="250"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
                                     pointer-events="all"
                                 />
                             </g>
@@ -9312,29 +8417,257 @@ export default function Diagram({values}) {
                         <g data-cell-id="1W33FOhmNmDA0zy-Gag4-351">
                             <g>
                                 <path
-                                    d="M 57.5 158.76 L 57.55 11.09 L 358.09 11.09 L 358.04 188"
+                                    d="M 279 10 L 359.5 10 L 359.05 188"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="stroke"
                                 />
-                                <path
-                                    d="M 57.5 164.76 L 53.5 156.76 L 57.5 158.76 L 61.5 156.77 Z"
-                                    fill="rgb(0, 0, 0)"
-                                    stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
-                                    stroke-miterlimit="10"
-                                    pointer-events="all"
-                                />
                                 <ellipse
-                                    cx="358.04"
+                                    cx="359.04"
                                     cy="191"
                                     rx="3"
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    stroke-width="3"
+                                    pointer-events="all"
+                                />
+                            </g>
+                            <g data-cell-id="iDGc5PNU-aZqenxwyxyE-5">
+                                <g>
+                                    <g transform="translate(-0.5 -0.5)">
+                                        <switch>
+                                            <foreignObject
+                                                pointer-events="none"
+                                                width="100%"
+                                                height="100%"
+                                                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                                                style={{ overflow: "visible", textAlign: "left" }}
+                                            >
+                                                <div
+                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
+                                                        width: "1px",
+                                                        height: "1px",
+                                                        paddingTop: "169px",
+                                                        marginLeft: "413px",
+                                                    }}
+                                                >
+                                                    <div
+                                                        data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); "
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            fontSize: "0px",
+                                                            textAlign: "center",
+                                                        }}
+                                                    >
+                                                        <div
+                                                            style={{
+                                                                display: "inline-block",
+                                                                fontSize: "11px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(0, 0, 0)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                backgroundColor:
+                                                                    "rgb(255, 255, 255)",
+                                                                whiteSpace: "nowrap",
+                                                            }}
+                                                        >
+                                                            <font style={{ fontSize: "13px" }}>
+                                                                <b>15:0</b>
+                                                            </font>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </foreignObject>
+                                            <text
+                                                x="413"
+                                                y="172"
+                                                fill="rgb(0, 0, 0)"
+                                                font-family='"Helvetica"'
+                                                font-size="11px"
+                                                text-anchor="middle"
+                                            >
+                                                15:0
+                                            </text>
+                                        </switch>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g data-cell-id="iDGc5PNU-aZqenxwyxyE-6">
+                            <g />
+                            <g data-cell-id="iDGc5PNU-aZqenxwyxyE-7">
+                                <g>
+                                    <rect
+                                        x="199"
+                                        y="10"
+                                        width="80"
+                                        height="30"
+                                        fill="#fad9d5"
+                                        stroke="#ae4132"
+                                        pointer-events="all"
+                                    />
+                                </g>
+                                <g>
+                                    <g transform="translate(-0.5 -0.5)">
+                                        <switch>
+                                            <foreignObject
+                                                pointer-events="none"
+                                                width="100%"
+                                                height="100%"
+                                                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                                                style={{ overflow: "visible", textAlign: "left" }}
+                                            >
+                                                <div
+                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "unsafe flex-end",
+                                                        justifyContent: "unsafe center",
+                                                        width: "78px",
+                                                        height: "1px",
+                                                        paddingTop: "37px",
+                                                        marginLeft: "200px",
+                                                    }}
+                                                >
+                                                    <div
+                                                        data-drawio-colors="color: rgb(0, 0, 0); "
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            fontSize: "0px",
+                                                            textAlign: "center",
+                                                        }}
+                                                    >
+                                                        <div
+                                                            style={{
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(0, 0, 0)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
+                                                            }}
+                                                        >
+                                                            {values.jmpAddr}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </foreignObject>
+                                            <text
+                                                x="239"
+                                                y="37"
+                                                fill="rgb(0, 0, 0)"
+                                                font-family='"Helvetica"'
+                                                font-size="12px"
+                                                text-anchor="middle"
+                                            >
+                                                plh_jmpAddr
+                                            </text>
+                                        </switch>
+                                    </g>
+                                </g>
+                            </g>
+                            <g data-cell-id="iDGc5PNU-aZqenxwyxyE-9">
+                                <g>
+                                    <rect
+                                        x="199"
+                                        y="0"
+                                        width="80"
+                                        height="20"
+                                        rx="6"
+                                        ry="6"
+                                        fill="#e51400"
+                                        stroke="#b20000"
+                                        pointer-events="all"
+                                    />
+                                </g>
+                                <g>
+                                    <g transform="translate(-0.5 -0.5)">
+                                        <switch>
+                                            <foreignObject
+                                                pointer-events="none"
+                                                width="100%"
+                                                height="100%"
+                                                requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                                                style={{ overflow: "visible", textAlign: "left" }}
+                                            >
+                                                <div
+                                                    xmlns="http://www.w3.org/1999/xhtml"
+                                                    style={{
+                                                        display: "flex",
+                                                        alignItems: "unsafe center",
+                                                        justifyContent: "unsafe center",
+                                                        width: "78px",
+                                                        height: "1px",
+                                                        paddingTop: "10px",
+                                                        marginLeft: "200px",
+                                                    }}
+                                                >
+                                                    <div
+                                                        data-drawio-colors="color: #ffffff; "
+                                                        style={{
+                                                            boxSizing: "border-box",
+                                                            fontSize: "0px",
+                                                            textAlign: "center",
+                                                        }}
+                                                    >
+                                                        <div
+                                                            style={{
+                                                                display: "inline-block",
+                                                                fontSize: "12px",
+                                                                fontFamily: "Helvetica",
+                                                                color: "rgb(255, 255, 255)",
+                                                                lineHeight: "1.2",
+                                                                pointerEvents: "all",
+                                                                whiteSpace: "normal",
+                                                                overflowWrap: "normal",
+                                                            }}
+                                                        >
+                                                            <b>JumpAddr</b>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </foreignObject>
+                                            <text
+                                                x="239"
+                                                y="14"
+                                                fill="#ffffff"
+                                                font-family='"Helvetica"'
+                                                font-size="12px"
+                                                text-anchor="middle"
+                                            >
+                                                JumpAddr
+                                            </text>
+                                        </switch>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g data-cell-id="iDGc5PNU-aZqenxwyxyE-11">
+                            <g>
+                                <path
+                                    d="M 199 10 L 58.5 10 L 58.5 156.9"
+                                    fill="none"
+                                    stroke="rgb(0, 0, 0)"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
+                                    pointer-events="stroke"
+                                />
+                                <path
+                                    d="M 58.5 163.65 L 54 154.65 L 58.5 156.9 L 63 154.65 Z"
+                                    fill="rgb(0, 0, 0)"
+                                    stroke="rgb(0, 0, 0)"
+                                    stroke-width="3"
+                                    strokeMiterlimit="10"
                                     pointer-events="all"
                                 />
                             </g>
