@@ -28,28 +28,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 29 434 L 29 635.65 Q 29 646 39.35 646 L 168.65 646 Q 179 646 179 635.65 L 179 434"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 29 434 L 179 434"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -99,10 +99,10 @@ export default function Diagram({ values }) {
                                             x="104"
                                             y="426"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             Instruction Memory
                                         </text>
@@ -118,14 +118,14 @@ export default function Diagram({ values }) {
                                         height="205"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -172,9 +172,9 @@ export default function Diagram({ values }) {
                                                 x="104"
                                                 y="541"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 placeholder_instr_mem
                                             </text>
@@ -190,28 +190,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 29 328 L 29 364.65 Q 29 375 39.35 375 L 138.65 375 Q 149 375 149 364.65 L 149 328"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 29 328 L 149 328"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -259,10 +259,10 @@ export default function Diagram({ values }) {
                                             x="89"
                                             y="320"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             Program Counter
                                         </text>
@@ -278,14 +278,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -333,10 +333,10 @@ export default function Diagram({ values }) {
                                                 x="89"
                                                 y="355"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="16px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="16px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 plh_pro...
                                             </text>
@@ -351,17 +351,17 @@ export default function Diagram({ values }) {
                                     d="M 570.98 300.05 L 592 300.1 L 603.9 300.32"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 300.44 L 601.57 304.77 L 603.9 300.32 L 601.73 295.78 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -371,17 +371,17 @@ export default function Diagram({ values }) {
                                     d="M 535 251.76 L 535 240 L 534.71 220"
                                     fill="none"
                                     stroke="#990099"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 535 257.76 L 531 249.76 L 535 251.76 L 539 249.76 Z"
                                     fill="#990099"
                                     stroke="#990099"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -392,28 +392,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 430 283 L 430 449.65 Q 430 460 440.35 460 L 559.65 460 Q 570 460 570 449.65 L 570 283"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 430 283 L 570 283"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -461,10 +461,10 @@ export default function Diagram({ values }) {
                                             x="500"
                                             y="275"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             Register File
                                         </text>
@@ -480,14 +480,14 @@ export default function Diagram({ values }) {
                                         height="175"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -501,8 +501,9 @@ export default function Diagram({ values }) {
                                                         justifyContent: "unsafe center",
                                                         width: "138px",
                                                         height: "1px",
-                                                        paddingTop: "373px",
+                                                        paddingTop: "372px",
                                                         marginLeft: "431px",
+                                                        height: "174px",
                                                     }}
                                                 >
                                                     <div
@@ -511,6 +512,8 @@ export default function Diagram({ values }) {
                                                             boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
+                                                            width: "100%",
+                                                            height: "174px",
                                                         }}
                                                     >
                                                         <div
@@ -523,9 +526,14 @@ export default function Diagram({ values }) {
                                                                 pointerEvents: "all",
                                                                 whiteSpace: "normal",
                                                                 overflowWrap: "normal",
+                                                                overflowY: "scroll",
+                                                                width: "100%",
+                                                                height: "174px",
                                                             }}
                                                         >
-                                                            placeholder_reg_file
+                                                            <MemoryList
+                                                                values={values.registerFile}
+                                                            ></MemoryList>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -534,9 +542,9 @@ export default function Diagram({ values }) {
                                                 x="500"
                                                 y="376"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 placeholder_reg_file
                                             </text>
@@ -551,9 +559,9 @@ export default function Diagram({ values }) {
                                     d="M 430 330 L 429 330 L 359 330 L 359 303"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="359"
@@ -562,8 +570,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-353">
@@ -571,7 +579,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -620,10 +628,10 @@ export default function Diagram({ values }) {
                                                 x="394"
                                                 y="324"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 20:16
                                             </text>
@@ -638,17 +646,17 @@ export default function Diagram({ values }) {
                                     d="M 500 190 L 557 190 L 557 40 L 603.9 40"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 40 L 601.65 44.5 L 603.9 40 L 601.65 35.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -658,17 +666,17 @@ export default function Diagram({ values }) {
                                     d="M 489.75 154.64 L 529 154.6 L 529 130 L 259 130 L 259 176.5 L 124.24 176.5"
                                     fill="none"
                                     stroke={values.jmp ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 118.24 176.5 L 126.24 172.5 L 124.24 176.5 L 126.24 180.5 Z"
                                     fill={values.jmp ? "#009900" : "#66ff66"}
                                     stroke={values.jmp ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="iDGc5PNU-aZqenxwyxyE-4">
@@ -676,7 +684,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -727,10 +735,10 @@ export default function Diagram({ values }) {
                                                 x="154"
                                                 y="167"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="11px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="11px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 Jump
                                             </text>
@@ -748,14 +756,14 @@ export default function Diagram({ values }) {
                                     ry="50"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -803,9 +811,9 @@ export default function Diagram({ values }) {
                                             x="465"
                                             y="194"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             Main...
                                         </text>
@@ -819,9 +827,9 @@ export default function Diagram({ values }) {
                                     d="M 430 190 L 359 190 L 359 297"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="359"
@@ -830,8 +838,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -841,9 +849,9 @@ export default function Diagram({ values }) {
                                     d="M 359 300 L 429 300"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-352">
@@ -851,7 +859,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -899,9 +907,9 @@ export default function Diagram({ values }) {
                                                 x="394"
                                                 y="292"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
                                             >
                                                 25:21
                                             </text>
@@ -916,17 +924,17 @@ export default function Diagram({ values }) {
                                     d="M 359 250 L 603.9 250.48"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 250.49 L 601.64 254.98 L 603.9 250.48 L 601.65 245.98 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -936,17 +944,17 @@ export default function Diagram({ values }) {
                                     d="M 489 512 L 552 512.5 L 603.9 512.08"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 512.03 L 601.68 516.6 L 603.9 512.08 L 601.61 507.6 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -959,14 +967,14 @@ export default function Diagram({ values }) {
                                     ry="25"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1013,9 +1021,9 @@ export default function Diagram({ values }) {
                                             x="504"
                                             y="516"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             Ext
                                         </text>
@@ -1029,9 +1037,9 @@ export default function Diagram({ values }) {
                                     d="M 484 512 L 359.5 512 L 359.01 333"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="359"
@@ -1040,8 +1048,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-354">
@@ -1049,7 +1057,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1098,10 +1106,10 @@ export default function Diagram({ values }) {
                                                 x="428"
                                                 y="505"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 15:0
                                             </text>
@@ -1116,17 +1124,17 @@ export default function Diagram({ values }) {
                                     d="M 603.9 470 L 449 470 L 449 510"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 470 L 601.65 474.5 L 603.9 470 L 601.65 465.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-355">
@@ -1134,7 +1142,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1183,10 +1191,10 @@ export default function Diagram({ values }) {
                                                 x="551"
                                                 y="485"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 10:6
                                             </text>
@@ -1201,17 +1209,17 @@ export default function Diagram({ values }) {
                                     d="M 603.9 554 L 449 554 L 449 513"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 554 L 601.65 558.5 L 603.9 554 L 601.65 549.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="449"
@@ -1220,8 +1228,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-356">
@@ -1229,7 +1237,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1278,10 +1286,10 @@ export default function Diagram({ values }) {
                                                 x="552"
                                                 y="568"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 5:0
                                             </text>
@@ -1296,17 +1304,17 @@ export default function Diagram({ values }) {
                                     d="M 603.9 595 L 360.8 595 L 360.75 517"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 595 L 601.65 599.5 L 603.9 595 L 601.65 590.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="360.75"
@@ -1315,8 +1323,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-357">
@@ -1324,7 +1332,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1373,10 +1381,10 @@ export default function Diagram({ values }) {
                                                 x="461"
                                                 y="589"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 20:16
                                             </text>
@@ -1392,28 +1400,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 239 232 L 239 669.65 Q 239 680 249.35 680 L 308.65 680 Q 319 680 319 669.65 L 319 232"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 239 232 L 319 232"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1461,10 +1469,10 @@ export default function Diagram({ values }) {
                                             x="279"
                                             y="224"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             IF/ID
                                         </text>
@@ -1482,14 +1490,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#ffcccc"
                                             stroke="#36393d"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1539,9 +1547,9 @@ export default function Diagram({ values }) {
                                                     x="279"
                                                     y="541"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_if_id.ins...
                                                 </text>
@@ -1555,9 +1563,9 @@ export default function Diagram({ values }) {
                                             d="M 319 514 L 339 514 L 359 514"
                                             fill="none"
                                             stroke="rgb(0, 0, 0)"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             strokeMiterlimit="10"
-                                            pointer-events="stroke"
+                                            pointerEvents="stroke"
                                         />
                                     </g>
                                 </g>
@@ -1572,14 +1580,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1629,9 +1637,9 @@ export default function Diagram({ values }) {
                                                     x="279"
                                                     y="518"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     INSTR
                                                 </text>
@@ -1649,7 +1657,7 @@ export default function Diagram({ values }) {
                                         height="40"
                                         fill="rgb(255, 255, 255)"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g data-cell-id="1W33FOhmNmDA0zy-Gag4-57">
@@ -1661,14 +1669,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1718,9 +1726,9 @@ export default function Diagram({ values }) {
                                                     x="279"
                                                     y="277"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_if_id.pc
                                                 </text>
@@ -1734,9 +1742,9 @@ export default function Diagram({ values }) {
                                             d="M 319 250 L 339 250 L 359 250"
                                             fill="none"
                                             stroke="rgb(0, 0, 0)"
-                                            stroke-width="3"
+                                            strokeWidth="3"
                                             strokeMiterlimit="10"
-                                            pointer-events="stroke"
+                                            pointerEvents="stroke"
                                         />
                                     </g>
                                 </g>
@@ -1751,14 +1759,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1808,9 +1816,9 @@ export default function Diagram({ values }) {
                                                     x="279"
                                                     y="254"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     PC
                                                 </text>
@@ -1826,17 +1834,17 @@ export default function Diagram({ values }) {
                                     d="M 228.9 514 L 209 514 L 179.9 513.84"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 235.65 514 L 226.65 518.5 L 228.9 514 L 226.65 509.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -1847,28 +1855,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 614 23 L 614 669.65 Q 614 680 624.35 680 L 683.65 680 Q 694 680 694 669.65 L 694 23"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 614 23 L 694 23"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1916,10 +1924,10 @@ export default function Diagram({ values }) {
                                             x="654"
                                             y="15"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             ID/EX
                                         </text>
@@ -1937,14 +1945,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -1994,9 +2002,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="497"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_id_ex.sa
                                                 </text>
@@ -2015,14 +2023,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2072,9 +2080,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="474"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     SA
                                                 </text>
@@ -2094,14 +2102,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2151,9 +2159,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="539"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_id_ex.opE...
                                                 </text>
@@ -2172,14 +2180,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2229,9 +2237,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="516"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     OP_EXT
                                                 </text>
@@ -2251,14 +2259,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2308,9 +2316,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="580"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_id_ex.func
                                                 </text>
@@ -2329,14 +2337,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2386,9 +2394,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="558"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     FUNC
                                                 </text>
@@ -2408,14 +2416,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2465,9 +2473,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="622"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_id_ex.rt
                                                 </text>
@@ -2486,14 +2494,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2543,9 +2551,9 @@ export default function Diagram({ values }) {
                                                     x="654"
                                                     y="599"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     RT
                                                 </text>
@@ -2567,14 +2575,14 @@ export default function Diagram({ values }) {
                                                 height="30"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2624,9 +2632,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="67"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         RegDst
                                                     </text>
@@ -2645,14 +2653,14 @@ export default function Diagram({ values }) {
                                                 ry="6"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2702,9 +2710,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="44"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         CTRL_SIG
                                                     </text>
@@ -2724,14 +2732,14 @@ export default function Diagram({ values }) {
                                                 height="30"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2781,9 +2789,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="328"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_id_ex.rd1
                                                     </text>
@@ -2802,14 +2810,14 @@ export default function Diagram({ values }) {
                                                 ry="6"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2859,9 +2867,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="304"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         RD1
                                                     </text>
@@ -2881,14 +2889,14 @@ export default function Diagram({ values }) {
                                                 height="30"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -2938,9 +2946,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="278"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_id_ex.pc
                                                     </text>
@@ -2959,14 +2967,14 @@ export default function Diagram({ values }) {
                                                 ry="6"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3016,9 +3024,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="254"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         PC
                                                     </text>
@@ -3036,7 +3044,7 @@ export default function Diagram({ values }) {
                                             height="40"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g data-cell-id="1W33FOhmNmDA0zy-Gag4-73">
@@ -3048,14 +3056,14 @@ export default function Diagram({ values }) {
                                                 height="30"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3105,9 +3113,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="378"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_id_ex.rd2
                                                     </text>
@@ -3126,14 +3134,14 @@ export default function Diagram({ values }) {
                                                 ry="6"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3183,9 +3191,9 @@ export default function Diagram({ values }) {
                                                         x="654"
                                                         y="354"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         RD2
                                                     </text>
@@ -3204,14 +3212,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3258,9 +3266,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="84"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 AluSrc
                                             </text>
@@ -3277,14 +3285,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3331,9 +3339,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="104"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Beq
                                             </text>
@@ -3350,14 +3358,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3404,9 +3412,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="124"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Bgtz
                                             </text>
@@ -3423,14 +3431,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3477,9 +3485,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="144"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Bne
                                             </text>
@@ -3496,14 +3504,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3550,9 +3558,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="164"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 MemWrite
                                             </text>
@@ -3569,14 +3577,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3623,9 +3631,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="184"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 MemToReg
                                             </text>
@@ -3642,14 +3650,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3696,9 +3704,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="204"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 RegWrite
                                             </text>
@@ -3715,14 +3723,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3769,9 +3777,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="667"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 plh_id_ex.rd
                                             </text>
@@ -3786,17 +3794,17 @@ export default function Diagram({ values }) {
                                     d="M 603.9 637 L 360.8 637 L 360.75 598"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 610.65 637 L 601.65 641.5 L 603.9 637 L 601.65 632.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="360.75"
@@ -3805,8 +3813,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-358">
@@ -3814,7 +3822,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3863,10 +3871,10 @@ export default function Diagram({ values }) {
                                                 x="461"
                                                 y="630"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="13px"
-                                                text-anchor="middle"
-                                                font-weight="bold"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="13px"
+                                                textAnchor="middle"
+                                                fontWeight="bold"
                                             >
                                                 15:11
                                             </text>
@@ -3881,17 +3889,17 @@ export default function Diagram({ values }) {
                                     d="M 884 359 L 903.9 359"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 910.65 359 L 901.65 363.5 L 903.9 359 L 901.65 354.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -3902,14 +3910,14 @@ export default function Diagram({ values }) {
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 912.88 303.75 L 905.88 307.26 L 907.63 303.75 L 905.88 300.26 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -3920,14 +3928,14 @@ export default function Diagram({ values }) {
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -3974,9 +3982,9 @@ export default function Diagram({ values }) {
                                             x="844"
                                             y="363"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             ...
                                         </text>
@@ -3992,7 +4000,7 @@ export default function Diagram({ values }) {
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
                                     transform="rotate(90,759,419)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4002,17 +4010,17 @@ export default function Diagram({ values }) {
                                     d="M 769 419 L 793.9 419"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 800.65 419 L 791.65 423.5 L 793.9 419 L 791.65 414.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4022,17 +4030,17 @@ export default function Diagram({ values }) {
                                     d="M 694 512 L 721.5 512 L 721.5 436.5 L 738.9 436.5"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 745.65 436.5 L 736.65 441 L 738.9 436.5 L 736.65 432 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4042,17 +4050,17 @@ export default function Diagram({ values }) {
                                     d="M 694 350.5 L 734 350.5 L 734 401.5 L 738.9 401.5"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 745.65 401.5 L 736.65 406 L 738.9 401.5 L 736.65 397 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4062,17 +4070,17 @@ export default function Diagram({ values }) {
                                     d="M 694 470 L 831.2 470 L 831.2 429.1"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 831.2 422.35 L 835.7 431.35 L 831.2 429.1 L 826.7 431.35 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4082,17 +4090,17 @@ export default function Diagram({ values }) {
                                     d="M 694 300.5 L 749 300.5 L 792.94 300.13"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 799.69 300.08 L 790.72 304.65 L 792.94 300.13 L 790.65 295.65 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -4103,28 +4111,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 914 23 L 914 669.65 Q 914 680 924.35 680 L 983.65 680 Q 994 680 994 669.65 L 994 23"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 914 23 L 994 23"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4172,10 +4180,10 @@ export default function Diagram({ values }) {
                                             x="954"
                                             y="15"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             EX/MEM
                                         </text>
@@ -4193,14 +4201,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4250,9 +4258,9 @@ export default function Diagram({ values }) {
                                                     x="954"
                                                     y="277"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_ex_mem.br...
                                                 </text>
@@ -4266,17 +4274,17 @@ export default function Diagram({ values }) {
                                             d="M 994 250 L 1016.5 250 L 1030.76 250"
                                             fill="none"
                                             stroke="#0055ff"
-                                            stroke-width="2"
+                                            strokeWidth="2"
                                             strokeMiterlimit="10"
-                                            pointer-events="stroke"
+                                            pointerEvents="stroke"
                                         />
                                         <path
                                             d="M 1036.76 250 L 1028.76 254 L 1030.76 250 L 1028.76 246 Z"
                                             fill="#0055ff"
                                             stroke="#0055ff"
-                                            stroke-width="2"
+                                            strokeWidth="2"
                                             strokeMiterlimit="10"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                 </g>
@@ -4291,14 +4299,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4348,9 +4356,9 @@ export default function Diagram({ values }) {
                                                     x="954"
                                                     y="254"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     BranchAddr
                                                 </text>
@@ -4370,14 +4378,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4427,9 +4435,9 @@ export default function Diagram({ values }) {
                                                     x="954"
                                                     y="667"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_ex_mem.dst
                                                 </text>
@@ -4448,14 +4456,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4505,9 +4513,9 @@ export default function Diagram({ values }) {
                                                     x="954"
                                                     y="644"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     DST
                                                 </text>
@@ -4529,14 +4537,14 @@ export default function Diagram({ values }) {
                                                 height="29.25"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4586,9 +4594,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="386"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_ex_mem.al...
                                                     </text>
@@ -4607,14 +4615,14 @@ export default function Diagram({ values }) {
                                                 ry="5.85"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4664,9 +4672,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="363"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         AluRes
                                                     </text>
@@ -4689,14 +4697,14 @@ export default function Diagram({ values }) {
                                                 height="29.25"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4746,9 +4754,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="330"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_ex_mem.ze...
                                                     </text>
@@ -4767,14 +4775,14 @@ export default function Diagram({ values }) {
                                                 ry="5.85"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4824,9 +4832,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="307"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         Zero
                                                     </text>
@@ -4849,14 +4857,14 @@ export default function Diagram({ values }) {
                                                 height="29.25"
                                                 fill="#fad9d5"
                                                 stroke="#ae4132"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4906,9 +4914,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="466"
                                                         fill="rgb(0, 0, 0)"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         plh_ex_mem.rd2
                                                     </text>
@@ -4927,14 +4935,14 @@ export default function Diagram({ values }) {
                                                 ry="5.85"
                                                 fill="#e51400"
                                                 stroke="#b20000"
-                                                pointer-events="all"
+                                                pointerEvents="all"
                                             />
                                         </g>
                                         <g>
                                             <g transform="translate(-0.5 -0.5)">
                                                 <switch>
                                                     <foreignObject
-                                                        pointer-events="none"
+                                                        pointerEvents="none"
                                                         width="100%"
                                                         height="100%"
                                                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -4984,9 +4992,9 @@ export default function Diagram({ values }) {
                                                         x="954"
                                                         y="443"
                                                         fill="#ffffff"
-                                                        font-family='"Helvetica"'
-                                                        font-size="12px"
-                                                        text-anchor="middle"
+                                                        fontFamily='"Helvetica"'
+                                                        fontSize="12px"
+                                                        textAnchor="middle"
                                                     >
                                                         RD2
                                                     </text>
@@ -5005,14 +5013,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5059,9 +5067,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="65"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Beq
                                             </text>
@@ -5078,14 +5086,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5132,9 +5140,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="80"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Bgtz
                                             </text>
@@ -5151,14 +5159,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5205,9 +5213,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="100"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 Bne
                                             </text>
@@ -5224,14 +5232,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5278,9 +5286,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="120"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 MemWrite
                                             </text>
@@ -5297,14 +5305,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5351,9 +5359,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="140"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 MemToReg
                                             </text>
@@ -5370,14 +5378,14 @@ export default function Diagram({ values }) {
                                         height="20"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5424,9 +5432,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="160"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 RegWrite
                                             </text>
@@ -5445,14 +5453,14 @@ export default function Diagram({ values }) {
                                         ry="6"
                                         fill="#e51400"
                                         stroke="#b20000"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5499,9 +5507,9 @@ export default function Diagram({ values }) {
                                                 x="954"
                                                 y="44"
                                                 fill="#ffffff"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 CTRL_SIG
                                             </text>
@@ -5516,17 +5524,17 @@ export default function Diagram({ values }) {
                                     d="M 844 235 L 864 235 L 864 250 L 903.9 250"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 910.65 250 L 901.65 254.5 L 903.9 250 L 901.65 245.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5537,14 +5545,14 @@ export default function Diagram({ values }) {
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5591,9 +5599,9 @@ export default function Diagram({ values }) {
                                             x="824"
                                             y="239"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                                  +
                                         </text>
@@ -5607,17 +5615,17 @@ export default function Diagram({ values }) {
                                     d="M 694 250.5 L 729 250.5 L 729 206.3 L 793.9 206.3"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 800.65 206.3 L 791.65 210.8 L 793.9 206.3 L 791.65 201.8 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5627,17 +5635,17 @@ export default function Diagram({ values }) {
                                     d="M 793.9 263.7 L 723 263.7 L 722.02 434"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 800.65 263.7 L 791.65 268.2 L 793.9 263.7 L 791.65 259.2 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="722"
@@ -5646,8 +5654,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5657,17 +5665,17 @@ export default function Diagram({ values }) {
                                     d="M 759 616 L 836.5 616 L 836.5 640 L 903.9 640"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 910.65 640 L 901.65 644.5 L 903.9 640 L 901.65 635.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5679,7 +5687,7 @@ export default function Diagram({ values }) {
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
                                     transform="rotate(90,749,616)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5689,17 +5697,17 @@ export default function Diagram({ values }) {
                                     d="M 694 595 L 728.54 595.03"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 735.29 595.04 L 726.28 599.53 L 728.54 595.03 L 726.29 590.53 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5709,17 +5717,17 @@ export default function Diagram({ values }) {
                                     d="M 694 637 L 716.5 637 L 728.9 636.59"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 735.65 636.36 L 726.8 641.16 L 728.9 636.59 L 726.5 632.16 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5729,17 +5737,17 @@ export default function Diagram({ values }) {
                                     d="M 694 80 L 759 80 L 759 385.76"
                                     fill="none"
                                     stroke={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 759 391.76 L 755 383.76 L 759 385.76 L 763 383.76 Z"
                                     fill={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
                                     stroke={values.id_ex.ctrlSig.AluSrc ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5752,14 +5760,14 @@ export default function Diagram({ values }) {
                                     ry="38.5"
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5806,9 +5814,9 @@ export default function Diagram({ values }) {
                                             x="861"
                                             y="529"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             Alu Control
                                         </text>
@@ -5822,17 +5830,17 @@ export default function Diagram({ values }) {
                                     d="M 861 487 L 861 444.75 L 860.85 412.6"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 860.82 405.85 L 865.36 414.83 L 860.85 412.6 L 856.36 414.88 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -5847,14 +5855,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5901,9 +5909,9 @@ export default function Diagram({ values }) {
                                                 x="771"
                                                 y="553"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 id_ex.aluOp
                                             </text>
@@ -5922,14 +5930,14 @@ export default function Diagram({ values }) {
                                         ry="6"
                                         fill="#e51400"
                                         stroke="#b20000"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -5976,9 +5984,9 @@ export default function Diagram({ values }) {
                                                 x="771"
                                                 y="530"
                                                 fill="#ffffff"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 AluOp
                                             </text>
@@ -5993,17 +6001,17 @@ export default function Diagram({ values }) {
                                     d="M 811 526 L 820.9 526"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 827.65 526 L 818.65 530.5 L 820.9 526 L 818.65 521.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6016,14 +6024,14 @@ export default function Diagram({ values }) {
                                     height="67"
                                     fill="none"
                                     stroke="none"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6078,9 +6086,9 @@ export default function Diagram({ values }) {
                                             x="757"
                                             y="423"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             0...
                                         </text>
@@ -6097,14 +6105,14 @@ export default function Diagram({ values }) {
                                     height="67"
                                     fill="none"
                                     stroke="none"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6159,9 +6167,9 @@ export default function Diagram({ values }) {
                                             x="749"
                                             y="623"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             0...
                                         </text>
@@ -6175,17 +6183,17 @@ export default function Diagram({ values }) {
                                     d="M 694 62.5 L 694 60 L 709 60 L 709 570 L 744 570 L 744 577.76"
                                     fill="none"
                                     stroke={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 744 583.76 L 740 575.76 L 744 577.76 L 748 575.76 Z"
                                     fill={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
                                     stroke={values.id_ex.ctrlSig.RegDst ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6195,17 +6203,17 @@ export default function Diagram({ values }) {
                                     d="M 694 40 L 903.9 40"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 910.65 40 L 901.65 44.5 L 903.9 40 L 901.65 35.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6215,9 +6223,9 @@ export default function Diagram({ values }) {
                                     d="M 994 303.75 L 1055 303.8 L 1055 110 L 1079 110 L 1079 120"
                                     fill="none"
                                     stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                             </g>
                         </g>
@@ -6228,28 +6236,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 1069 343 L 1069 509.65 Q 1069 520 1079.35 520 L 1198.65 520 Q 1209 520 1209 509.65 L 1209 343"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 1069 343 L 1209 343"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6288,7 +6296,7 @@ export default function Diagram({ values }) {
                                                             overflowWrap: "normal",
                                                         }}
                                                     >
-                                                        <font color="#ffffff">Register File</font>
+                                                        <font color="#ffffff">Memory</font>
                                                     </div>
                                                 </div>
                                             </div>
@@ -6297,12 +6305,12 @@ export default function Diagram({ values }) {
                                             x="1139"
                                             y="335"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
-                                            Register File
+                                            Memory
                                         </text>
                                     </switch>
                                 </g>
@@ -6316,14 +6324,14 @@ export default function Diagram({ values }) {
                                         height="175"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6337,8 +6345,9 @@ export default function Diagram({ values }) {
                                                         justifyContent: "unsafe center",
                                                         width: "138px",
                                                         height: "1px",
-                                                        paddingTop: "433px",
+                                                        paddingTop: "431px",
                                                         marginLeft: "1070px",
+                                                        height: "173px",
                                                     }}
                                                 >
                                                     <div
@@ -6347,6 +6356,8 @@ export default function Diagram({ values }) {
                                                             boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
+                                                            width: "100%",
+                                                            height: "173px",
                                                         }}
                                                     >
                                                         <div
@@ -6359,9 +6370,14 @@ export default function Diagram({ values }) {
                                                                 pointerEvents: "all",
                                                                 whiteSpace: "normal",
                                                                 overflowWrap: "normal",
+                                                                overflowY: "scroll",
+                                                                width: "100%",
+                                                                height: "173px",
                                                             }}
                                                         >
-                                                            placeholder_reg_file
+                                                            <MemoryList
+                                                                values={values.memory}
+                                                            ></MemoryList>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -6370,9 +6386,9 @@ export default function Diagram({ values }) {
                                                 x="1139"
                                                 y="436"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 placeholder_reg_file
                                             </text>
@@ -6387,17 +6403,17 @@ export default function Diagram({ values }) {
                                     d="M 994 359.75 L 1031.5 359.8 L 1058.9 360.37"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1065.65 360.51 L 1056.56 364.82 L 1058.9 360.37 L 1056.74 355.82 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6407,9 +6423,9 @@ export default function Diagram({ values }) {
                                     d="M 738 350 L 779 350 L 779 439.8 L 903.9 439.75"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="735"
@@ -6418,16 +6434,16 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 910.65 439.75 L 901.65 444.25 L 903.9 439.75 L 901.64 435.25 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6437,17 +6453,17 @@ export default function Diagram({ values }) {
                                     d="M 994 439.75 L 1031.5 439.8 L 1056.94 440.09"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1063.69 440.16 L 1054.64 444.56 L 1056.94 440.09 L 1054.74 435.56 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -6458,28 +6474,28 @@ export default function Diagram({ values }) {
                                     fill="#e51400"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 1249 23 L 1249 669.65 Q 1249 680 1259.35 680 L 1318.65 680 Q 1329 680 1329 669.65 L 1329 23"
                                     fill="rgb(255, 255, 255)"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 1249 23 L 1329 23"
                                     fill="none"
                                     stroke="#b20000"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6527,10 +6543,10 @@ export default function Diagram({ values }) {
                                             x="1289"
                                             y="15"
                                             fill="#ffffff"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
-                                            font-weight="bold"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
+                                            fontWeight="bold"
                                         >
                                             MemWb
                                         </text>
@@ -6548,14 +6564,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6605,9 +6621,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="383"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_mem_wb.me...
                                                 </text>
@@ -6626,14 +6642,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6683,9 +6699,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="360"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     MemData
                                                 </text>
@@ -6705,14 +6721,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6762,9 +6778,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="597"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_mem_wb.al...
                                                 </text>
@@ -6783,14 +6799,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6840,9 +6856,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="574"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     AluRes
                                                 </text>
@@ -6862,14 +6878,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6919,9 +6935,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="667"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     plh_mem_wb.dst
                                                 </text>
@@ -6940,14 +6956,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -6997,9 +7013,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="644"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     DST
                                                 </text>
@@ -7019,14 +7035,14 @@ export default function Diagram({ values }) {
                                             height="30"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -7076,9 +7092,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="67"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     MemToReg
                                                 </text>
@@ -7092,17 +7108,17 @@ export default function Diagram({ values }) {
                                             d="M 1329 80 L 1349 80 L 1349 101.76"
                                             fill="none"
                                             stroke="#990099"
-                                            stroke-width="2"
+                                            strokeWidth="2"
                                             strokeMiterlimit="10"
-                                            pointer-events="stroke"
+                                            pointerEvents="stroke"
                                         />
                                         <path
                                             d="M 1349 107.76 L 1345 99.76 L 1349 101.76 L 1353 99.76 Z"
                                             fill="#990099"
                                             stroke="#990099"
-                                            stroke-width="2"
+                                            strokeWidth="2"
                                             strokeMiterlimit="10"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                 </g>
@@ -7115,14 +7131,14 @@ export default function Diagram({ values }) {
                                             height="20"
                                             fill="#fad9d5"
                                             stroke="#ae4132"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -7172,9 +7188,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="84"
                                                     fill="rgb(0, 0, 0)"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     RegWrite
                                                 </text>
@@ -7193,14 +7209,14 @@ export default function Diagram({ values }) {
                                             ry="6"
                                             fill="#e51400"
                                             stroke="#b20000"
-                                            pointer-events="all"
+                                            pointerEvents="all"
                                         />
                                     </g>
                                     <g>
                                         <g transform="translate(-0.5 -0.5)">
                                             <switch>
                                                 <foreignObject
-                                                    pointer-events="none"
+                                                    pointerEvents="none"
                                                     width="100%"
                                                     height="100%"
                                                     requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -7250,9 +7266,9 @@ export default function Diagram({ values }) {
                                                     x="1289"
                                                     y="44"
                                                     fill="#ffffff"
-                                                    font-family='"Helvetica"'
-                                                    font-size="12px"
-                                                    text-anchor="middle"
+                                                    fontFamily='"Helvetica"'
+                                                    fontSize="12px"
+                                                    textAnchor="middle"
                                                 >
                                                     CTRL_SIG
                                                 </text>
@@ -7272,7 +7288,7 @@ export default function Diagram({ values }) {
                                         stroke="rgb(0, 0, 0)"
                                         strokeMiterlimit="10"
                                         transform="rotate(-270,1089,145.5)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -7286,7 +7302,7 @@ export default function Diagram({ values }) {
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
                                         transform="rotate(-180,1079,125)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -7301,7 +7317,7 @@ export default function Diagram({ values }) {
                                         stroke="rgb(0, 0, 0)"
                                         strokeMiterlimit="10"
                                         transform="rotate(-270,1139,145.5)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -7315,7 +7331,7 @@ export default function Diagram({ values }) {
                                         fill="rgb(255, 255, 255)"
                                         stroke="rgb(0, 0, 0)"
                                         transform="rotate(-180,1129,125)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -7328,7 +7344,7 @@ export default function Diagram({ values }) {
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
                                     transform="rotate(-270,1187,145)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7338,9 +7354,9 @@ export default function Diagram({ values }) {
                                     d="M 1082 110 L 1129 110 L 1129 120"
                                     fill="none"
                                     stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="1079"
@@ -7349,8 +7365,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill={values.ex_mem.zero ? "#009900" : "#66ff66"}
                                     stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
-                                    pointer-events="all"
+                                    strokeWidth="2"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7360,9 +7376,9 @@ export default function Diagram({ values }) {
                                     d="M 1132 110.03 L 1177.8 110.5 L 1177.25 130"
                                     fill="none"
                                     stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="1129"
@@ -7371,8 +7387,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill={values.ex_mem.zero ? "#009900" : "#66ff66"}
                                     stroke={values.ex_mem.zero ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
-                                    pointer-events="all"
+                                    strokeWidth="2"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7382,9 +7398,9 @@ export default function Diagram({ values }) {
                                     d="M 994 96 L 1098.8 96 L 1098.75 130.5"
                                     fill="none"
                                     stroke={values.ex_mem.ctrlSig.Bne ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                             </g>
                         </g>
@@ -7394,9 +7410,9 @@ export default function Diagram({ values }) {
                                     d="M 994 76 L 1148.8 76 L 1148.75 130.5"
                                     fill="none"
                                     stroke={values.ex_mem.ctrlSig.Bgtz ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                             </g>
                         </g>
@@ -7406,9 +7422,9 @@ export default function Diagram({ values }) {
                                     d="M 994 53 L 1196.8 53 L 1196.75 130"
                                     fill="none"
                                     stroke={values.ex_mem.ctrlSig.Beq ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                             </g>
                         </g>
@@ -7418,17 +7434,17 @@ export default function Diagram({ values }) {
                                     d="M 1158 250 L 1178.5 250 L 1190.76 250.08"
                                     fill="none"
                                     stroke="#ff0000"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1196.76 250.12 L 1188.74 254.07 L 1190.76 250.08 L 1188.79 246.07 Z"
                                     fill="#ff0000"
                                     stroke="#ff0000"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7439,7 +7455,7 @@ export default function Diagram({ values }) {
                                     fill="rgb(255, 255, 255)"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7453,9 +7469,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1131.01 260 L 1123.01 264 L 1125.01 260 L 1123.01 256 Z"
@@ -7469,9 +7485,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7485,9 +7501,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1133.26 250 L 1125.26 254 L 1127.26 250 L 1125.26 246 Z"
@@ -7501,9 +7517,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7517,9 +7533,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1131.01 240 L 1123.01 244 L 1125.01 240 L 1123.01 236 Z"
@@ -7533,9 +7549,9 @@ export default function Diagram({ values }) {
                                             ? "#009900"
                                             : "#66ff66"
                                     }
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7545,17 +7561,17 @@ export default function Diagram({ values }) {
                                     d="M 994 116 L 1019 116 L 1019 280 L 1139 280 L 1139 311.76"
                                     fill="none"
                                     stroke={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1139 317.76 L 1135 309.76 L 1139 311.76 L 1143 309.76 Z"
                                     fill={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
                                     stroke={values.ex_mem.ctrlSig.MemWrite ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7565,9 +7581,9 @@ export default function Diagram({ values }) {
                                     d="M 1019 363 L 1019 570 L 1238.9 570"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="1019"
@@ -7576,16 +7592,16 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                                 <path
                                     d="M 1245.65 570 L 1236.65 574.5 L 1238.9 570 L 1236.65 565.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7595,17 +7611,17 @@ export default function Diagram({ values }) {
                                     d="M 1238.9 356 L 1229 356 L 1208.72 355.68"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1245.65 356 L 1236.65 360.5 L 1238.9 356 L 1236.65 351.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7615,17 +7631,17 @@ export default function Diagram({ values }) {
                                     d="M 994 640 L 1238.9 640"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1245.65 640 L 1236.65 644.5 L 1238.9 640 L 1236.65 635.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7637,7 +7653,7 @@ export default function Diagram({ values }) {
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
                                     transform="rotate(90,1384,444.5)"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7647,17 +7663,17 @@ export default function Diagram({ values }) {
                                     d="M 1392 444.5 L 1412 444.5 L 1412 730 L 389 730 L 389 416.3 L 419.9 416.26"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 426.65 416.25 L 417.65 420.77 L 419.9 416.26 L 417.64 411.77 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7670,14 +7686,14 @@ export default function Diagram({ values }) {
                                     height="67"
                                     fill="none"
                                     stroke="none"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -7732,9 +7748,9 @@ export default function Diagram({ values }) {
                                             x="1382"
                                             y="448"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                             0...
                                         </text>
@@ -7748,17 +7764,17 @@ export default function Diagram({ values }) {
                                     d="M 1329 356 L 1350.5 356 L 1350.5 427.8 L 1361.9 427.77"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1368.65 427.76 L 1359.66 432.28 L 1361.9 427.77 L 1359.64 423.28 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7768,17 +7784,17 @@ export default function Diagram({ values }) {
                                     d="M 1329 570 L 1350.5 570 L 1350.5 461.3 L 1361.9 461.27"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1368.65 461.26 L 1359.66 465.78 L 1361.9 461.27 L 1359.64 456.78 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7788,17 +7804,17 @@ export default function Diagram({ values }) {
                                     d="M 1329 62.5 L 1379.8 62.5 L 1379.83 407.1"
                                     fill="none"
                                     stroke={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 1379.83 413.1 L 1375.83 405.1 L 1379.83 407.1 L 1383.83 405.1 Z"
                                     fill={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
                                     stroke={values.mem_wb.ctrlSig.MemToReg ? "#009900" : "#66ff66"}
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7815,14 +7831,14 @@ export default function Diagram({ values }) {
                                         ry="6"
                                         fill="#e51400"
                                         stroke="#b20000"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -7869,9 +7885,9 @@ export default function Diagram({ values }) {
                                                 x="654"
                                                 y="641"
                                                 fill="#ffffff"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 RD
                                             </text>
@@ -7886,17 +7902,17 @@ export default function Diagram({ values }) {
                                     d="M 1329 640 L 1349 640 L 1349 710 L 410 710 L 410 435 L 420.32 434.99"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 427.07 434.98 L 418.07 439.49 L 420.32 434.99 L 418.06 430.49 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7906,17 +7922,17 @@ export default function Diagram({ values }) {
                                     d="M 81.5 98.76 L 81.5 84 L 81.67 60"
                                     fill="none"
                                     stroke="#0000ff"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 81.5 104.76 L 77.5 96.76 L 81.5 98.76 L 85.5 96.76 Z"
                                     fill="#0000ff"
                                     stroke="#0000ff"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7926,17 +7942,17 @@ export default function Diagram({ values }) {
                                     d="M 147.24 116.5 L 169 116.5 L 189 116.56"
                                     fill="none"
                                     stroke="#ff0000"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 141.24 116.5 L 149.24 112.5 L 147.24 116.5 L 149.24 120.5 Z"
                                     fill="#ff0000"
                                     stroke="#ff0000"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7946,17 +7962,17 @@ export default function Diagram({ values }) {
                                     d="M 219 250 L 230.76 250"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 236.76 250 L 228.76 254 L 230.76 250 L 228.76 246 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -7966,17 +7982,17 @@ export default function Diagram({ values }) {
                                     d="M 168.9 221.3 L 159 221.3 L 139 221.64"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 175.65 221.3 L 166.65 225.8 L 168.9 221.3 L 166.65 216.8 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="1W33FOhmNmDA0zy-Gag4-336">
@@ -7984,7 +8000,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8036,9 +8052,9 @@ export default function Diagram({ values }) {
                                                 x="132"
                                                 y="225"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="11px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="11px"
+                                                textAnchor="middle"
                                             >
                                                 1
                                             </text>
@@ -8054,14 +8070,14 @@ export default function Diagram({ values }) {
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g>
                                 <g transform="translate(-0.5 -0.5)">
                                     <switch>
                                         <foreignObject
-                                            pointer-events="none"
+                                            pointerEvents="none"
                                             width="100%"
                                             height="100%"
                                             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8108,9 +8124,9 @@ export default function Diagram({ values }) {
                                             x="199"
                                             y="254"
                                             fill="rgb(0, 0, 0)"
-                                            font-family='"Helvetica"'
-                                            font-size="12px"
-                                            text-anchor="middle"
+                                            fontFamily='"Helvetica"'
+                                            fontSize="12px"
+                                            textAnchor="middle"
                                         >
                                                  +
                                         </text>
@@ -8124,17 +8140,17 @@ export default function Diagram({ values }) {
                                     d="M 89 305 L 89 278.7 L 168.9 278.7"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 175.65 278.7 L 166.65 283.2 L 168.9 278.7 L 166.65 274.2 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8144,17 +8160,17 @@ export default function Diagram({ values }) {
                                     d="M 18.9 485.78 L 9 485.8 L 9 390 L 160 390 L 159.03 283"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 25.65 485.76 L 16.66 490.28 L 18.9 485.78 L 16.63 481.28 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="159"
@@ -8163,8 +8179,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8179,14 +8195,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8233,9 +8249,9 @@ export default function Diagram({ values }) {
                                                 x="104"
                                                 y="119"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 1        0
                                             </text>
@@ -8251,7 +8267,7 @@ export default function Diagram({ values }) {
                                         stroke="rgb(0, 0, 0)"
                                         strokeMiterlimit="10"
                                         transform="rotate(-180,104,116.5)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -8267,14 +8283,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="none"
                                         stroke="none"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8321,9 +8337,9 @@ export default function Diagram({ values }) {
                                                 x="81"
                                                 y="179"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 1        0
                                             </text>
@@ -8339,7 +8355,7 @@ export default function Diagram({ values }) {
                                         stroke="rgb(0, 0, 0)"
                                         strokeMiterlimit="10"
                                         transform="rotate(-180,81,176.5)"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                             </g>
@@ -8350,17 +8366,17 @@ export default function Diagram({ values }) {
                                     d="M 104 126 L 104 146.5 L 103.75 156.9"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 103.58 163.65 L 99.3 154.54 L 103.75 156.9 L 108.3 154.76 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8370,17 +8386,17 @@ export default function Diagram({ values }) {
                                     d="M 81 186 L 81 245.5 L 9 245.5 L 9 340 L 18.9 340"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 25.65 340 L 16.65 344.5 L 18.9 340 L 16.65 335.5 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8390,17 +8406,17 @@ export default function Diagram({ values }) {
                                     d="M 126.5 96.9 L 126.5 70 L 219 70 L 219 247"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 126.5 103.65 L 122 94.65 L 126.5 96.9 L 131 94.65 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                                 <ellipse
                                     cx="219"
@@ -8409,8 +8425,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8420,9 +8436,9 @@ export default function Diagram({ values }) {
                                     d="M 279 10 L 359.5 10 L 359.05 188"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <ellipse
                                     cx="359.04"
@@ -8431,8 +8447,8 @@ export default function Diagram({ values }) {
                                     ry="3"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
-                                    pointer-events="all"
+                                    strokeWidth="3"
+                                    pointerEvents="all"
                                 />
                             </g>
                             <g data-cell-id="iDGc5PNU-aZqenxwyxyE-5">
@@ -8440,7 +8456,7 @@ export default function Diagram({ values }) {
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8490,9 +8506,9 @@ export default function Diagram({ values }) {
                                                 x="413"
                                                 y="172"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="11px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="11px"
+                                                textAnchor="middle"
                                             >
                                                 15:0
                                             </text>
@@ -8512,14 +8528,14 @@ export default function Diagram({ values }) {
                                         height="30"
                                         fill="#fad9d5"
                                         stroke="#ae4132"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8566,9 +8582,9 @@ export default function Diagram({ values }) {
                                                 x="239"
                                                 y="37"
                                                 fill="rgb(0, 0, 0)"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 plh_jmpAddr
                                             </text>
@@ -8587,14 +8603,14 @@ export default function Diagram({ values }) {
                                         ry="6"
                                         fill="#e51400"
                                         stroke="#b20000"
-                                        pointer-events="all"
+                                        pointerEvents="all"
                                     />
                                 </g>
                                 <g>
                                     <g transform="translate(-0.5 -0.5)">
                                         <switch>
                                             <foreignObject
-                                                pointer-events="none"
+                                                pointerEvents="none"
                                                 width="100%"
                                                 height="100%"
                                                 requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
@@ -8641,9 +8657,9 @@ export default function Diagram({ values }) {
                                                 x="239"
                                                 y="14"
                                                 fill="#ffffff"
-                                                font-family='"Helvetica"'
-                                                font-size="12px"
-                                                text-anchor="middle"
+                                                fontFamily='"Helvetica"'
+                                                fontSize="12px"
+                                                textAnchor="middle"
                                             >
                                                 JumpAddr
                                             </text>
@@ -8658,17 +8674,17 @@ export default function Diagram({ values }) {
                                     d="M 199 10 L 58.5 10 L 58.5 156.9"
                                     fill="none"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="stroke"
+                                    pointerEvents="stroke"
                                 />
                                 <path
                                     d="M 58.5 163.65 L 54 154.65 L 58.5 156.9 L 63 154.65 Z"
                                     fill="rgb(0, 0, 0)"
                                     stroke="rgb(0, 0, 0)"
-                                    stroke-width="3"
+                                    strokeWidth="3"
                                     strokeMiterlimit="10"
-                                    pointer-events="all"
+                                    pointerEvents="all"
                                 />
                             </g>
                         </g>
@@ -8683,8 +8699,8 @@ export default function Diagram({ values }) {
                     target="_blank"
                 >
                     <text
-                        text-anchor="middle"
-                        font-size="10px"
+                        textAnchor="middle"
+                        fontSize="10px"
                         x="50%"
                         y="100%"
                     >

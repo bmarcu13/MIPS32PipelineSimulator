@@ -5,7 +5,7 @@ export default function MemoryList({ values }) {
                 return (
                     <div
                         key={index}
-                        className="flex flex-1 border-t border-slate-700"
+                        className="flex flex-1 border-t border-slate-700 justify-between"
                     >
                         <div>{index}</div>
                         <div>{data}</div>

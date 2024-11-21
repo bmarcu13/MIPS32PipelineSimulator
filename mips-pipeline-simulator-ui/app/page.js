@@ -136,7 +136,7 @@ export default function Flow() {
             className="flex"
             style={{ height: "100vh", width: "100vw" }}
         >
-            <div className="flex flex-col items-center grow-0 bg-zinc-100 px-3 pt-4 my-3 ml-2 rounded-lg">
+            <div className="flex flex-col items-center grow-0 bg-red-100 px-3 pt-4 my-3 ml-2 rounded-lg">
                 <b>Controls</b>
                 <button
                     className="
