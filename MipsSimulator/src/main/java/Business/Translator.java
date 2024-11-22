@@ -77,7 +77,11 @@ public class Translator {
                         throw new TranslationError("Unexpected token " + tokens[i]);
                     }
                     if(i < 3){
-                        operands[i] = Integer.parseInt(tokens[i].substring(1));
+                        int op = Integer.parseInt(tokens[i].substring(1));
+                        if(op > 31) {
+                            throw new TranslationError("Register index out of bounds: " + tokens[i]);
+                        }
+                        operands[i] = op;
                     }
                 }
                 if(tokens.length != 3) {
