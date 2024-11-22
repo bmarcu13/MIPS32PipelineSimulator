@@ -9,8 +9,6 @@ import Exception.TranslationError;
 
 public class Translator {
 
-    private enum Type {R, I, J}
-
     private static final Map<String, Integer> instructionOpCodes = new HashMap<>();
     static {
         instructionOpCodes.put("add", 0);
