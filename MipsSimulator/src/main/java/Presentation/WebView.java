@@ -11,7 +11,10 @@ public class WebView implements IView{
     private JsonObject values = new JsonObject();
 
     public String collect() {
-        String payload = values.toString();
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("type", "updateUi");
+        jsonObject.add("payload", values);
+        String payload = jsonObject.toString();
         values = new JsonObject();
         return payload;
     }

@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function useWebSocket(url) {
+export default function useWebSocket(url, handleMessage) {
     const [ws, setWs] = useState(null);
     const [message, setMessage] = useState(null);
     const [isConnected, setIsConnected] = useState(false);
@@ -23,7 +23,8 @@ export default function useWebSocket(url) {
         };
 
         socket.onmessage = (event) => {
-            setMessage(event.data);
+            // setMessage(event.data);
+            handleMessage(event.data)
             console.log("Message from server: ", event.data);
         };
 

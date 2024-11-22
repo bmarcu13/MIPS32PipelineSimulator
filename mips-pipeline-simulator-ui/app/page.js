@@ -2,6 +2,7 @@
 
 import Diagram from "@/components/diagram";
 import useWebSocket from "@/hooks/useWebSocket";
+import { useEffect, useState } from "react";
 
 const placeholders = {
     if_id: {
@@ -115,10 +116,6 @@ const placeholders = {
     ],
 };
 
-const tickCommand = {
-    command: "tick",
-};
-
 const commands = {
     tick: {
         command: "tick",
@@ -126,16 +123,57 @@ const commands = {
     reset: {
         command: "reset",
     },
+    uploadInstructions: {
+        command: 'uploadInstructions' ,
+        instructions: ''
+    }
 };
 
 export default function Flow() {
-    const { isConnected, message, sendMessage } = useWebSocket("ws://localhost:8080/ws");
+
+    const handleWebSocketMessage = (message) => {
+        if (message == null) {
+            return
+        }        
+
+        let json = JSON.parse(message)
+        switch(json.type) {
+            case 'updateUi':
+                setValues(json.payload)
+            case 'response':
+                if(json.payload.status = 'error') {
+                    setErrorMessages(json.payload.errors)
+                }
+                else if (json.payload.status = 'success') {
+                    setInstructions(json.payload.instructions)
+                }
+        }
+    }
+
+    const { isConnected, message, sendMessage } = useWebSocket("ws://localhost:8080/ws", handleWebSocketMessage);
+    
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const [errorMessages, setErrorMessages] = useState([])
+    const [values, setValues] = useState(placeholders)
+    const [instructions, setInstructions] = useState([])
+    
 
     return (
         <div
             className="flex"
             style={{ height: "100vh", width: "100vw" }}
         >
+            <div className="absolute flex items-center justify-center w-full h-full bg-black/25" style={{ visibility: isPopupVisible ? 'visible' : 'hidden' }}>
+                <div className="flex flex-col p-2 bg-white rounded">
+                    <div className="flex flex-row justify-between items-center">
+                        <div className="">Instructions</div>
+                        <div onClick={() => setIsPopupVisible(false)} className="rotate-45 text-2xl hover:cursor-pointer">+</div>
+                    </div>
+                    <textarea onChange={(e) => {commands.uploadInstructions.instructions = e.target.value}} name="Text1" cols="40" rows="5" className="border rounded"></textarea>
+                    <div className="color-red">{errorMessages}</div>
+                    <button onClick={() => {sendMessage(commands.uploadInstructions)}} className="self-end border-2 rounded-full px-2 mt-1">Submit</button>
+                </div>
+            </div>
             <div className="flex flex-col items-center grow-0 bg-red-100 px-3 pt-4 my-3 ml-2 rounded-lg">
                 <b>Controls</b>
                 <button
@@ -156,8 +194,9 @@ export default function Flow() {
                 >
                     Reset
                 </button>
+                <button onClick={() => setIsPopupVisible(true)} className="mt-4">Modify Code</button>
             </div>
-            <Diagram values={message == null ? placeholders : JSON.parse(message)} />
+            <Diagram values={values} />
         </div>
     );
 }
