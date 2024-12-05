@@ -146,15 +146,17 @@ export default function Flow() {
             case "response":
                 if (json.payload.status == "error") {
                     setErrorMessages(json.payload.message);
-                    console.log(json.payload.message);
                 } else if (json.payload.status == "success") {
+                    validInstructions.current = [].concat(textFieldRef.current.value);
+                    console.log(validInstructions.current);
                     setInstructions(
-                        tempInstructions.current.concat(
-                            Array(64 - tempInstructions.current.length).fill("noop")
+                        validInstructions.current.concat(
+                            Array(64 - validInstructions.current.length).fill("noop")
                         )
                     );
                     setErrorMessages("");
                     setIsPopupVisible(false);
+                    console.log("modifying...");
                 }
                 textFieldRef.current.disabled = false;
                 break;
@@ -177,7 +179,7 @@ export default function Flow() {
     const [instructions, setInstructions] = useState(instructionsPlaceholders);
 
     const textFieldRef = useRef(null);
-    const tempInstructions = useRef([]);
+    const validInstructions = useRef([]);
 
     return (
         <div
@@ -194,7 +196,6 @@ export default function Flow() {
                         <div
                             onClick={() => {
                                 setIsPopupVisible(false);
-                                textFieldRef.current.value = instructions.join("\n");
                                 setErrorMessages("");
                             }}
                             className="rotate-45 text-2xl hover:cursor-pointer"
@@ -217,11 +218,11 @@ export default function Flow() {
                             onClick={() => {
                                 let text = textFieldRef.current.value;
                                 console.log(text);
-                                tempInstructions.current = text
+                                let tmpInstructionList = text
                                     .trim()
                                     .split("\n")
                                     .map((instr) => instr.trim());
-                                sendInstructions(tempInstructions.current);
+                                sendInstructions(tmpInstructionList);
                                 textFieldRef.current.disabled = true;
                             }}
                             className="self-end border-2 rounded-full px-2 mt-1"
@@ -252,7 +253,10 @@ export default function Flow() {
                     Reset
                 </button>
                 <button
-                    onClick={() => setIsPopupVisible(true)}
+                    onClick={() => {
+                        textFieldRef.current.value = validInstructions.current.join("\n");
+                        setIsPopupVisible(true);
+                    }}
                     className="mt-4"
                 >
                     Modify Code
