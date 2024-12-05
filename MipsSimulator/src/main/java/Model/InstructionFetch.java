@@ -28,6 +28,15 @@ public class InstructionFetch{
         instructionMemory[9] = 0b10001100000000010000000000000000;
     }
 
+    public void setContents(List<Integer> instructionSet) {
+        for (int i = 0; i < maxRomCapacity; i++) {
+            instructionMemory[i] = 0;
+        }
+        for (int i = 0; i < instructionSet.size(); i++) {
+            instructionMemory[i] = instructionSet.get(i);
+        }
+    }
+
     public Integer getInstruction()
     {
         return instructionMemory[programCounter];
@@ -49,9 +58,5 @@ public class InstructionFetch{
 
     public void resetProgramCounter() {
         programCounter = 0;
-    }
-
-    public List<Integer> getInstructionMemory() {
-        return Arrays.stream(instructionMemory).boxed().toList();
     }
 }

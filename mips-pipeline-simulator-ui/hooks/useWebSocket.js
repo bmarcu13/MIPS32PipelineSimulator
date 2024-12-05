@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function useWebSocket(url) {
+export default function useWebSocket(url, handleMessage) {
     const [ws, setWs] = useState(null);
     const [message, setMessage] = useState(null);
     const [isConnected, setIsConnected] = useState(false);
@@ -12,7 +12,7 @@ export default function useWebSocket(url) {
 
         socket.onopen = () => {
             setIsConnected(true);
-            setWs(socket)
+            setWs(socket);
             console.log("WebSocket connection established");
         };
 
@@ -23,8 +23,9 @@ export default function useWebSocket(url) {
         };
 
         socket.onmessage = (event) => {
-            setMessage(event.data);
+            // setMessage(event.data);
             console.log("Message from server: ", event.data);
+            handleMessage(event.data);
         };
 
         socket.onerror = (error) => {
@@ -41,7 +42,7 @@ export default function useWebSocket(url) {
     const sendMessage = (msg) => {
         if (ws && isConnected) {
             ws.send(msg);
-            console.log("message sent: " + msg)
+            console.log("message sent: " + msg);
         }
     };
 

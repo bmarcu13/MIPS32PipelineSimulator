@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import MemoryList from "./MemoryList";
 
-export default function Diagram({ values }) {
+export default function Diagram({ values, instructions }) {
     // const [pcValue, setPcValue] = useState(0);
 
     console.log(values);
@@ -139,7 +139,8 @@ export default function Diagram({ values }) {
                                                         justifyContent: "unsafe center",
                                                         width: "148px",
                                                         height: "1px",
-                                                        paddingTop: "537px",
+                                                        paddingTop: "540px",
+                                                        // width: '100%',
                                                         marginLeft: "30px",
                                                     }}
                                                 >
@@ -149,6 +150,7 @@ export default function Diagram({ values }) {
                                                             boxSizing: "border-box",
                                                             fontSize: "0px",
                                                             textAlign: "center",
+                                                            width: "100%",
                                                         }}
                                                     >
                                                         <div
@@ -161,9 +163,14 @@ export default function Diagram({ values }) {
                                                                 pointerEvents: "all",
                                                                 whiteSpace: "normal",
                                                                 overflowWrap: "normal",
+                                                                overflowY: "scroll",
+                                                                height: "208px",
+                                                                width: "100%",
                                                             }}
                                                         >
-                                                            placeholder_instr_mem
+                                                            <MemoryList
+                                                                values={instructions}
+                                                            ></MemoryList>
                                                         </div>
                                                     </div>
                                                 </div>
