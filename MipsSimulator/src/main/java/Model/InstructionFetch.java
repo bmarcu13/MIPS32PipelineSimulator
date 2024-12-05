@@ -6,7 +6,7 @@ import java.util.*;
 
 public class InstructionFetch{
     private final int maxRomCapacity = 64;
-    private int[] instructionMemory = new int[maxRomCapacity];
+    private final int[] instructionMemory = new int[maxRomCapacity];
     private int programCounter = 0;
 
     public int getProgramCounter()
@@ -29,6 +29,9 @@ public class InstructionFetch{
     }
 
     public void setContents(List<Integer> instructionSet) {
+        for (int i = 0; i < maxRomCapacity; i++) {
+            instructionMemory[i] = 0;
+        }
         for (int i = 0; i < instructionSet.size(); i++) {
             instructionMemory[i] = instructionSet.get(i);
         }
@@ -55,9 +58,5 @@ public class InstructionFetch{
 
     public void resetProgramCounter() {
         programCounter = 0;
-    }
-
-    public List<Integer> getInstructionMemory() {
-        return Arrays.stream(instructionMemory).boxed().toList();
     }
 }
