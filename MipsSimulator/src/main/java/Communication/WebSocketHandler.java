@@ -66,7 +66,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
                     sendMessage(responseJson.toString());
 
                     break;
-                } catch ()
+                }
 
                 JsonObject responseJson = new JsonObject();
                 JsonObject payload = new JsonObject();
