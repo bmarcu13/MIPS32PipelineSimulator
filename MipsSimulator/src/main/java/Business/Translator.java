@@ -1,6 +1,8 @@
 package Business;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -43,7 +45,24 @@ public class Translator {
     private static final Pattern jumpAddrPattern = Pattern.compile("j\\s+([0|1]{26})");
     private static final Pattern registerOperandPattern = Pattern.compile("\\$([0-9]+)");
 
-    public static int translateInstruction(String instruction) throws TranslationError {
+    public static List<Integer> translateInstructionSet(List<String> instructionSet) throws TranslationError {
+        List<Integer> machineCodeInstructionSet = new ArrayList<>();
+        int line = 1;
+        for (String instruction : instructionSet) {
+            try {
+                int machineCode = translateInstruction(instruction);
+                machineCodeInstructionSet.add(machineCode);
+            }
+            catch (TranslationError err) {
+                String errMsg = err.getMessage();
+                throw new TranslationError(String.format("Translation error at line %d: %s", line, errMsg));
+            }
+            line++;
+        }
+        return machineCodeInstructionSet;
+    }
+
+    private static int translateInstruction(String instruction) throws TranslationError {
         instruction = instruction.strip();
         String[] result = instruction.split("\\s+", 2);
         if (result.length == 0) {
@@ -97,7 +116,6 @@ public class Translator {
             case "addi", "subi", "lw", "sw", "bgtz", "be", "bne":
                 break;
         }
-
 
         throw new TranslationError("Unexpected translation error");
     }
