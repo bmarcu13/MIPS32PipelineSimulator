@@ -86,6 +86,7 @@ public class Translator {
                 return parse2R1I(instructionId, opCode, result[1]);
 
             case "bgtz":
+                //TO-DO
                 break;
         }
 
