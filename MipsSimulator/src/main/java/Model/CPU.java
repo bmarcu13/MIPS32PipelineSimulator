@@ -2,7 +2,6 @@ package Model;
 
 import Presentation.IView;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -90,6 +89,22 @@ public class CPU {
         int addr1 = (instrId >> 21) & 0x1f;
         int addr2 = (instrId >> 16) & 0x1f;
 
+        // jump decision
+        if(idCtrlSig.getSignalValue(ControlSignals.Signals.Jmp)) {
+            int jumpAddr = instrId & 0x0000FFFF;
+            instructionFetch.jumpToAddress(jumpAddr);
+        }
+
+        boolean regWrite = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.RegWrite);
+        if(regWrite)
+        {
+            int data = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
+                    ? memWb.getValue(MEM_DATA, Integer.class)
+                    : memWb.getValue(ALU_RES, AluRes.class).res;
+            int regAddr = memWb.getValue(REG_DST, Integer.class);
+            instructionDecode.writeData(regAddr, data);
+        }
+
         idEx.setValue(CTRL_SIG, idCtrlSig);
         idEx.setValue(PROG_CNT, ifId.getValue(PROG_CNT, Integer.class));
         idEx.setValue(RD1, instructionDecode.readData(addr1));
@@ -99,16 +114,6 @@ public class CPU {
         idEx.setValue(FUNC, instrId & 0x3f);
         idEx.setValue(REG_TGT, (instrId >> 16) & 0x1f);
         idEx.setValue(REG_DST, (instrId >> 11) & 0x1f);
-
-        boolean regWrite = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.RegWrite);
-        if(regWrite)
-        {
-            int data = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
-                    ? memWb.getValue(MEM_DATA, Integer.class)
-                    : memWb.getValue(ALU_RES, Integer.class);
-            int regAddr = memWb.getValue(REG_DST, Integer.class);
-            instructionDecode.writeData(regAddr, data);
-        }
 
         ///Execution Stage
         ControlSignals exCtrlSig = idEx.getValue(CTRL_SIG, ControlSignals.class);
@@ -124,24 +129,35 @@ public class CPU {
             ? idEx.getValue(REG_DST, Integer.class)
             : idEx.getValue(REG_TGT, Integer.class);
 
-        exMem.setValue(BRANCH_ADDR, extOp);
+        int exProgCnt = idEx.getValue(PROG_CNT, Integer.class);
+
+        exMem.setValue(BRANCH_ADDR, exProgCnt + extOp);
         exMem.setValue(CTRL_SIG, exCtrlSig);
         exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, (byte)func));
         exMem.setValue(RD2, idEx.getValue(RD2, Integer.class));
         exMem.setValue(REG_DST, finalRegDst);
 
-        ///Memory Stage
+        /// Memory Stage
         ControlSignals memCtrlSig = exMem.getValue(CTRL_SIG, ControlSignals.class);
-        int memAluRes = exMem.getValue(ALU_RES, AluRes.class).res;
-        int memAddr = memAluRes & 0x000000FF; // RAM capacity limited at 256 * 4 bytes simulation purposes
+        AluRes memAluRes = exMem.getValue(ALU_RES, AluRes.class);
+        int memAddr = memAluRes.res & 0x000000FF; // RAM capacity limited at 256 * 4 bytes simulation purposes
         if(memCtrlSig.getSignalValue(ControlSignals.Signals.MemWrite))
         {
-            System.out.println("Addr: " + memAluRes + "; Data: " + exMem.getValue(RD2, Integer.class));
+            System.out.println("Addr: " + memAluRes.res + "; Data: " + exMem.getValue(RD2, Integer.class));
             memory.writeData(memAddr, exMem.getValue(RD2, Integer.class));
         }
         else
         {
             memWb.setValue(MEM_DATA, memory.readData(memAddr)); //
+        }
+
+        // branch logic
+        if (memCtrlSig.getSignalValue(ControlSignals.Signals.Beq) && memAluRes.zero ||
+            memCtrlSig.getSignalValue(ControlSignals.Signals.Bne) && !memAluRes.zero ||
+            memCtrlSig.getSignalValue(ControlSignals.Signals.Bgtz) && memAluRes.res > 0
+        ) {
+            int branchAddr = exMem.getValue(BRANCH_ADDR, Integer.class);
+            instructionFetch.jumpToAddress(branchAddr);
         }
 
         memWb.setValue(CTRL_SIG, memCtrlSig);
@@ -187,7 +203,7 @@ public class CPU {
         view.updateMemWbValues(
                 memWb.getValue(CTRL_SIG, ControlSignals.class),
                 memWb.getValue(MEM_DATA, Integer.class),
-                memWb.getValue(ALU_RES, Integer.class),
+                memWb.getValue(ALU_RES, AluRes.class).res,
                 memWb.getValue(REG_DST, Integer.class)
         );
 
@@ -219,7 +235,7 @@ public class CPU {
 
         memWb.addField(CTRL_SIG, new ControlSignals());
         memWb.addField(MEM_DATA, 0);
-        memWb.addField(ALU_RES, 0);
+        memWb.addField(ALU_RES, new AluRes());
         memWb.addField(REG_DST, 0);
     }
 }

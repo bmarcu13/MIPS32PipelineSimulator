@@ -80,6 +80,8 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
                 cpu.loadInstructionSet(translatedInstructions);
 
+                sendMessage(webView.collect());
+
                 System.out.println(translatedInstructions.toString());
 
                 break;
