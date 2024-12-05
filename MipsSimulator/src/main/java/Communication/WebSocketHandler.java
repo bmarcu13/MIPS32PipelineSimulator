@@ -78,6 +78,10 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
                 sendMessage(responseJson.toString());
 
+                cpu.loadInstructionSet(translatedInstructions);
+
+                System.out.println(translatedInstructions.toString());
+
                 break;
             default:
                 break;

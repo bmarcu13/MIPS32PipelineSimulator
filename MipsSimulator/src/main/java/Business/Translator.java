@@ -82,9 +82,10 @@ public class Translator {
             case "add", "sub", "and", "or", "xor":
                 return parseRType(instructionId, opCode, result[1]);
 
-            case "sll", "srl":
-                break;
-            case "addi", "subi", "lw", "sw", "bgtz", "be", "bne":
+            case "addi", "subi", "lw", "sw", "sll", "srl", "be", "bne":
+                return parse2R1I(instructionId, opCode, result[1]);
+
+            case "bgtz":
                 break;
         }
 
@@ -128,13 +129,13 @@ public class Translator {
         return (opCode << 26) | (operands[1] << 21) | (operands[2] << 16) | (operands[0] << 11) | (instructionFunc.get(instructionId));
     }
 
-    private static int parseRShift(String instructionId, int opCode, String body) throws TranslationError {
+    private static int parse2R1I(String instructionId, int opCode, String body) throws TranslationError {
         String[] tokens = body.split("\\s*,\\s*"); // split the remaining instruction tokens by ,
         int[] operands = new int[3];
         for(int i = 0; i < tokens.length; i++) {
             Matcher matcher = registerOperandPattern.matcher(tokens[i]); // try to match the token as a valid
             // operand ${number}
-            if(!matcher.matches()) {
+            if(!matcher.matches() && i != 2) {
                 throw new TranslationError("Unexpected token " + tokens[i]);
             }
             if(i < 2){ // R-type instruction have exactly 3 register operands
@@ -160,6 +161,12 @@ public class Translator {
         if(operands[0] == 0) { // destination register can't be $0
             throw new TranslationError("Use of $0 as destination is forbidden");
         }
-        return (opCode << 26) | (operands[1] << 16) | (operands[0] << 11) | (operands[2] << 6) | (instructionFunc.get(instructionId));
+        if(instructionId.equals("srl") || instructionId.equals("sll")) {
+            return (opCode << 26) | (operands[1] << 16) | (operands[0] << 11) | (operands[2] << 6) | (instructionFunc.get(instructionId));
+        }
+        else
+        {
+            return (opCode << 26) | (operands[1] << 21) | (operands[0] << 16) | operands[2];
+        }
     }
 }

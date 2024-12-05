@@ -72,6 +72,11 @@ public class CPU {
         updateView();
     }
 
+    public void loadInstructionSet(List<Integer> instructionSet) {
+        instructionFetch.setContents(instructionSet);
+        reset();
+    }
+
     private void executePipeline()
     {
         ///Instruction Fetch Stage
