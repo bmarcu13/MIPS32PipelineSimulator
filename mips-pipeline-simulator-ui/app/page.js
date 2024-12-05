@@ -147,7 +147,10 @@ export default function Flow() {
                 if (json.payload.status == "error") {
                     setErrorMessages(json.payload.message);
                 } else if (json.payload.status == "success") {
-                    validInstructions.current = [].concat(textFieldRef.current.value);
+                    validInstructions.current = textFieldRef.current.value
+                        .trim()
+                        .split("\n")
+                        .map((instr) => instr.trim());
                     console.log(validInstructions.current);
                     setInstructions(
                         validInstructions.current.concat(
@@ -207,8 +210,8 @@ export default function Flow() {
                         ref={textFieldRef}
                         name="Text1"
                         cols="40"
-                        rows="5"
-                        className="border rounded"
+                        rows="10"
+                        className="border rounded p-1"
                     ></textarea>
                     <div className="flex flex-row justify-between items-center">
                         <div className="text-red-600 border-l-2 border-red-600 pl-2 text-sm">
