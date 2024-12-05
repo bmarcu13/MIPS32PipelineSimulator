@@ -148,7 +148,11 @@ export default function Flow() {
                     setErrorMessages(json.payload.message);
                     console.log(json.payload.message);
                 } else if (json.payload.status == "success") {
-                    setInstructions(tempInstructions.current);
+                    setInstructions(
+                        tempInstructions.current.concat(
+                            Array(64 - tempInstructions.current.length).fill("noop")
+                        )
+                    );
                     setErrorMessages("");
                     setIsPopupVisible(false);
                 }

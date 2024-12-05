@@ -46,12 +46,12 @@ public class WebSocketHandler extends TextWebSocketHandler {
                 break;
             case "translateInstructions":
                 List<String> receivedInstructions = new ArrayList<>();
-                for (JsonElement instruction : json.getAsJsonArray("instructions")) {
-                    receivedInstructions.add(instruction.getAsString());
-                }
 
                 List<Integer> translatedInstructions;
                 try {
+                    for (JsonElement instruction : json.getAsJsonArray("instructions")) {
+                        receivedInstructions.add(instruction.getAsString());
+                    }
                     translatedInstructions = Translator.translateInstructionSet(receivedInstructions);
                 } catch (TranslationError e) {
                     JsonObject responseJson = new JsonObject();
@@ -66,7 +66,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
                     sendMessage(responseJson.toString());
 
                     break;
-                }
+                } catch ()
 
                 JsonObject responseJson = new JsonObject();
                 JsonObject payload = new JsonObject();
