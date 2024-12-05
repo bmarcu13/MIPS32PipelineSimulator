@@ -82,10 +82,11 @@ public class Translator {
             case "add", "sub", "and", "or", "xor":
                 return parseRType(instructionId, opCode, result[1]);
 
-            case "addi", "subi", "lw", "sw", "sll", "srl", "be", "bne":
+            case "addi", "subi", "lw", "sw", "sll", "srl", "beq", "bne":
                 return parse2R1I(instructionId, opCode, result[1]);
 
             case "bgtz":
+                //TO-DO
                 break;
         }
 
@@ -93,11 +94,12 @@ public class Translator {
     }
 
     private static int parseJ(String instruction, int opCode, String instrBody) throws TranslationError {
-        Matcher matcher = jumpAddrPattern.matcher(instruction);
-        if (!matcher.matches()) {
+        int address;
+        try {
+            address = Integer.parseInt(instrBody);
+        } catch(NumberFormatException e) {
             throw new TranslationError("Invalid jump address: " + instrBody);
         }
-        int address = Integer.parseInt(matcher.group(1), 2);
         return (opCode << 26) | address;
     }
 

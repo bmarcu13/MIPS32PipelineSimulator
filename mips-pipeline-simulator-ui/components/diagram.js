@@ -1814,7 +1814,7 @@ export default function Diagram({ values, instructions }) {
                                                                     overflowWrap: "normal",
                                                                 }}
                                                             >
-                                                                <b>PC</b>
+                                                                <b>PC+1</b>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1827,7 +1827,7 @@ export default function Diagram({ values, instructions }) {
                                                     fontSize="12px"
                                                     textAnchor="middle"
                                                 >
-                                                    PC
+                                                    PC+1
                                                 </text>
                                             </switch>
                                         </g>
@@ -3022,7 +3022,7 @@ export default function Diagram({ values, instructions }) {
                                                                         overflowWrap: "normal",
                                                                     }}
                                                                 >
-                                                                    <b>PC</b>
+                                                                    <b>PC+1</b>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3035,7 +3035,7 @@ export default function Diagram({ values, instructions }) {
                                                         fontSize="12px"
                                                         textAnchor="middle"
                                                     >
-                                                        PC
+                                                        PC+1
                                                     </text>
                                                 </switch>
                                             </g>
