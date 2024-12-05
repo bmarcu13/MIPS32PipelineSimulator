@@ -12,7 +12,7 @@ export default function useWebSocket(url, handleMessage) {
 
         socket.onopen = () => {
             setIsConnected(true);
-            setWs(socket)
+            setWs(socket);
             console.log("WebSocket connection established");
         };
 
@@ -24,8 +24,8 @@ export default function useWebSocket(url, handleMessage) {
 
         socket.onmessage = (event) => {
             // setMessage(event.data);
-            handleMessage(event.data)
             console.log("Message from server: ", event.data);
+            handleMessage(event.data);
         };
 
         socket.onerror = (error) => {
@@ -42,7 +42,7 @@ export default function useWebSocket(url, handleMessage) {
     const sendMessage = (msg) => {
         if (ws && isConnected) {
             ws.send(msg);
-            console.log("message sent: " + msg)
+            console.log("message sent: " + msg);
         }
     };
 
