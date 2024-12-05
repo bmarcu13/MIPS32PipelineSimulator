@@ -170,6 +170,7 @@ export default function Diagram({ values, instructions }) {
                                                         >
                                                             <MemoryList
                                                                 values={instructions}
+                                                                activeEntry={values.programCounter}
                                                             ></MemoryList>
                                                         </div>
                                                     </div>
