@@ -133,14 +133,15 @@ public class CPU {
         ///Memory Stage
         ControlSignals memCtrlSig = exMem.getValue(CTRL_SIG, ControlSignals.class);
         int memAluRes = exMem.getValue(ALU_RES, AluRes.class).res;
+        int memAddr = memAluRes & 0x000000FF; // RAM capacity limited at 256 * 4 bytes simulation purposes
         if(memCtrlSig.getSignalValue(ControlSignals.Signals.MemWrite))
         {
             System.out.println("Addr: " + memAluRes + "; Data: " + exMem.getValue(RD2, Integer.class));
-            memory.writeData(memAluRes, exMem.getValue(RD2, Integer.class));
+            memory.writeData(memAddr, exMem.getValue(RD2, Integer.class));
         }
         else
         {
-            memWb.setValue(MEM_DATA, memory.readData(memAluRes));
+            memWb.setValue(MEM_DATA, memory.readData(memAddr)); //
         }
 
         memWb.setValue(CTRL_SIG, memCtrlSig);
