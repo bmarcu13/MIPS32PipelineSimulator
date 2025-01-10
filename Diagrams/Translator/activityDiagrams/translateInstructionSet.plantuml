@@ -1,0 +1,18 @@
+@startuml
+start
+:initialize empty machine code instruction list;
+:initialize instruction counter to 1;
+repeat
+    :get next instruction;
+    :translateInstruction(instruction);
+    if (TranslationError) then (yes)
+        :throw new TranslationError;
+        stop
+    else (no)
+        :add machineCode to machineCodeInstructionSet;
+    endif
+    :increment line;
+repeat while (more instructions) is (yes)
+:return machineCodeInstructionSet;
+stop
+@enduml

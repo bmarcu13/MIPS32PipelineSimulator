@@ -1,0 +1,12 @@
+@startuml
+title startAutoTick
+
+start
+:Check if auto-tick is already enabled;
+if (isAutoTickEnabled) then (yes)
+    stop
+else (no)
+    :Set auto-tick to enabled;
+    :Schedule the tick method to run at fixed intervals;
+stop
+@enduml

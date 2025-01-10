@@ -1,0 +1,29 @@
+@startuml
+
+package Business {
+    class Translator {
+        - static Map<String, Integer> instructionOpCodes
+        - static Map<String, Integer> instructionFunc
+        - static Pattern jumpAddrPattern
+        - static Pattern registerOperandPattern
+
+        + static List<Integer> translateInstructionSet(List<String> instructionSet) throws TranslationError
+        - static int translateInstruction(String instruction) throws TranslationError
+        - static int parseJ(String instruction, int opCode, String instrBody) throws TranslationError
+        - static int parseRType(String instructionId, int opCode, String instrBody) throws TranslationError
+        - static int parse2R1I(String instructionId, int opCode, String body) throws TranslationError
+    }
+}
+
+package Exception {
+    class TranslationError  {
+        - String details
+        + TranslationError(String details)
+    }
+
+    TranslationError -down-|> Exception
+}
+
+Translator -down.> TranslationError
+
+@enduml

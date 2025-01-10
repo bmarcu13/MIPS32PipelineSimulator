@@ -1,0 +1,16 @@
+@startuml
+package Model {
+    class Clock {
+        - boolean value
+        - final int clockCycleDuration
+        - boolean isAutoTickEnabled
+        - final List<Runnable> onClockTick
+        - ScheduledExecutorService scheduler
+        + Clock(int clockCycleDuration)
+        + void tick()
+        + void startAutoTick() throws NullPointerException
+        + void stopAutoTick() throws InterruptedException
+        + void addSynchronousTask(Runnable task)
+    }
+}
+@enduml
