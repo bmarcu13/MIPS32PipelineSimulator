@@ -2,6 +2,7 @@ package Model;
 
 import Presentation.IView;
 
+import javax.sound.midi.SysexMessage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -154,11 +155,15 @@ public class CPU {
 
         int extOp = idEx.getValue(EXT_OP, Integer.class);
         int exOp1, exOp2;
+        int lvl2FwRes = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
+                ? memWb.getValue(MEM_DATA, Integer.class)
+                : memWb.getValue(ALU_RES, AluRes.class).res;
+
 
         exOp1 = switch (forwardA) {
             case 0 -> idEx.getValue(RD1, Integer.class);
             case 1 -> exMem.getValue(ALU_RES, AluRes.class).res;
-            case 2 -> memWb.getValue(ALU_RES, AluRes.class).res;
+            case 2 -> lvl2FwRes;
             default -> throw new IllegalStateException("Unexpected value: " + forwardA);
         };
 
@@ -167,9 +172,11 @@ public class CPU {
                     ? extOp
                     : idEx.getValue(RD2, Integer.class);
             case 1 -> exMem.getValue(ALU_RES, AluRes.class).res;
-            case 2 -> memWb.getValue(ALU_RES, AluRes.class).res;
+            case 2 -> lvl2FwRes;
             default -> throw new IllegalStateException("Unexpected value: " + forwardB);
         };
+
+        System.out.println(exOp1 + " " + exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc) + " " + exOp2);
 
         int shiftAmm = idEx.getValue(SHIFT_AMM, Integer.class);
         int func = idEx.getValue(FUNC, Integer.class);
@@ -206,6 +213,8 @@ public class CPU {
         ) {
             int branchAddr = exMem.getValue(BRANCH_ADDR, Integer.class);
             instructionFetch.jumpToAddress(branchAddr);
+            System.out.println("Branching to " + branchAddr);
+            System.out.println("Address: " + instructionFetch.getProgramCounter());
         }
 
         memWb.setValue(CTRL_SIG, memCtrlSig);
