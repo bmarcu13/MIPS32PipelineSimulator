@@ -1,0 +1,7 @@
+addi $1, $0, 11
+addi $2, $0, 8
+add $3, $1, $2
+noop
+noop
+noop
+sw $3, $0, 0

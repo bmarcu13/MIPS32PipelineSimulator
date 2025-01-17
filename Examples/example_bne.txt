@@ -1,0 +1,16 @@
+# The programs puts in registers $1 and $2 the values 101 and 55 respectively, 
+# then attempts to branch on not equality between the 2 registers.
+#
+# At the end of the program there should be the value of $2 stored at address 0 in the memory.
+
+addi $1, $0, 101
+addi $2, $0, 55
+noop
+noop
+noop
+bne $1, $2, 3
+noop
+noop
+noop
+sw $1, $0, 0
+sw $2, $0, 0

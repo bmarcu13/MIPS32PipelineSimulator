@@ -1,0 +1,92 @@
+# Initialize memory and remove RF contents
+# 0: 4 
+# 1: -10
+# 2: 456
+# 3: -169
+# 4: 20
+
+addi $1, $0, 4
+addi $2, $0, -10
+addi $3, $0, 456
+addi $4, $0, -169
+sw $1, $0, 0
+sw $2, $0, 1
+addi $5, $0, 20
+sw $3, $0, 2
+sw $4, $0, 3
+xor $1, $0, $0
+sw $5, $0, 4
+xor $2, $0, $0
+xor $3, $0, $0
+xor $4, $0, $0
+
+# Used registers
+# $1 - number of numbers
+# $2 - current maximum
+# $3 - current number from memory
+# $4 - current maximum - current number
+# $5 - memory index 
+
+addi $5, $0, 0
+noop
+addi $2, $0, -999
+lw $1, $0, 0
+lw $3, $5, 1
+noop
+sub $4, $2, $3
+bgtz $4, 4
+noop
+noop
+noop
+add $2, $0, $3
+addi $5, $5, 1
+beq $1, $5, 4
+noop
+noop
+noop
+j 18
+noop
+sw $2, $0, 5
+
+
+----------
+
+
+addi $1, $0, 4
+addi $2, $0, -10
+addi $3, $0, 456
+addi $4, $0, -169
+sw $1, $0, 0
+sw $2, $0, 1
+addi $5, $0, 20
+sw $3, $0, 2
+sw $4, $0, 3
+xor $1, $0, $0
+sw $5, $0, 4
+xor $2, $0, $0
+xor $3, $0, $0
+xor $4, $0, $0
+addi $5, $0, 0
+noop
+addi $2, $0, -999
+lw $1, $0, 0
+lw $3, $5, 1
+noop
+sub $4, $2, $3
+bgtz $4, 4
+noop
+noop
+noop
+add $2, $0, $3
+addi $5, $5, 1
+beq $1, $5, 4
+noop
+noop
+noop
+j 18
+noop
+sw $2, $0, 5
+
+
+
+
