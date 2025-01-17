@@ -1,0 +1,40 @@
+\usepackage{listings}
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8}
+
+% Define Java language
+\lstdefinelanguage{Java}{
+  morekeywords={abstract,assert,boolean,break,byte,case,catch,char,class,const,
+    continue,default,do,double,else,enum,extends,final,finally,float,for,if,
+    implements,import,instanceof,int,interface,long,native,new,package,private,
+    protected,public,return,short,static,strictfp,super,switch,synchronized,this,
+    throw,throws,transient,try,void,volatile,while},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  sensitive=true
+}
+
+% Define a tcolorbox environment for Java code
+\newtcblisting{javacodebox}[1][]{%
+  colback=white!5!white, % Background color
+  colframe=violet!75!black, % Frame color
+  title=#1, % Title for the box (optional)
+  fonttitle=, % Title font
+  listing only,
+  listing options={%
+    language=Java,
+    basicstyle=\ttfamily\small, % Font style and size
+    keywordstyle=\color{blue}, % Style for keywords
+    commentstyle=\color{green!60!black}, % Style for comments
+    stringstyle=\color{red!70!black}, % Style for strings
+    tabsize=2, % Tab width
+    showstringspaces=false,
+    breaklines=true, % Automatic line breaking
+    frame=none,
+  },
+  enhanced,
+  breakable,
+  boxrule=0.5mm, % Thickness of the frame
+  arc=1mm, % Rounded corners
+}
