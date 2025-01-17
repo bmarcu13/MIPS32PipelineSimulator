@@ -62,8 +62,12 @@ public class Translator {
         return machineCodeInstructionSet;
     }
 
-    private static int translateInstruction(String instruction) throws TranslationError {
+    public static int translateInstruction(String instruction) throws TranslationError {
         instruction = instruction.strip();
+        if(instruction.equals("noop")) {
+            return createNoop();
+        }
+
         String[] result = instruction.split("\\s+", 2);
         if (result.length == 0) {
             throw new TranslationError("No such instruction: " + instruction);
@@ -86,11 +90,17 @@ public class Translator {
                 return parse2R1I(instructionId, opCode, result[1]);
 
             case "bgtz":
-                //TO-DO
-                break;
+                return parse1R1I(opCode, result[1]);
         }
 
         throw new TranslationError("Unexpected translation error");
+    }
+
+    private static int createNoop() {
+        // add $0, $0, $0
+        // opCode = 000000, RD = 00000, RS = 00000, RT = 00000, SA = 00000, Func = 000000
+        // instr = 000000 00000 00000 00000 000000
+        return 0;
     }
 
     private static int parseJ(String instruction, int opCode, String instrBody) throws TranslationError {
@@ -168,7 +178,29 @@ public class Translator {
         }
         else
         {
-            return (opCode << 26) | (operands[1] << 21) | (operands[0] << 16) | operands[2];
+            return (opCode << 26) | (operands[1] << 21) | (operands[0] << 16) | (operands[2] & 0x0000FFFF);
         }
+    }
+
+    private static int parse1R1I(int opCode, String body) throws TranslationError{
+        String[] tokens = body.split("\\s*,\\s*", 3);
+        if(tokens.length > 2) {
+            throw new TranslationError("Unexpected token " + tokens[2]);
+        }
+        Matcher matcher = registerOperandPattern.matcher(tokens[0]);
+        if(!matcher.matches()) {
+            throw new TranslationError("Unexpected token " + tokens[0]);
+        }
+        int rs = Integer.parseInt(tokens[0].substring(1));
+        if (rs > 31) {
+            throw new TranslationError("Register index out of bounds: " + rs);
+        }
+
+        int offset = Integer.parseInt(tokens[1]);
+        if (offset < 0) {
+            throw new TranslationError("Branch ofset can't be negative " + offset);
+        }
+
+        return (opCode << 26) | (rs << 21) | (offset & 0x0000FFFF);
     }
 }

@@ -14,20 +14,6 @@ public class InstructionFetch{
         return programCounter;
     }
 
-    public InstructionFetch()
-    {
-        instructionMemory[0] = 0b10000000000000100000000000000101;
-        instructionMemory[1] = 0b10000000000000110000000000000011;
-        instructionMemory[2] = 0b00000000000000000000000000000000;
-        instructionMemory[3] = 0b00000000000000000000000000000000;
-        instructionMemory[4] = 0b00000000000000000000000000000000;
-        instructionMemory[5] = 0b00000000010000110000100000000000;
-        instructionMemory[6] = 0b00000000000000000000000000000000;
-        instructionMemory[7] = 0b00000000000000000000000000000000;
-        instructionMemory[8] = 0b00000000000000000000000000000000;
-        instructionMemory[9] = 0b10001100000000010000000000000000;
-    }
-
     public void setContents(List<Integer> instructionSet) {
         for (int i = 0; i < maxRomCapacity; i++) {
             instructionMemory[i] = 0;
