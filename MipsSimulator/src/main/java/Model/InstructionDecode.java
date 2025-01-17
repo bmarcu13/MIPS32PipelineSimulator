@@ -2,7 +2,7 @@ package Model;
 
 import java.util.*;
 
-public class InstructionDecode implements SynchronousComponent{
+public class InstructionDecode implements DeferredUpdateComponent {
     private final int registerFileCapacity = 32;
     private int[] registerFile = new int[registerFileCapacity];
     private final Map<Integer, Integer> pendingChanges = new HashMap<>();

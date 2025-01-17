@@ -26,7 +26,7 @@ public class CPU {
 
     private final IView view;
 
-    List<SynchronousComponent> synchronousComponents = new ArrayList<>();
+    List<DeferredUpdateComponent> synchronousComponents = new ArrayList<>();
 
     private final InstructionFetch instructionFetch = new InstructionFetch();
     private final InstructionDecode instructionDecode = new InstructionDecode();
@@ -57,7 +57,7 @@ public class CPU {
             executePipeline();
 
             //commit registers
-            for (SynchronousComponent sc : synchronousComponents)
+            for (DeferredUpdateComponent sc : synchronousComponents)
             {
                 sc.commitChanges();
             }
@@ -66,7 +66,7 @@ public class CPU {
     }
 
     public void reset() {
-        for(SynchronousComponent sc : synchronousComponents) {
+        for(DeferredUpdateComponent sc : synchronousComponents) {
             sc.reset();
         }
         instructionFetch.resetProgramCounter();

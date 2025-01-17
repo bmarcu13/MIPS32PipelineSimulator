@@ -1,6 +1,6 @@
 package Model;
 
-public interface SynchronousComponent {
+public interface DeferredUpdateComponent {
     void reset();
     void commitChanges();
 }

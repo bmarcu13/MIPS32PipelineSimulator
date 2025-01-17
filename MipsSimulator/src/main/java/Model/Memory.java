@@ -2,7 +2,7 @@ package Model;
 
 import java.util.*;
 
-public class Memory implements SynchronousComponent {
+public class Memory implements DeferredUpdateComponent {
     private final int memCapacity = 256;
     private int[] memoryBlock = new int[memCapacity];
     private Map<Integer, Integer> pendingChanges = new HashMap<>();

@@ -1,10 +1,9 @@
 package Model;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Register implements SynchronousComponent
+public class Register implements DeferredUpdateComponent
 {
 
     private final Map<String, Object> fieldValues = new HashMap<>();
