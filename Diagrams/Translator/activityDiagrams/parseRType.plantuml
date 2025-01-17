@@ -1,0 +1,51 @@
+@startuml
+start
+:split instruction body into tokens;
+note right
+    Toxens are potential operand candidates
+    separated by commas in the intructition body
+end note
+:initialize operands array;
+repeat
+    :get next token;
+    :match token with regex pattern;
+    note left
+       The regex pattern checks for token validity. 
+       (ex. register operands always begin with $)
+    end note
+    if (not matches) then (yes)
+        :throw new TranslationError;
+        stop
+    else (no)
+        if (operand index < 3) then (yes)
+            note right
+                the R instruction type has
+                exactly 3 operands
+            end note
+            :parse operand from token;
+            if (operand > 31) then (yes)
+                note left
+                    The simulator has 32 registers
+                    indexed 0-31 
+                end note
+                :throw new TranslationError;
+                stop
+            else (no)
+                :add operand to operands array;
+            endif
+        endif
+    endif
+repeat while (more tokens)
+if (tokens.length != 3) then (yes)
+    :throw new TranslationError;
+    stop
+else (no)
+    if (operands[0] == 0) then (yes)
+        :throw new TranslationError;
+        stop
+    else (no)
+        :return (opCode << 26) | (operands[1] << 21) | (operands[2] << 16) | (operands[0] << 11) | (instructionFunc.get(instructionId));
+        stop
+    endif
+endif
+@enduml

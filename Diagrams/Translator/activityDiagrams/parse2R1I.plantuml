@@ -1,0 +1,74 @@
+@startuml
+start
+:split instruction body into tokens;
+note right
+    Tokens are potential operand candidates
+    separated by commas in the instruction body
+end note
+:initialize operands array;
+repeat
+    :get next token;
+    :match token with regex pattern;
+    note left
+       The regex pattern checks for token validity. 
+       (ex. register operands always begin with $)
+    end note
+    if (not matches and i != 2) then (yes)
+        :throw error;
+        stop
+    else (no)
+        note left
+            the instruction type has
+            exactly 2 register operands and 1 immediate value
+        end note
+        if (token index < 2) then (yes)
+            :parse operand from token;
+            note left
+                first 2 operands are registers
+            end note
+            if (operand > 31) then (yes)
+                note left
+                    The simulator has 32 registers
+                    indexed 0-31 
+                end note
+                :throw error;
+                stop
+            else (no)
+                :add operand to operands array;
+            endif
+        else if (token index == 2) then (yes)
+            :parse immediate value from token;
+            note left
+                the third operand is immediate value
+            end note
+            if (invalid value) then (yes)
+                :throw error;
+                stop
+            else (no)
+                :add immediate value to operands array;
+            endif
+        endif
+    endif
+repeat while (more tokens)
+if (tokens.length != 3) then (yes)
+    :throw error;
+    stop
+else (no)
+    if (operands[0] == 0) then (yes)
+        :throw error;
+        note left
+            the first operand cannot be 
+            register 0
+        end note
+        stop
+    else (no)
+        if (instruction is shift) then (yes)
+            :return machine code for shift instruction;
+            stop
+        else (no)
+            :return machine code for other instruction;
+            stop
+        endif
+    endif
+endif
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+title addSynchronousTask
+
+start
+:Receive task as parameter;
+:Add the task to the onClockTick list;
+stop
+@enduml

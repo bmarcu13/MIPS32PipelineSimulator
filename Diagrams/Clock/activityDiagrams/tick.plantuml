@@ -1,0 +1,11 @@
+@startuml
+title tick
+
+start
+:Initialize task list;
+repeat
+    :Get next task from onClockTick list;
+    :Run task;
+repeat while (more tasks?) is (yes)
+stop
+@enduml

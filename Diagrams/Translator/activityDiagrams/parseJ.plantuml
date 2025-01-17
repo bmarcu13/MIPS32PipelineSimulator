@@ -1,0 +1,11 @@
+@startuml
+start
+:try parse address from instruction body string;
+if (NumberFormatException) then (yes)
+    :throw new TranslationError;
+    stop
+else (no)
+    :return address - bits [0:25] from instruction body;
+    stop
+endif
+@enduml

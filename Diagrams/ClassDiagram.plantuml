@@ -2,10 +2,8 @@
 
 Boostrapper o-- CPU
 Boostrapper *-- Clock
-Boostrapper *-right- MainView
-Boostrapper *-left- Compiler
+Boostrapper *-left- Translator
 
-Clock *-- ClockTransition
 Clock *-left- ScheduledExecutorService
 
 CPU *-- DeferredUpdateComponent
@@ -48,15 +46,26 @@ interface DeferredUpdateComponent {
 }
 
 class Boostrapper {
-    - cpu : CPU
-    - clock : Clock
-    - mainView : MainView
+    + main(args: String[]) : void
 }
 
 class CPU {
-    - synchronousComponents : List<DeferredUpdateComponent>
-    - clock : Clock
+    - synchronousComponents : List<SynchronousComponent>
+    - view : IView
+    - instructionFetch : InstructionFetch
+    - instructionDecode : InstructionDecode
+    - executionUnit : ExecutionUnit
+    - memory : Memory
+    - ifId : Register
+    - idEx : Register 
+    - exMem : Register
+    - memWb : Register
+    + CPU(clock: Clock, view: IView)
     + reset()
+    + loadInstructionSet(instructions: List<Integer>)
+    - executePipeline()
+    - updateView()
+    - initRegisters()
 }
 
 class Clock {
@@ -65,7 +74,7 @@ class Clock {
     - isAutoTickEnabled : boolean
     - scheduler : ScheduledExecutorService
     - onClockTick : List<Runnable>
-    + addOnClockTickEvent(callback: Runnable) : void
+    + addAsynchronousTask(callback: Runnable) : void
     + startAutoTick() : void
     + stopAutoTick() : void
     + tickOnce() : void
@@ -109,13 +118,18 @@ class Register {
     + commitChanges() : void
 }
 
-class MainView {
-    
-}
 
-class Compiler {
-    - registerSet : Map<String, Int>
-    + compile(program: String) : List<Int32>
+class Translator {
+    - static Map<String, Integer> instructionOpCodes
+    - static Map<String, Integer> instructionFunc
+    - static Pattern jumpAddrPattern
+    - static Pattern registerOperandPattern
+
+    + static List<Integer> translateInstructionSet(List<String> instructionSet) throws TranslationError
+    - static int translateInstruction(String instruction) throws TranslationError
+    - static int parseJ(String instruction, int opCode, String instrBody) throws TranslationError
+    - static int parseRType(String instructionId, int opCode, String instrBody) throws TranslationError
+    - static int parse2R1I(String instructionId, int opCode, String body) throws TranslationError
 }
 
 @enduml

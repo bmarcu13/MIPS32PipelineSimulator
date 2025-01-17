@@ -1,0 +1,18 @@
+@startuml
+title stopAutoTick
+
+start
+:Check if auto-tick is enabled;
+if (isAutoTickEnabled) then (yes)
+    :Set auto-tick to disabled;
+    :Shutdown the scheduler;
+    :Wait for scheduler to terminate;
+    if (scheduler does not terminate) then (yes)
+        :Force shutdown of the scheduler;
+    endif
+    :Create a new schedulre;
+stop
+else (no)
+    stop
+endif
+@enduml

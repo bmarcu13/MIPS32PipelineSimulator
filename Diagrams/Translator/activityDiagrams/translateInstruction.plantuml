@@ -1,0 +1,30 @@
+@startuml
+start
+:strip instruction;
+:split instruction into result;
+if (result.length == 0) then (yes)
+    :throw new TranslationError;
+    stop
+else (no)
+    :get instructionId from result[0];
+    :get opCode from instructionOpCodes;
+    if (opCode == null) then (yes)
+        :throw new TranslationError;
+        stop
+    else (no)
+        switch (instructionId)
+            case ( "j" )
+                :parseJ(instruction, opCode, result[1]);
+            case ( "add", "sub", "and", "or", "xor")
+                :parseRType(instructionId, opCode, result[1]);
+            case ( "addi", "subi", "lw", "sw", "sll", "srl", "beq", "bne" )
+                :parse2R1I(instructionId, opCode, result[1]);
+            case ("bgtz")
+                :TO-DO;
+        endswitch
+        :return instruction in machine code;
+    endif
+endif
+:throw new TranslationError;
+stop
+@enduml

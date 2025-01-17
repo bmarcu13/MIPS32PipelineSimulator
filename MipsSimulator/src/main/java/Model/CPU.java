@@ -7,10 +7,13 @@ import java.util.List;
 
 public class CPU {
 
+    //Inter-stage register fields macros
     private static final String INSTRUCTION = "INSTR";
     private static final String PROG_CNT = "PROG_CNT";
     private static final String RD1 = "RD1";
     private static final String RD2 = "RD2";
+    private static final String FW_RS = "FW_RS";
+    private static final String FW_RT = "FW_RT";
     private static final String SHIFT_AMM = "SHIFT_AMM";
     private static final String FUNC = "FUNC";
     private static final String EXT_OP = "EXT_OP";
@@ -109,6 +112,8 @@ public class CPU {
         idEx.setValue(PROG_CNT, ifId.getValue(PROG_CNT, Integer.class));
         idEx.setValue(RD1, instructionDecode.readData(addr1));
         idEx.setValue(RD2, instructionDecode.readData(addr2));
+        idEx.setValue(FW_RS, addr1); // for forwarding unit
+        idEx.setValue(FW_RT, addr2); // for forwarding unit
         idEx.setValue(SHIFT_AMM, (instrId >> 6) & 0x1f);
         idEx.setValue(EXT_OP, instructionDecode.extendOp(instrId & 0xffff, idCtrlSig.getSignalValue(ControlSignals.Signals.ExtOp)));
         idEx.setValue(FUNC, instrId & 0x3f);
@@ -118,11 +123,59 @@ public class CPU {
         ///Execution Stage
         ControlSignals exCtrlSig = idEx.getValue(CTRL_SIG, ControlSignals.class);
 
+        int rd1Src = idEx.getValue(FW_RS, Integer.class);
+        int rd2Src = idEx.getValue(FW_RT, Integer.class);
+        int memRegDst = exMem.getValue(REG_DST, Integer.class);
+        int wbRegDst = memWb.getValue(REG_DST, Integer.class);
+        boolean memStageMemWrite = exMem.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.RegWrite);
+        boolean wbStageMemWrite = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.RegWrite);
+
+        // Forwarding operands
+        short forwardA = 0;
+        short forwardB = 0;
+
+        if (memStageMemWrite && memRegDst != 0) {
+            if(memRegDst == rd1Src) {
+                forwardA = 1;
+            }
+            else if(memRegDst == rd2Src) {
+                forwardB = 1;
+            }
+        }
+
+        if (wbStageMemWrite && wbRegDst != 0) {
+            if (wbRegDst == rd1Src) {
+                forwardA = 2;
+            }
+            else if (wbRegDst == rd2Src) {
+                forwardB = 2;
+            }
+        }
+
         int extOp = idEx.getValue(EXT_OP, Integer.class);
-        int exOp1 = idEx.getValue(RD1, Integer.class);
-        int exOp2 = exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc)
-            ? extOp
-            : idEx.getValue(RD2, Integer.class);
+        int exOp1, exOp2, fwMux2Res;
+        int lvl2FwRes = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
+                ? memWb.getValue(MEM_DATA, Integer.class)
+                : memWb.getValue(ALU_RES, AluRes.class).res;
+
+        exOp1 = switch (forwardA) {
+            case 0 -> idEx.getValue(RD1, Integer.class);
+            case 1 -> exMem.getValue(ALU_RES, AluRes.class).res;
+            case 2 -> lvl2FwRes;
+            default -> throw new IllegalStateException("Unexpected value: " + forwardA);
+        };
+
+        fwMux2Res = switch(forwardB) {
+            case 0 -> idEx.getValue(RD2, Integer.class);
+            case 1 -> exMem.getValue(ALU_RES, AluRes.class).res;
+            case 2 -> lvl2FwRes;
+            default -> throw new IllegalStateException("Unexpected value: " + forwardB);
+        };
+
+        exOp2 = exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc)
+                ? extOp
+                : fwMux2Res;
+
         int shiftAmm = idEx.getValue(SHIFT_AMM, Integer.class);
         int func = idEx.getValue(FUNC, Integer.class);
         int finalRegDst = exCtrlSig.getSignalValue(ControlSignals.Signals.RegDst)
@@ -134,7 +187,7 @@ public class CPU {
         exMem.setValue(BRANCH_ADDR, exProgCnt + extOp);
         exMem.setValue(CTRL_SIG, exCtrlSig);
         exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, (byte)func));
-        exMem.setValue(RD2, idEx.getValue(RD2, Integer.class));
+        exMem.setValue(RD2, fwMux2Res);
         exMem.setValue(REG_DST, finalRegDst);
 
         /// Memory Stage
@@ -158,6 +211,8 @@ public class CPU {
         ) {
             int branchAddr = exMem.getValue(BRANCH_ADDR, Integer.class);
             instructionFetch.jumpToAddress(branchAddr);
+            System.out.println("Branching to " + branchAddr);
+            System.out.println("Address: " + instructionFetch.getProgramCounter());
         }
 
         memWb.setValue(CTRL_SIG, memCtrlSig);
@@ -220,6 +275,8 @@ public class CPU {
         idEx.addField(PROG_CNT, 0);
         idEx.addField(RD1, 0);
         idEx.addField(RD2, 0);
+        idEx.addField(FW_RS, 1);
+        idEx.addField(FW_RT, 1);
         idEx.addField(SHIFT_AMM, 0);
         idEx.addField(EXT_OP, 0);
         idEx.addField(FUNC, 0);
