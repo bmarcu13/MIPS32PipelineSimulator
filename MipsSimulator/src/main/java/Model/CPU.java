@@ -2,7 +2,6 @@ package Model;
 
 import Presentation.IView;
 
-import javax.sound.midi.SysexMessage;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -154,11 +153,10 @@ public class CPU {
         }
 
         int extOp = idEx.getValue(EXT_OP, Integer.class);
-        int exOp1, exOp2;
+        int exOp1, exOp2, fwMux2Res;
         int lvl2FwRes = memWb.getValue(CTRL_SIG, ControlSignals.class).getSignalValue(ControlSignals.Signals.MemToReg)
                 ? memWb.getValue(MEM_DATA, Integer.class)
                 : memWb.getValue(ALU_RES, AluRes.class).res;
-
 
         exOp1 = switch (forwardA) {
             case 0 -> idEx.getValue(RD1, Integer.class);
@@ -167,16 +165,16 @@ public class CPU {
             default -> throw new IllegalStateException("Unexpected value: " + forwardA);
         };
 
-        exOp2 = switch(forwardB) {
-            case 0 -> exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc)
-                    ? extOp
-                    : idEx.getValue(RD2, Integer.class);
+        fwMux2Res = switch(forwardB) {
+            case 0 -> idEx.getValue(RD2, Integer.class);
             case 1 -> exMem.getValue(ALU_RES, AluRes.class).res;
             case 2 -> lvl2FwRes;
             default -> throw new IllegalStateException("Unexpected value: " + forwardB);
         };
 
-        System.out.println(exOp1 + " " + exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc) + " " + exOp2);
+        exOp2 = exCtrlSig.getSignalValue(ControlSignals.Signals.AluSrc)
+                ? extOp
+                : fwMux2Res;
 
         int shiftAmm = idEx.getValue(SHIFT_AMM, Integer.class);
         int func = idEx.getValue(FUNC, Integer.class);
@@ -189,7 +187,7 @@ public class CPU {
         exMem.setValue(BRANCH_ADDR, exProgCnt + extOp);
         exMem.setValue(CTRL_SIG, exCtrlSig);
         exMem.setValue(ALU_RES, executionUnit.executeInstruction(exOp1, exOp2, shiftAmm, exCtrlSig.aluOp, (byte)func));
-        exMem.setValue(RD2, idEx.getValue(RD2, Integer.class));
+        exMem.setValue(RD2, fwMux2Res);
         exMem.setValue(REG_DST, finalRegDst);
 
         /// Memory Stage
