@@ -10,7 +10,7 @@ export default function MemoryList({ values, activeEntry }) {
                     <div
                         key={index}
                         className={`flex flex-1 border-t border-slate-700 justify-between ${
-                            activeEntry !== undefined && activeEntry - 1 == index
+                            activeEntry !== undefined && activeEntry == index
                                 ? "bg-red-200"
                                 : "bg-transparent"
                         }`}
